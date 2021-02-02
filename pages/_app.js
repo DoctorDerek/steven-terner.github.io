@@ -1,4 +1,6 @@
 import '@/css/tailwind.css'
+import '@/css/KeenSlider.css'
+import 'keen-slider/keen-slider.min.css'
 
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'next-themes'
