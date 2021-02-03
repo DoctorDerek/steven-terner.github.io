@@ -6,7 +6,7 @@ const KeenSlider = (props) => {
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
-    duration: 1000,
+    duration: 3000, // animation duration in ms
     dragStart: () => {
       setPause(true)
     },
@@ -29,7 +29,7 @@ const KeenSlider = (props) => {
       if (!pause && slider) {
         slider.next()
       }
-    }, 2000)
+    }, 5000) // autoplay interval in ms
     return () => {
       clearInterval(timer.current)
     }
