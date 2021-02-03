@@ -31,12 +31,12 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex flex-col-reverse items-center justify-between w-full text-base leading-5 sm:flex-row">
-            <div className="items-center justify-around hidden w-full font-serif font-bold text-center border-2 border-black border-solid xl:text-2xl md:text-xl sm:flex sm:text-l dark:border-gray-500">
+            <div className="items-center justify-around hidden w-full font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-100 xl:text-2xl md:text-xl sm:flex sm:text-l">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 text-gray-900 sm:p-4 dark:text-gray-100"
+                  className="p-1 text-green-900 sm:p-4 dark:text-gray-100 hover:bg-gray-900 hover:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900"
                 >
                   {link.title}
                 </Link>
