@@ -13,12 +13,12 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex flex-col justify-between h-screen">
         <header className="flex flex-col items-center justify-between pt-10">
           <div>
-            <Link href="/" aria-label="StevenTerner.com">
+            <Link href="/" aria-label="Steven Terner">
               <div className="flex items-center justify-between">
-                <div className="w-screen">
-                  <div className="w-3/4 m-auto mb-8 lg:w-1/2">
+                <div className="w-screen px-3 mb-8">
+                  <SectionContainer>
                     <Logo />
-                  </div>
+                  </SectionContainer>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">
@@ -30,13 +30,13 @@ const LayoutWrapper = ({ children }) => {
               </div>
             </Link>
           </div>
-          <div className="flex flex-col-reverse items-center text-base leading-5 sm:flex-row">
-            <div className="items-center hidden font-serif font-bold text-center xl:text-2xl md:text-xl sm:flex sm:text-l">
+          <div className="flex flex-col-reverse items-center justify-between w-full text-base leading-5 sm:flex-row">
+            <div className="items-center justify-around hidden w-full font-serif font-bold text-center border-2 border-black border-solid xl:text-2xl md:text-xl sm:flex sm:text-l dark:border-gray-500">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                  className="p-1 text-gray-900 sm:p-4 dark:text-gray-100"
                 >
                   {link.title}
                 </Link>
