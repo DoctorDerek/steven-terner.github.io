@@ -25,14 +25,23 @@ module.exports = {
         serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
       },
       colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        black: colors.black,
+        white: colors.white,
+        //        gray: colors.trueGray,
+        indigo: colors.indigo,
+        red: colors.rose,
+        yellow: colors.amber,
+        gray: colors.coolGray,
         blue: colors.lightBlue,
-        code: {
-          green: '#b5f4a5',
-          yellow: '#ffe484',
-          purple: '#d9a9ff',
-          red: '#ff8383',
-          blue: '#93ddfd',
-          white: '#fff',
+        pink: colors.fuchsia,
+        green: {
+          // https://colorhunt.co/palette/201883
+          dark: '#206a5d',
+          DEFAULT: '#81b214',
+          light: '#bfdcae',
+          lightest: '#f1f1e8',
         },
       },
       typography: (theme) => ({
