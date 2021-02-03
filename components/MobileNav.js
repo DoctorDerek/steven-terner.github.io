@@ -28,8 +28,7 @@ const MobileNav = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
+          className="border-2 border-gray-900 border-solid rounded fill-current dark:border-green-lightest xl:text-2xl md:text-xl sm:flex sm:text-l bg-green-lightest dark:bg-green-dark hover:bg-green-light dark:hover:text-green-dark"
         >
           {navShow ? (
             <path
