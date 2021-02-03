@@ -11,7 +11,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
-        <header className="flex flex-col items-center justify-between pt-10 ">
+        <header className="flex flex-col items-center justify-between pt-10">
           <div>
             <Link href="/" aria-label="StevenTerner.com">
               <div className="flex items-center justify-between">
@@ -31,7 +31,7 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex flex-col-reverse items-center text-base leading-5 sm:flex-row">
-            <div className="hidden sm:block">
+            <div className="items-center hidden font-serif font-bold text-center xl:text-2xl md:text-xl sm:flex sm:text-l">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}

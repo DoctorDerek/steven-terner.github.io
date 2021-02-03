@@ -21,7 +21,8 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Rubik', ...defaultTheme.fontFamily.sans],
+        serif: ['Source Serif Pro', ...defaultTheme.fontFamily.serif],
       },
       colors: {
         blue: colors.lightBlue,
