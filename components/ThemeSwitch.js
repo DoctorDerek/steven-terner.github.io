@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
     <CSSTransition
       aria-label="Toggle Dark Mode"
       type="button"
-      className="h-16 p-1 ml-1 mr-1 text-gray-900 bg-transparent"
+      className="p-1 ml-1 mr-1 text-gray-900 bg-transparent w-36 sm:w-24 md:w-32 xl:w-36"
       onClick={() => {
         setTheme(theme === 'dark' ? 'light' : 'dark')
         setInProp(inProp ? false : true)
@@ -196,7 +196,6 @@ const ThemeSwitch = () => {
             fill="#FFF3CA"
             className="moon"
           />
-          <circle cx="35" cy="35" r="28.5" fill="white" stroke="#E8E8E8" className="button" />
         </g>
         <defs>
           <linearGradient
