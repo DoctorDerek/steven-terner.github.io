@@ -57,10 +57,10 @@ const MobileNav = () => {
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed flex content-center w-full h-full py-24 border-2 border-black border-solid cursor-auto focus:outline-none"
+          className="fixed flex content-center w-full h-full py-24 border-0 border-black border-solid cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed flex flex-col justify-between w-64 mt-8 text-center transform -translate-x-1/2 border-2 border-red-900 border-solid align-center h-3/5 left-1/2">
+        <nav className="fixed flex flex-col justify-between w-64 mt-8 text-center transform -translate-x-1/2 border-0 border-red-900 border-solid align-center h-3/5 left-1/2">
           {headerNavLinks.map((link) => (
             <Link
               href={link.href}
