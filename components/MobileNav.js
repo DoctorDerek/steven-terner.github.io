@@ -21,14 +21,14 @@ const MobileNav = () => {
     <div className="sm:hidden">
       <button
         type="button"
-        className="flex w-32 h-8 ml-1 mr-1 rounded"
+        className="flex w-32 h-8 mx-1 rounded"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          className="w-8 text-gray-900 bg-transparent border-2 border-gray-900 border-solid rounded dark:border-green-lightest xl:text-2xl md:text-xl sm:flex sm:text-l hover:text-green-dark dark:text-green-lightest hover:bg-green-light dark:hover:text-green-dark"
+          className="w-8 ml-3 text-gray-900 bg-transparent border-2 border-gray-900 border-solid rounded fill-current dark:hover:text-gray-900 dark:border-gray-400 xl:text-2xl md:text-xl sm:flex sm:text-l hover:text-green-dark dark:text-gray-300 hover:bg-green-light"
         >
           {navShow ? (
             <path
@@ -44,30 +44,34 @@ const MobileNav = () => {
             />
           )}
         </svg>
-        <div className="m-auto font-serif text-2xl font-bold text-gray-900">Menu</div>
+        <div className="m-auto font-serif text-2xl font-bold text-gray-900 dark:text-gray-200">
+          Menu
+        </div>
       </button>
       <div
-        className={`fixed w-full h-full top-24 right-0 bg-gray-200 dark:bg-gray-800 opacity-95 z-10 transform ease-in-out duration-300 ${
-          navShow ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={
+          'fixed flex justify-center items-start px-24 w-full h-full bg-gray-200 dark:bg-gray-800 opacity-100 z-10 transform ease-in-out duration-300 top-48 right-0' +
+          ` ${navShow ? 'translate-x-0' : 'translate-x-full'}`
+        }
       >
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed w-full h-full cursor-auto focus:outline-none"
+          className="fixed flex flex-col content-start justify-start w-full h-full py-24 border-2 border-black border-solid cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed h-full mt-8">
+        <nav className="flex flex-col content-start justify-start mt-20 text-center border-2 border-red-900 border-solid w-80">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-              >
+            <Link
+              href={link.href}
+              className="font-serif text-2xl font-bold tracking-widest"
+              onClick={onToggleNav}
+              key={link.title}
+            >
+              <div className="h-16 px-12 py-4 mx-4 my-2 rounded left-4 bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
                 {link.title}
-              </Link>
-            </div>
+              </div>
+            </Link>
           ))}
         </nav>
       </div>
