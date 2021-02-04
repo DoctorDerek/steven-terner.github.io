@@ -50,17 +50,17 @@ const MobileNav = () => {
       </button>
       <div
         className={
-          'fixed flex justify-center items-start px-24 w-full h-full bg-gray-200 dark:bg-gray-800 opacity-100 z-10 transform ease-in-out duration-300 top-48 right-0' +
+          'fixed w-full h-full top-48 right-0 bg-gray-200 dark:bg-gray-800 opacity-95 z-10 transform ease-in-out duration-300' +
           ` ${navShow ? 'translate-x-0' : 'translate-x-full'}`
         }
       >
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed flex flex-col content-start justify-start w-full h-full py-24 border-2 border-black border-solid cursor-auto focus:outline-none"
+          className="fixed flex content-center w-full h-full py-24 border-2 border-black border-solid cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="flex flex-col content-start justify-start mt-20 text-center border-2 border-red-900 border-solid w-80">
+        <nav className="fixed flex flex-col justify-between w-64 mt-8 text-center transform -translate-x-1/2 border-2 border-red-900 border-solid align-center h-3/5 left-1/2">
           {headerNavLinks.map((link) => (
             <Link
               href={link.href}
@@ -68,7 +68,7 @@ const MobileNav = () => {
               onClick={onToggleNav}
               key={link.title}
             >
-              <div className="h-16 px-12 py-4 mx-4 my-2 rounded left-4 bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
+              <div className="h-auto px-0 py-4 mx-0 rounded left-4 bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
                 {link.title}
               </div>
             </Link>
