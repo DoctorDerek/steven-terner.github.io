@@ -24,8 +24,9 @@ export default function Home({ posts }) {
         url={siteMetadata.siteUrl}
       />
       <div className="w-full pt-6 pb-8 space-y-2 md:space-y-5">
-        <div className="bg-gray-800"></div>
-        <ImageSlideshow />
+        <div className="bg-gray-800">
+          <ImageSlideshow />
+        </div>
         <div className="bg-gray-300">3 Columns</div>
         <div className="bg-green-800">About</div>
       </div>
