@@ -68,7 +68,7 @@ const MobileNav = () => {
               onClick={onToggleNav}
               key={link.title}
             >
-              <div className="h-auto px-0 py-4 mx-0 rounded left-4 bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
+              <div className="h-auto px-0 py-4 mx-0 my-2 rounded bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
                 {link.title}
               </div>
             </Link>
