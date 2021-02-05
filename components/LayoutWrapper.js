@@ -9,28 +9,21 @@ import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
-      <div className="flex flex-col justify-between h-screen">
-        <header className="flex flex-col items-center justify-between pt-10">
+    <div className="flex flex-col justify-between h-screen">
+      <header className="flex flex-col items-center justify-between pt-10">
+        <SectionContainer>
           <div>
             <Link href="/" aria-label="Steven Terner">
               <div className="flex items-center justify-between">
-                <div className="w-screen px-3 mb-8">
+                <div className="w-screen px-3">
                   <SectionContainer>
                     <Logo className="rounded stroke-current stroke-2 text-green-dark dark:text-purple-900" />
                   </SectionContainer>
                 </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
               </div>
             </Link>
           </div>
-          <div className="flex flex-row-reverse items-center justify-between w-full text-base leading-5 sm:flex-row">
+          <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row">
             <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-500 xl:text-2xl md:text-xl sm:flex sm:text-l bg-green-lightest dark:bg-transparent">
               {headerNavLinks.map((link) => (
                 <Link
@@ -45,11 +38,11 @@ const LayoutWrapper = ({ children }) => {
             <ThemeSwitch />
             <MobileNav />
           </div>
-        </header>
-        <main className="mb-auto">{children}</main>
-        <Footer />
-      </div>
-    </SectionContainer>
+        </SectionContainer>
+      </header>
+      <main className="mb-auto">{children}</main>
+      <Footer />
+    </div>
   )
 }
 
