@@ -23,7 +23,7 @@ export default function Home({ posts }) {
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
-      <div className="w-full pt-6 pb-8 space-y-2 md:space-y-5">
+      <>
         <div className="bg-gray-800">
           <ImageSlideshow />
         </div>
@@ -44,7 +44,7 @@ export default function Home({ posts }) {
           EditHome About Service Offerings Sample Publications Blog Contact Steven Terner, Create
           your website at WordPress.com Get started :)
         </div>
-      </div>
+      </>
     </>
   )
 }
