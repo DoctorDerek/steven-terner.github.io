@@ -4,12 +4,13 @@ import { CSSTransition } from 'react-transition-group'
 
 const ThemeSwitch = () => {
   const [inProp, setInProp] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
+  /* resolvedTheme: If enableSystem is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to theme */
 
   // Transition "in" prop from false to true after mounting to show
   // dark toggle correctly when refreshing with dark mode enabled
   useEffect(() => {
-    theme === 'dark' && setInProp(true)
+    resolvedTheme === 'dark' && setInProp(true)
   }, [])
 
   // Here's a note about Avoid Hydration Mismatch -- probably not necessary
@@ -22,7 +23,7 @@ const ThemeSwitch = () => {
       type="button"
       className="p-1 ml-1 mr-1 text-gray-900 bg-transparent w-36 sm:w-24 md:w-32 xl:w-36"
       onClick={() => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
+        setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
         setInProp(inProp ? false : true)
       }}
       in={inProp}
