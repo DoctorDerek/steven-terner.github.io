@@ -17,7 +17,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="w-screen px-3 mb-8">
                   <SectionContainer>
-                    <Logo className="text-purple-900 rounded stroke-current dark:stroke-2" />
+                    <Logo className="text-gray-900 dark:text-purple-900 rounded stroke-current stroke-2" />
                   </SectionContainer>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
