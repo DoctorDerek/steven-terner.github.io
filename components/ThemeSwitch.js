@@ -4,14 +4,24 @@ import { CSSTransition } from 'react-transition-group'
 
 const ThemeSwitch = () => {
   const [inProp, setInProp] = useState(false)
-  const { resolvedTheme, setTheme } = useTheme()
-  /* resolvedTheme: If enableSystem is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to theme */
+  const { resolvedTheme, systemTheme, setTheme } = useTheme()
+  /*  useTheme takes no parameters, but returns:
+      theme: Active theme name
+      
+      setTheme(name): Function to update the theme
+      
+      forcedTheme: Forced page theme or falsy. If forcedTheme is set, you should disable any theme switching UI
+      
+      resolvedTheme: If enableSystem is true and the active theme is "system", this returns whether the system preference resolved to "dark" or "light". Otherwise, identical to theme
+      
+      systemTheme: If enableSystem is true, represents the System theme preference ("dark" or "light"), regardless what the active theme is
+      themes: The list of themes passed to ThemeProvider (with "system" appended, if enableSystem is true) */
 
   // Transition "in" prop from false to true after mounting to show
   // dark toggle correctly when refreshing with dark mode enabled
   useEffect(() => {
-    resolvedTheme === 'dark' && setInProp(true)
-  }, [])
+    if (resolvedTheme === 'dark') setInProp(true)
+  }, [resolvedTheme])
 
   // Here's a note about Avoid Hydration Mismatch -- probably not necessary
   // https://github.com/pacocoursey/next-themes#avoid-hydration-mismatch
