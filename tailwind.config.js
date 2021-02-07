@@ -29,11 +29,11 @@ module.exports = {
         current: 'currentColor',
         black: colors.black,
         white: colors.white,
-        //        gray: colors.trueGray,
+        gray: colors.trueGray,
         indigo: colors.indigo,
         red: colors.rose,
         yellow: colors.amber,
-        gray: colors.coolGray,
+        // gray: colors.coolGray,
         blue: colors.lightBlue,
         pink: colors.fuchsia,
         green: {

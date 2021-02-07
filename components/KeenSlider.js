@@ -1,5 +1,6 @@
 import React from 'react'
 import { useKeenSlider } from 'keen-slider/react'
+import Image from 'next/image'
 
 const KeenSlider = (props) => {
   const [pause, setPause] = React.useState(false)
@@ -36,14 +37,75 @@ const KeenSlider = (props) => {
   }, [pause, slider])
 
   return (
-    <div>
-      <div ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1">1</div>
-        <div className="keen-slider__slide number-slide2">2</div>
-        <div className="keen-slider__slide number-slide3">3</div>
-        <div className="keen-slider__slide number-slide4">4</div>
-        <div className="keen-slider__slide number-slide5">5</div>
-        <div className="keen-slider__slide number-slide6">6</div>
+    <div ref={sliderRef} className="max-h-screen keen-slider h-60 md:h-80 lg:h-96">
+      <div className="grid grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2">
+        <Image
+          alt="ocean"
+          src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+          width={2177}
+          height={3265}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
+          width={2099}
+          height={3084}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
+          width={3200}
+          height={4000}
+          className="object-cover"
+        />
+      </div>
+      <div className="grid grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2">
+        <Image
+          alt="ocean"
+          src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
+          width={3360}
+          height={2100}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
+          width={4000}
+          height={3000}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
+          width={2778}
+          height={2778}
+          className="object-cover"
+        />
+      </div>
+      <div className="grid h-full grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2">
+        <Image
+          alt="ocean"
+          src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
+          width={3024}
+          height={4032}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
+          width={6240}
+          height={4160}
+          className="object-cover"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/StevenTernerPhoto2-cropped.jpg"
+          width={960}
+          height={772}
+          className="object-cover"
+        />
       </div>
     </div>
   )

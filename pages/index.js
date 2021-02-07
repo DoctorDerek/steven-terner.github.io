@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
-      <div className="bg-gray-800">
+      <div className="py-4 bg-gray-900">
         <SectionContainer>
           <ImageSlideshow />
         </SectionContainer>
@@ -37,9 +37,9 @@ export default function Home({ posts }) {
               <div className="w-3/4 rounded-3xl">
                 <Image
                   alt="ocean"
-                  src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
-                  width={2177}
-                  height={3265}
+                  src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
+                  width={3360}
+                  height={2100}
                 />
               </div>
               <h3 className="font-serif">Service Offerings</h3>
