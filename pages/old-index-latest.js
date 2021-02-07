@@ -4,7 +4,7 @@ import siteMetadata from '@/data/siteMetadata'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import ImageSlideshow from '@/components/KeenSlider'
+import ImageSlideshow from '@/components/ImageSlideshow'
 
 const MAX_DISPLAY = 5
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
