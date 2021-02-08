@@ -38,7 +38,7 @@ const ImageSlideshow = (props) => {
 
   return (
     <div ref={sliderRef} className="max-h-screen keen-slider h-3/4">
-      <div className="grid grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2 xl:gap-3">
+      <div className="grid grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2 xl:gap-3">
         <Image
           alt="ocean"
           src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"

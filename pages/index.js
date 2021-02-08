@@ -32,20 +32,51 @@ export default function Home({ posts }) {
       </div>
       <div className="bg-gray-300">
         <SectionContainer>
-          <div className="grid text-center grid-col-1 md:grid-cols-3">
-            <div>
-              <div className="w-3/4 rounded-3xl">
+          <div className="max-h-screen h-3/4">
+            <div className="grid grid-cols-3 gap-1 text-center md:gap-2 xl:gap-3">
+              <div>
                 <Image
                   alt="ocean"
-                  src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
-                  width={3360}
-                  height={2100}
+                  src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+                  width={2177}
+                  height={3265}
+                  className="object-cover"
                 />
+                <h3 className="fontSerif">Services</h3>
+                <p>
+                  I offer expert consulting services for international businesses, newspapers, NGOs
+                  & think tanks.
+                </p>
               </div>
-              <h3 className="font-serif">Service Offerings</h3>
+              <div>
+                <Image
+                  alt="ocean"
+                  src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+                  width={2177}
+                  height={3265}
+                  className="object-cover"
+                />
+                <h3 className="fontSerif">Portfolio</h3>
+                <p>
+                  My consulting portfolio includes examples of my analysis of the Middle East &
+                  Central/West Asia.
+                </p>
+              </div>
+              <div>
+                <Image
+                  alt="ocean"
+                  src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+                  width={2177}
+                  height={3265}
+                  className="object-cover"
+                />
+                <h3 className="fontSerif">Blog</h3>
+                <p>
+                  I publish my latest socio-political analysis work here on my blog at
+                  StevenTerner.com
+                </p>
+              </div>
             </div>
-            <div>Sample Publications</div>
-            <div>Blog</div>
           </div>
         </SectionContainer>
       </div>
