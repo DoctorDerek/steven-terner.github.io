@@ -37,75 +37,85 @@ const ImageSlideshow = (props) => {
   }, [pause, slider])
 
   return (
-    <div ref={sliderRef} className="keen-slider">
-      <div className="grid grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2 xl:gap-3">
-        <Image
-          alt="ocean"
-          src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
-          width={2177}
-          height={3265}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
-          width={2099}
-          height={3084}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
-          width={3200}
-          height={4000}
-          className="object-cover"
-        />
+    <div ref={sliderRef} className="h-96 keen-slider">
+      <div className="grid h-full grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2 xl:gap-3">
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+            layout="fill"
+            sizes=""
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2">
-        <Image
-          alt="ocean"
-          src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
-          width={3360}
-          height={2100}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
-          width={4000}
-          height={3000}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
-          width={2778}
-          height={2778}
-          className="object-cover"
-        />
+      <div className="grid grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2">
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
       </div>
-      <div className="grid grid-cols-3 gap-1 space-x-4 text-center keen-slider__slide md:gap-2">
-        <Image
-          alt="ocean"
-          src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
-          width={3024}
-          height={4032}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
-          width={6240}
-          height={4160}
-          className="object-cover"
-        />
-        <Image
-          alt="ocean"
-          src="/static/images/Imports, Exports, and International Partnerships photo.jpg"
-          width={7952}
-          height={4472}
-          className="object-cover"
-        />
+      <div className="grid grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2">
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative">
+          <Image
+            alt="ocean"
+            src="/static/images/Imports, Exports, and International Partnerships photo.jpg"
+            layout="fill"
+            className="object-cover"
+          />
+        </div>
       </div>
     </div>
   )
