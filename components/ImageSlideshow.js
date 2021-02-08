@@ -44,7 +44,6 @@ const ImageSlideshow = (props) => {
             alt="ocean"
             src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
             layout="fill"
-            sizes=""
             className="object-cover"
           />
         </div>
