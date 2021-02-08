@@ -37,8 +37,8 @@ const ImageSlideshow = (props) => {
   }, [pause, slider])
 
   return (
-    <div ref={sliderRef} className="h-96 keen-slider">
-      <div className="grid h-full grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2 xl:gap-3">
+    <div ref={sliderRef} className="h-80 md:h-96 lg:h-112 xl:h-128 keen-slider">
+      <div className="grid grid-cols-3 gap-1 text-center keen-slider__slide md:gap-2 xl:gap-3">
         <div className="relative">
           <Image
             alt="ocean"
