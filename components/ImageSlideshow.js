@@ -38,7 +38,7 @@ const ImageSlideshow = (props) => {
 
   return (
     <div ref={sliderRef} className="h-80 md:h-96 lg:h-112 xl:h-128 keen-slider">
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu">
+      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu min-w-full max-w-full">
         <div className="relative">
           <Image
             alt="ocean"
@@ -67,7 +67,7 @@ const ImageSlideshow = (props) => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu">
+      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu min-w-full max-w-full">
         <div className="relative">
           <Image
             alt="ocean"
@@ -96,7 +96,7 @@ const ImageSlideshow = (props) => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu">
+      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu min-w-full max-w-full">
         <div className="relative">
           <Image
             alt="ocean"
