@@ -4,26 +4,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   images: {
-    imageSizes: [], // added to deviceSizes
-    deviceSizes: [
-      16,
-      32,
-      48,
-      64,
-      96,
-      128,
-      256,
-      384,
-      512,
-      640,
-      750,
-      828,
-      1080,
-      1200,
-      1920,
-      2048,
-      3840,
-    ],
+    /* This is because imageSizes is only used when generating the 1x/2x/3x srcSet for layout="fixed" or layout="intrinsic".
+
+    The deviceSizes are used for layout="responsive" and layout="fill" which generates a srcSet with all the device sizes. */
+    imageSizes: [16, 32, 48, 64], // This array is concatenated to deviceSizes.
+    // imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Next.js default
+    deviceSizes: [96, 128, 256, 384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    // deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840], // default
   },
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   experimental: {
