@@ -40,7 +40,7 @@ export default function Home({ posts }) {
                   src="/static/images/Iran Currency.jpg"
                   className="object-cover rounded-full"
                   layout="fill"
-                  sizes="30vw"
+                  sizes="33vw"
                 />
               </div>
               <h3 className="fontSerif">Services</h3>
@@ -72,6 +72,7 @@ export default function Home({ posts }) {
                   src="/static/images/Iran Tehran traffic.jpg"
                   layout="fill"
                   className="object-cover rounded-full"
+                  sizes="33vw"
                 />
               </div>
               <h3 className="fontSerif">Blog</h3>
@@ -82,72 +83,6 @@ export default function Home({ posts }) {
             </div>
           </div>
         </SectionContainer>
-      </div>
-      <div className="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
-        <div className="grid grid-cols-3 gap-1 text-center md:gap-2 xl:gap-3">
-          <div>
-            <div className="relative h-36">
-              <Image
-                src="/static/images/ocean.jpeg"
-                className="object-cover rounded-full"
-                layout="fill"
-                sizes="(min-width: 768px) 256px, (min-width: 1024px) 384px, 128px" // 128px used if width < 768px
-
-                // Tailwind CSS explanation
-                // max-w-3xl
-                //   {max-width: 48rem/* 768 px */;}
-                // xl:max-w-5xl
-                //   @media (min-width: 1280px) {max-width: 64rem/* 1024px */; }
-                // h-36
-                //   {height: 9rem/* 144px */;}
-
-                // These "sizes" result in almost the same behavior as 33vw.
-
-                // A minimized Chrome window is 500px and will load the 128px
-                // version. Later, when using 33vw, the 256px version will load.
-
-                // That's because 33% (33vw) of 500px is 165px, so 256px loads.
-                // (The resulting image is 148x144 when scaled with CSS.)
-
-                // Note that this requires the following in next.config.js:
-                /*
-                module.exports = {
-                images: {
-                  imageSizes: [16, 32, 48, 64],
-                  deviceSizes: [96, 128, 256, 384, 512, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-                },}
-                */
-                // You can inspect the image in the HTML code in Chrome in order
-                // to find out its "intrinsic" size, as served by next.js.
-
-                // Due to caching, you'll need to load a new private window at
-                // the window size you want to test in Chrome.
-
-                // You can also run Lighthouse in Google DevTools to test sizes.
-              />
-            </div>
-          </div>
-          <div>
-            <div className="relative h-36">
-              <Image
-                src="/static/images/ocean.jpeg"
-                className="object-cover rounded-full"
-                layout="fill"
-                sizes="33vw"
-              />
-            </div>
-          </div>
-          <div>
-            <div className="relative h-36">
-              <Image
-                src="/static/images/ocean.jpeg"
-                className="object-cover rounded-full"
-                layout="fill"
-                sizes="33vw"
-              />
-            </div>
-          </div>
-        </div>
       </div>
       <div className="bg-green-800">
         <SectionContainer>

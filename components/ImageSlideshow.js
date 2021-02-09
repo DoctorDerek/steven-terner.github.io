@@ -45,6 +45,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -53,6 +54,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -61,6 +63,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
       </div>
@@ -71,6 +74,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -79,6 +83,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -87,6 +92,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
       </div>
@@ -97,6 +103,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -105,6 +112,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
         <div className="relative">
@@ -113,6 +121,7 @@ const ImageSlideshow = (props) => {
             src="/static/images/Imports, Exports, and International Partnerships photo.jpg"
             layout="fill"
             className="object-cover"
+            sizes="33vw"
           />
         </div>
       </div>
