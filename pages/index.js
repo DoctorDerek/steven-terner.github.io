@@ -30,7 +30,7 @@ export default function Home({ posts }) {
           <ImageSlideshow />
         </SectionContainer>
       </div>
-      <div className="bg-gray-300">
+      <div className="bg-gray-300 py-36">
         <SectionContainer>
           <div className="grid grid-cols-3 gap-1 text-center md:gap-2 xl:gap-3">
             <div>
@@ -43,10 +43,16 @@ export default function Home({ posts }) {
                   sizes="33vw"
                 />
               </div>
-              <h3 className="fontSerif">Services</h3>
+
+              <h2 className="py-4 font-serif text-xl font-extrabold ">
+                <Link href="/services" className="no-underline">
+                  Services
+                </Link>
+              </h2>
+
               <p>
-                I offer expert consulting services for international businesses, newspapers, NGOs &
-                think tanks.
+                I offer <Link href="/services">expert consulting services</Link> for international
+                businesses, newspapers, NGOs & think tanks.
               </p>
             </div>
             <div>
@@ -59,10 +65,14 @@ export default function Home({ posts }) {
                   sizes="33vw"
                 />
               </div>
-              <h3 className="fontSerif">Portfolio</h3>
+              <h2 className="py-4 font-serif text-xl font-extrabold ">
+                <Link href="/portfolio" className="no-underline">
+                  Portfolio
+                </Link>
+              </h2>
               <p>
-                My consulting portfolio includes examples of my analysis of the Middle East &
-                Central/West Asia.
+                My <Link href="/portfolio">consulting portfolio</Link> includes examples of my
+                analysis of the Middle East & Central/West Asia.
               </p>
             </div>
             <div>
@@ -75,10 +85,13 @@ export default function Home({ posts }) {
                   sizes="33vw"
                 />
               </div>
-              <h3 className="fontSerif">Blog</h3>
+              <h2 className="py-4 font-serif text-xl font-extrabold ">
+                <Link href="/portfolio" className="no-underline">
+                  Blog
+                </Link>
+              </h2>
               <p>
-                I publish my latest socio-political analysis work here on my blog at
-                StevenTerner.com
+                I publish my latest socio-political analysis work on my blog at Medium. Read more.
               </p>
             </div>
           </div>
