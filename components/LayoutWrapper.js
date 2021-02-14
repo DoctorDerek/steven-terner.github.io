@@ -9,37 +9,38 @@ import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <div className="flex flex-col justify-between w-full h-screen">
+    <div className="flex flex-col justify-between w-full h-screen pt-10">
       <header className="flex flex-col items-center justify-between pt-10">
-        <SectionContainer>
-          <div>
-            <Link href="/" aria-label="Steven Terner">
-              <div className="flex items-center justify-between">
-                <div className="w-screen px-3">
-                  <SectionContainer>
-                    <Logo className="rounded stroke-current stroke-2 text-green-dark dark:text-purple-900" />
-                  </SectionContainer>
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row">
-            <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-500 xl:text-2xl md:text-xl sm:flex sm:text-l bg-green-lightest dark:bg-transparent">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="px-3 py-1 rounded xl:px-8 text-green-dark dark:text-green-lightest hover:bg-green-light dark:hover:text-green-dark"
-                >
-                  {link.title}
-                </Link>
-              ))}
+        <Link href="/" aria-label="Steven Terner">
+          <div className="flex items-center justify-between">
+            <div className="w-screen px-3 mb-8">
+              <SectionContainer>
+                <Logo />
+              </SectionContainer>
             </div>
-            <ThemeSwitch />
-            <MobileNav />
           </div>
-        </SectionContainer>
+        </Link>
+        <div className="w-screen">
+          <SectionContainer>
+            <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row">
+              <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-500 xl:text-2xl md:text-xl sm:flex sm:text-l bg-green-lightest dark:bg-transparent">
+                {headerNavLinks.map((link) => (
+                  <Link
+                    key={link.title}
+                    href={link.href}
+                    className="px-3 py-1 rounded xl:px-8 text-green-dark dark:text-green-lightest hover:bg-green-light dark:hover:text-green-dark"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
+              </div>
+              <ThemeSwitch />
+              <MobileNav />
+            </div>
+          </SectionContainer>
+        </div>
       </header>
+
       <main className="mb-auto">{children}</main>
       <Footer />
     </div>
