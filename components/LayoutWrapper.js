@@ -9,11 +9,11 @@ import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <div className="flex flex-col justify-between w-full h-screen pt-10">
+    <div className="flex flex-col justify-between w-full h-screen">
       <header className="flex flex-col items-center justify-between pt-10">
         <Link href="/" aria-label="Steven Terner">
           <div className="flex items-center justify-between">
-            <div className="w-screen px-3 mb-8">
+            <div className="w-screen px-3">
               <SectionContainer>
                 <Logo />
               </SectionContainer>
