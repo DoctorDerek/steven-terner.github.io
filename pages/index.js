@@ -27,7 +27,7 @@ export default function Home({ posts }) {
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
       />
-      <div className="py-4 bg-gray-900">
+      <div className="py-8 bg-gray-900 md:py-12">
         <SectionContainer>
           <ImageSlideshow />
         </SectionContainer>
