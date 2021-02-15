@@ -22,7 +22,7 @@ const Card = ({ alt, src, link, heading, children }) => {
         </Link>
       </h2>
 
-      {children}
+      <p>{children}</p>
     </div>
   )
 }
