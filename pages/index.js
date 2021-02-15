@@ -7,6 +7,8 @@ import { PageSeo } from '@/components/SEO'
 import ImageSlideshow from '@/components/ImageSlideshow'
 import SectionContainer from '@/components/SectionContainer'
 import Image from 'next/image'
+import CardList from '@/components/CardList'
+import Card from '@/components/Card'
 
 const MAX_DISPLAY = 5
 const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
@@ -32,69 +34,34 @@ export default function Home({ posts }) {
       </div>
       <div className="bg-gray-300 py-36">
         <SectionContainer>
-          <div className="grid grid-cols-3 gap-1 text-center md:gap-2 xl:gap-3">
-            <div>
-              <div className="relative h-36">
-                <Image
-                  alt="ocean"
-                  src="/static/images/Iran Currency.jpg"
-                  className="object-cover rounded-full"
-                  layout="fill"
-                  sizes="33vw"
-                />
-              </div>
-
-              <h2 className="py-4 font-serif text-xl font-extrabold ">
-                <Link href="/services" className="no-underline">
-                  Services
-                </Link>
-              </h2>
-
-              <p>
-                I offer <Link href="/services">expert consulting services</Link> for international
-                businesses, newspapers, NGOs & think tanks.
-              </p>
-            </div>
-            <div>
-              <div className="relative h-36">
-                <Image
-                  alt="ocean"
-                  src="/static/images/Banking, Currency, Policy photo.jpg"
-                  layout="fill"
-                  className="object-cover rounded-full"
-                  sizes="33vw"
-                />
-              </div>
-              <h2 className="py-4 font-serif text-xl font-extrabold ">
-                <Link href="/portfolio" className="no-underline">
-                  Portfolio
-                </Link>
-              </h2>
-              <p>
-                My <Link href="/portfolio">consulting portfolio</Link> includes examples of my
-                analysis of the Middle East & Central/West Asia.
-              </p>
-            </div>
-            <div>
-              <div className="relative h-36">
-                <Image
-                  alt="ocean"
-                  src="/static/images/Iran Tehran traffic.jpg"
-                  layout="fill"
-                  className="object-cover rounded-full"
-                  sizes="33vw"
-                />
-              </div>
-              <h2 className="py-4 font-serif text-xl font-extrabold ">
-                <Link href="/portfolio" className="no-underline">
-                  Blog
-                </Link>
-              </h2>
-              <p>
-                I publish my latest socio-political analysis work on my blog at Medium. Read more.
-              </p>
-            </div>
-          </div>
+          <CardList>
+            <Card
+              alt="ocean"
+              src="/static/images/Iran Currency.jpg"
+              heading="Services"
+              link="/services"
+            >
+              I offer <Link href="/services">expert consulting services</Link>
+              for international businesses, newspapers, NGOs & think tanks.
+            </Card>
+            <Card
+              alt="ocean"
+              src="/static/images/Banking, Currency, Policy photo.jpg"
+              heading="Portfolio"
+              link="/portfolio"
+            >
+              My <Link href="/portfolio">consulting portfolio</Link> includes examples of my
+              analysis of the Middle East & Central/West Asia.
+            </Card>
+            <Card
+              alt="ocean"
+              src="/static/images/Iran Tehran traffic.jpg"
+              heading="Services"
+              link="/services"
+            >
+              I publish my latest socio-political analysis work on my blog at Medium. Read more.
+            </Card>
+          </CardList>
         </SectionContainer>
       </div>
       <div className="bg-green-800">
