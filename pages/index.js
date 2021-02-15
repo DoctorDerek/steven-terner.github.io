@@ -56,8 +56,8 @@ export default function Home({ posts }) {
             <Card
               alt="ocean"
               src="/static/images/Iran Tehran traffic.jpg"
-              heading="Services"
-              link="/services"
+              heading="Blog"
+              link="/blog"
             >
               I publish my latest socio-political analysis work on my blog at Medium. Read more.
             </Card>
