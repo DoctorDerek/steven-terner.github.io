@@ -22,7 +22,7 @@ const Card = ({ alt, src, link, heading, children }) => {
         </Link>
       </h2>
 
-      <p>{children}</p>
+      <p className="text-lg lg:text-xl">{children}</p>
     </div>
   )
 }
