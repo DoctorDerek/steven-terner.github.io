@@ -16,7 +16,7 @@ const Card = ({ alt, src, link, heading, children }) => {
         </div>
       )}
 
-      <h2 className="py-4 font-serif text-xl font-extrabold">
+      <h2 className="py-4 font-serif text-xl font-extrabold text-center">
         <Link href={link} className="no-underline">
           {heading}
         </Link>
