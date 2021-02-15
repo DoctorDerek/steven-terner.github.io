@@ -1,13 +1,13 @@
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import siteMetadata from '@/data/siteMetadata'
-import ListLayout from '@/layouts/ListLayout'
-import { PageSeo } from '@/components/SEO'
-import Image from 'next/image'
-import SectionContainer from '@/components/SectionContainer'
+import { getAllFilesFrontMatter } from "@/lib/mdx"
+import siteMetadata from "@/data/siteMetadata"
+import ListLayout from "@/layouts/ListLayout"
+import { PageSeo } from "@/components/SEO"
+import Image from "next/image"
+import SectionContainer from "@/components/SectionContainer"
 
 export async function getStaticProps() {
   const res = await fetch(
-    'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@steventerner'
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@steventerner"
   )
 
   const data = await res.json()
@@ -26,7 +26,15 @@ export default function Blog({ posts }) {
         url={`${siteMetadata.siteUrl}/blog`}
       />
       {posts.map((post) => {
-        const { title, pubDate, link, guid, author, thumbnail, description } = post
+        const {
+          title,
+          pubDate,
+          link,
+          guid,
+          author,
+          thumbnail,
+          description,
+        } = post
         return (
           <div key={title}>
             <h2>{title}</h2>

@@ -1,6 +1,6 @@
-import React from 'react'
-import { useKeenSlider } from 'keen-slider/react'
-import Image from 'next/image'
+import React from "react"
+import { useKeenSlider } from "keen-slider/react"
+import Image from "next/image"
 
 const ImageSlideshow = (props) => {
   const [pause, setPause] = React.useState(false)
@@ -17,10 +17,10 @@ const ImageSlideshow = (props) => {
   })
 
   React.useEffect(() => {
-    sliderRef.current.addEventListener('mouseover', () => {
+    sliderRef.current.addEventListener("mouseover", () => {
       setPause(true)
     })
-    sliderRef.current.addEventListener('mouseout', () => {
+    sliderRef.current.addEventListener("mouseout", () => {
       setPause(false)
     })
   }, [sliderRef])

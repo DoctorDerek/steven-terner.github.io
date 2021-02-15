@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document"
 class MyDocument extends Document {
   render() {
     return (
@@ -22,13 +22,21 @@ class MyDocument extends Document {
             href="/static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-          <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+          <link
+            rel="mask-icon"
+            href="/static/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
+          />
           <meta name="apple-mobile-web-app-title" content="StevenTerner.com" />
           <meta name="application-name" content="StevenTerner.com" />
           <meta name="msapplication-TileColor" content="#603cba" />
           <meta name="theme-color" content="#ffffff" />
           <link rel="alternate" type="application/rss+xml" href="/index.xml" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
           <link
             rel="preload"
             as="style"

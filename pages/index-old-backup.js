@@ -1,16 +1,16 @@
-import tinytime from 'tinytime'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import siteMetadata from '@/data/siteMetadata'
-import Tag from '@/components/Tag'
-import Link from '@/components/Link'
-import { PageSeo } from '@/components/SEO'
-import ImageSlideshow from '@/components/ImageSlideshow'
+import tinytime from "tinytime"
+import { getAllFilesFrontMatter } from "@/lib/mdx"
+import siteMetadata from "@/data/siteMetadata"
+import Tag from "@/components/Tag"
+import Link from "@/components/Link"
+import { PageSeo } from "@/components/SEO"
+import ImageSlideshow from "@/components/ImageSlideshow"
 
 const MAX_DISPLAY = 5
-const postDateTemplate = tinytime('{MMMM} {DD}, {YYYY}')
+const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const posts = await getAllFilesFrontMatter("blog")
 
   return { props: { posts } }
 }
@@ -34,7 +34,7 @@ export default function Home({ posts }) {
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
+          {!posts.length && "No posts found."}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
@@ -43,14 +43,19 @@ export default function Home({ posts }) {
                   <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                      <time dateTime={date}>{postDateTemplate.render(new Date(date))}</time>
+                      <time dateTime={date}>
+                        {postDateTemplate.render(new Date(date))}
+                      </time>
                     </dd>
                   </dl>
                   <div className="space-y-5 xl:col-span-3">
                     <div className="space-y-6">
                       <div>
                         <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                          <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                          <Link
+                            href={`/blog/${slug}`}
+                            className="text-gray-900 dark:text-gray-100"
+                          >
                             {title}
                           </Link>
                         </h2>

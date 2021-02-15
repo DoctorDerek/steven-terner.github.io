@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { CSSTransition } from 'react-transition-group'
+import { useState, useEffect } from "react"
+import { useTheme } from "next-themes"
+import { CSSTransition } from "react-transition-group"
 
 const ThemeSwitch = () => {
   const [inProp, setInProp] = useState(false)
@@ -20,7 +20,7 @@ const ThemeSwitch = () => {
   // Transition "in" prop from false to true after mounting to show
   // dark toggle correctly when refreshing with dark mode enabled
   useEffect(() => {
-    if (resolvedTheme === 'dark') setInProp(true)
+    if (resolvedTheme === "dark") setInProp(true)
   }, [resolvedTheme])
 
   // Here's a note about Avoid Hydration Mismatch -- probably not necessary
@@ -33,7 +33,7 @@ const ThemeSwitch = () => {
       type="button"
       className="p-1 ml-1 mr-1 text-gray-900 bg-transparent w-36 sm:w-24 md:w-32 xl:w-36"
       onClick={() => {
-        setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+        setTheme(resolvedTheme === "dark" ? "light" : "dark")
         setInProp(inProp ? false : true)
       }}
       in={inProp}
@@ -61,7 +61,13 @@ const ThemeSwitch = () => {
         </mask>
         <g mask="url(#mask0)">
           <rect width="170" height="70" rx="35" fill="url(#paint0_linear)" />
-          <circle cx="133.5" cy="37.5" r="19.5" fill="url(#paint1_radial)" className="sun" />
+          <circle
+            cx="133.5"
+            cy="37.5"
+            r="19.5"
+            fill="url(#paint1_radial)"
+            className="sun"
+          />
           <path
             d="M33.5 29L9 70V81H186.5V70L173 19L151.5 66L136 34L117.5 70L103 23L79.5 70L65 38L48.5 70L33.5 29Z"
             fill="#729971"
@@ -218,7 +224,11 @@ const ThemeSwitch = () => {
             gradientUnits="userSpaceOnUse"
           >
             <stop stopColor="#75DAF0" className="background-top-color" />
-            <stop offset="1" stopColor="#C3EFF8" className="background-bottom-color" />
+            <stop
+              offset="1"
+              stopColor="#C3EFF8"
+              className="background-bottom-color"
+            />
           </linearGradient>
           <radialGradient
             id="paint1_radial"
