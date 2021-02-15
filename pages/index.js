@@ -41,8 +41,8 @@ export default function Home({ posts }) {
               heading="Services"
               link="/services"
             >
-              I offer <Link href="/services">expert consulting services</Link>
-              for international businesses, newspapers, NGOs & think tanks.
+              I offer <Link href="/services">expert consulting services</Link> for international
+              businesses, newspapers, NGOs & think tanks.
             </Card>
             <Card
               alt="ocean"
