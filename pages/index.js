@@ -32,7 +32,7 @@ export default function Home({ posts }) {
           <ImageSlideshow />
         </SectionContainer>
       </div>
-      <div className="bg-gray-300 py-36">
+      <div className="py-12 bg-gray-300 md:py-32">
         <SectionContainer>
           <CardList>
             <Card
