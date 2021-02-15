@@ -6,7 +6,7 @@ const CustomLink = ({ href, className, ...rest }) => {
   const isAnchorLink = href && href.startsWith('#')
 
   const defaultClass = 'underline text-green-dark hover:text-green hover:no-underline'
-  className = className ? className + defaultClass : defaultClass
+  className = className ? className + ' ' + defaultClass : defaultClass
 
   if (isInternalLink) {
     return (
