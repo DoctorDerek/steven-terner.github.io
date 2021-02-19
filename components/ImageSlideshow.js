@@ -57,12 +57,12 @@ const ImageSlideshow = (props) => {
   // "The browser ignores everything after the first matching condition, so be careful how you order the media conditions." --https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
   //
   // portrait image -> portrait crop
-  const portrait = "160px" // "(max-width: 1280px) 384px, (max-width: 768px) 256px, 128px"
+  const portrait = "33vw" // "(max-width: 1280px) 384px, (max-width: 768px) 256px, 128px"
   //
   // landscape image -> portrait crop (needs to be 1.5x larger)
-  const landscape = portrait //"(max-width: 1280px) 576px, (max-width: 768px) 384px, 50vw"
+  const landscape = "50vw" //"(max-width: 1280px) 576px, (max-width: 768px) 384px, 50vw"
 
-  const quality = 90
+  const quality = 75 // default is 75
 
   return (
     <div
