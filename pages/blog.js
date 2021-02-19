@@ -1,6 +1,6 @@
-import { getAllFilesFrontMatter } from "@/lib/mdx"
+// import { getAllFilesFrontMatter } from "@/lib/mdx"
 import siteMetadata from "@/data/siteMetadata"
-import ListLayout from "@/layouts/ListLayout"
+// import ListLayout from "@/layouts/ListLayout"
 import { PageSeo } from "@/components/SEO"
 import Image from "next/image"
 import SectionContainer from "@/components/SectionContainer"
