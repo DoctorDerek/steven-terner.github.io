@@ -52,6 +52,9 @@ module.exports = {
           DEFAULT: "#81b214",
           light: "#bfdcae",
           lightest: "#f1f1e8",
+          // gradient colors
+          lighter: "#bfdcae", // gradient 1A
+          aqua: "#206a5d", // gradient 1B
         },
       },
       typography: (theme) => ({
