@@ -59,15 +59,19 @@ export default function Home() {
           </CardList>
         </SectionContainer>
       </div>
-      <div className="bg-green-800">
+      <div className="py-12 from-green-lighter to-green-aqua bg-gradient-to-t">
         <SectionContainer>
-          <h2>About</h2>
-          <p>
-            Steven Terner is a multi-lingual American scholar and researcher
-            specializing in socio-political and economic analysis of the Middle
-            East and Central/West Asia. Read more
-          </p>{" "}
-          <div>Steven Terner contact@StevenTerner.com Get in touch!</div>
+          <div className="grid md:grid-cols-2 grad-cols-1">
+            <div>
+              <h2>About</h2>
+              <p>
+                Steven Terner is a multi-lingual American scholar and researcher
+                specializing in socio-political and economic analysis of the
+                Middle East and Central/West Asia. Read more
+              </p>{" "}
+            </div>
+            <div>Steven Terner contact@StevenTerner.com Get in touch!</div>
+          </div>
         </SectionContainer>
       </div>
     </>
