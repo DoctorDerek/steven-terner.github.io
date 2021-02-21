@@ -61,18 +61,13 @@ export default function Home() {
       </div>
       <div className="bg-green-800">
         <SectionContainer>
-          About Skip to content Steven Terner Steven TernerConsultant
-          specializing in the Middle East Home About Service Offerings Sample
-          Publications Blog Contact Service Offerings I offer expert consulting
-          services for international businesses, newspapers, NGOs & think tanks.
-          Sample Publications My consulting portfolio includes examples of my
-          analysis of the Middle East & Central/West Asia. Blog I publish my
-          latest socio-political analysis work here on my blog at
-          StevenTerner.com About Steven Terner is a multi-lingual American
-          scholar and researcher specializing in socio-political and economic
-          analysis of the Middle East and Central/West Asia. Read more Steven
-          Terner contact@StevenTerner.com Get in touch! EditHome About Service
-          Offerings Sample Publications Blog Contact Steven Terner
+          <h2>About</h2>
+          <p>
+            Steven Terner is a multi-lingual American scholar and researcher
+            specializing in socio-political and economic analysis of the Middle
+            East and Central/West Asia. Read more
+          </p>{" "}
+          <div>Steven Terner contact@StevenTerner.com Get in touch!</div>
         </SectionContainer>
       </div>
     </>
