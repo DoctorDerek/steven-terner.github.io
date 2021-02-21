@@ -1,25 +1,19 @@
 import tinytime from "tinytime"
 import { getAllFilesFrontMatter } from "@/lib/mdx"
 import siteMetadata from "@/data/siteMetadata"
-import Tag from "@/components/Tag"
+// import Tag from "@/components/Tag"
 import Link from "@/components/Link"
 import { PageSeo } from "@/components/SEO"
 import ImageSlideshow from "@/components/ImageSlideshow"
 import SectionContainer from "@/components/SectionContainer"
-import Image from "next/image"
+// import Image from "next/image"
 import CardList from "@/components/CardList"
 import Card from "@/components/Card"
 
-const MAX_DISPLAY = 5
-const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
+// const MAX_DISPLAY = 5
+// const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
 
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter("blog")
-
-  return { props: { posts } }
-}
-
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
       <PageSeo
