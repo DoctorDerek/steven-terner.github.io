@@ -16,13 +16,13 @@ const Card = ({ alt, src, link, heading, children }) => {
         </div>
       )}
 
-      <h2 className="py-4 font-serif text-xl font-bold text-center lg:text-3xl">
+      <h2 className="py-4 font-serif text-2xl font-bold text-center md:text-4xl">
         <Link href={link} className="no-underline">
           {heading}
         </Link>
       </h2>
 
-      <p className="text-lg lg:text-xl">{children}</p>
+      <p className="text-lg xl:text-xl">{children}</p>
     </div>
   )
 }

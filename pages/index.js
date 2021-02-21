@@ -9,6 +9,7 @@ import SectionContainer from "@/components/SectionContainer"
 // import Image from "next/image"
 import CardList from "@/components/CardList"
 import Card from "@/components/Card"
+import SocialIcon from "@/components/social-icons"
 
 // const MAX_DISPLAY = 5
 // const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
@@ -59,18 +60,68 @@ export default function Home() {
           </CardList>
         </SectionContainer>
       </div>
-      <div className="py-12 from-green-lighter to-green-aqua bg-gradient-to-t">
+      <div className="py-32 from-green-lighter to-green-aqua bg-gradient-to-t">
         <SectionContainer>
-          <div className="grid md:grid-cols-2 grad-cols-1">
-            <div>
-              <h2>About</h2>
-              <p>
-                Steven Terner is a multi-lingual American scholar and researcher
-                specializing in socio-political and economic analysis of the
-                Middle East and Central/West Asia. Read more
-              </p>{" "}
+          <div className="grid space-y-6 sm:grid-cols-3 grad-cols-1 sm:space-y-0">
+            <div className="col-span-2">
+              <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
+                About
+              </h2>
+              <div className="text-lg xl:text-xl">
+                <p className="py-4">
+                  Steven Terner is a multi-lingual American scholar and
+                  researcher specializing in socio-political and economic
+                  analysis of the Middle East and Central/West Asia.
+                </p>
+                <p className="py-4">
+                  <a
+                    className="text-black underline hover:no-underline"
+                    href="about"
+                  >
+                    Read more
+                  </a>
+                </p>
+              </div>
             </div>
-            <div>Steven Terner contact@StevenTerner.com Get in touch!</div>
+            <div className="text-center">
+              <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
+                Steven Terner
+              </h2>{" "}
+              <p className="py-4 text-lg xl:text-xl">
+                <Link>contact@StevenTerner.com</Link>
+              </p>
+              <div className="flex justify-center py-4 mb-3 space-x-4">
+                <SocialIcon
+                  kind="mail"
+                  href={`mailto:${siteMetadata.email}`}
+                  size="8"
+                />
+                <SocialIcon kind="github" href={siteMetadata.github} size="8" />
+                <SocialIcon
+                  kind="facebook"
+                  href={siteMetadata.facebook}
+                  size="8"
+                />
+                <SocialIcon
+                  kind="youtube"
+                  href={siteMetadata.youtube}
+                  size="8"
+                />
+                <SocialIcon
+                  kind="linkedin"
+                  href={siteMetadata.linkedin}
+                  size="8"
+                />
+                <SocialIcon
+                  kind="twitter"
+                  href={siteMetadata.twitter}
+                  size="8"
+                />
+              </div>
+              <div className="w-32 py-2 mx-auto my-4 font-bold text-white rounded text-md bg-green-dark">
+                Get in touch!
+              </div>
+            </div>
           </div>
         </SectionContainer>
       </div>
