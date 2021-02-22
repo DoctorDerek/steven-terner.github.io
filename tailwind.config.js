@@ -56,6 +56,13 @@ module.exports = {
           lighter: "#bfdcae", // gradient 1A
           aqua: "#206a5d", // gradient 1B
         },
+        social: {
+          // brand colors for social icons
+          twitter: "#1DA1F2",
+          linkedin: "#2867B2",
+          medium: "#12100E",
+          email: "#206a5d",
+        },
       },
       typography: (theme) => ({
         DEFAULT: {

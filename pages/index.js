@@ -92,34 +92,15 @@ export default function Home() {
               </p>
               <div className="flex justify-center py-4 mb-3 space-x-4">
                 <SocialIcon
-                  kind="mail"
+                  kind="email"
                   href={`mailto:${siteMetadata.email}`}
-                  size="8"
                 />
-                <SocialIcon kind="github" href={siteMetadata.github} size="8" />
-                <SocialIcon
-                  kind="facebook"
-                  href={siteMetadata.facebook}
-                  size="8"
-                />
-                <SocialIcon
-                  kind="youtube"
-                  href={siteMetadata.youtube}
-                  size="8"
-                />
-                <SocialIcon
-                  kind="linkedin"
-                  href={siteMetadata.linkedin}
-                  size="8"
-                />
-                <SocialIcon
-                  kind="twitter"
-                  href={siteMetadata.twitter}
-                  size="8"
-                />
+                <SocialIcon kind="medium" href={siteMetadata.medium} />
+                <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
+                <SocialIcon kind="twitter" href={siteMetadata.twitter} />
               </div>
               <div className="w-32 py-2 mx-auto my-4 font-bold text-white rounded text-md bg-green-dark">
-                Get in touch!
+                <Link href="about">Get in touch!</Link>
               </div>
             </div>
           </div>
