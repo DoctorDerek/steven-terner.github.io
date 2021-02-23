@@ -3,19 +3,19 @@ import headerNavLinks from "@/data/headerNavLinks"
 
 const FooterNav = () => {
   return (
-    <nav className="flex justify-between w-64 mt-8 text-center align-center">
-      {headerNavLinks.map((link) => (
-        <Link
-          href={link.href}
-          className="font-serif text-2xl font-bold tracking-widest"
-          key={link.title}
-        >
-          <div className="h-auto px-0 py-4 mx-0 my-2 rounded bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
+    <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row">
+      <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-500 xl:text-2xl md:text-xl sm:flex sm:text-l">
+        {headerNavLinks.map((link) => (
+          <Link
+            key={link.title}
+            href={link.href}
+            className="px-3 py-1 no-underline rounded xl:px-8 hover:bg-green-light dark:hover:text-green-dark"
+          >
             {link.title}
-          </div>
-        </Link>
-      ))}
-    </nav>
+          </Link>
+        ))}
+      </div>{" "}
+    </div>
   )
 }
 
