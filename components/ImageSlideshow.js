@@ -2,7 +2,7 @@ import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import Image from "next/image"
 
-const ImageSlideshow = (props) => {
+const ImageSlideshow = () => {
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
