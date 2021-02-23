@@ -54,8 +54,8 @@ export default function Home() {
               heading="Blog"
               link="/blog"
             >
-              I publish my latest socio-political analysis work on my blog at
-              Medium. Read more.
+              I publish my latest socio-political analysis work on{" "}
+              <Link href="blog">my blog</Link> at Medium.
             </Card>
           </CardList>
         </SectionContainer>
