@@ -76,7 +76,7 @@ export default function Home() {
                 <p className="py-4">
                   <a
                     className="text-black underline hover:no-underline"
-                    href="about"
+                    href="/about"
                   >
                     Read more
                   </a>
@@ -99,8 +99,10 @@ export default function Home() {
                 <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
                 <SocialIcon kind="twitter" href={siteMetadata.twitter} />
               </div>
-              <div className="w-32 py-2 mx-auto my-4 font-bold text-white rounded text-md bg-green-dark">
-                <Link href="about">Get in touch!</Link>
+              <div className="w-32 py-2 mx-auto my-4 font-bold rounded text-md bg-green-dark">
+                <Link href="/about" className="text-white">
+                  Get in touch!
+                </Link>
               </div>
             </div>
           </div>
