@@ -13,12 +13,14 @@ const LayoutWrapper = ({ children }) => {
       <header className="flex flex-col items-center justify-between pt-10">
         <Link href="/" aria-label="Steven Terner">
           <div className="flex items-center justify-between">
-            <SectionContainer>
-              <Logo />
-            </SectionContainer>
+            <div className="w-screen">
+              <SectionContainer>
+                <Logo />
+              </SectionContainer>
+            </div>
           </div>
         </Link>
-        <div>
+        <div className="w-screen">
           <SectionContainer>
             <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row">
               <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded dark:border-gray-500 xl:text-2xl md:text-xl sm:flex sm:text-l">
