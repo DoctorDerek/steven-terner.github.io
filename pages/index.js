@@ -62,8 +62,8 @@ export default function Home() {
       </div>
       <div className="py-32 from-green-lighter to-green-aqua bg-gradient-to-t">
         <SectionContainer>
-          <div className="grid grid-cols-1 space-y-6 sm:grid-cols-2 sm:space-y-0">
-            <div>
+          <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
+            <div className="col-span-4">
               <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
                 About
               </h2>
@@ -83,7 +83,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="text-center">
+            <div className="col-span-1"></div>
+            <div className="col-span-3 text-center">
               <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
                 Steven Terner
               </h2>{" "}
