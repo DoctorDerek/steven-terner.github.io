@@ -88,7 +88,9 @@ export default function Home() {
                 Steven Terner
               </h2>{" "}
               <p className="py-4 text-lg xl:text-xl">
-                <Link>contact@StevenTerner.com</Link>
+                <Link href="mailto:contact@StevenTerner.com">
+                  contact@StevenTerner.com
+                </Link>
               </p>
               <div className="flex justify-center py-4 mb-3 space-x-4">
                 <SocialIcon
