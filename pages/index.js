@@ -88,12 +88,7 @@ export default function Home() {
               <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
                 Steven Terner
               </h2>{" "}
-              <p className="py-4 text-lg xl:text-xl">
-                <Link href="mailto:contact@StevenTerner.com">
-                  contact@StevenTerner.com
-                </Link>
-              </p>
-              <div className="flex justify-center py-4 mb-3 space-x-4">
+              <div className="flex justify-center py-10 mb-3 space-x-4">
                 <SocialIcon
                   kind="email"
                   href={`mailto:${siteMetadata.email}`}
@@ -102,7 +97,7 @@ export default function Home() {
                 <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
                 <SocialIcon kind="twitter" href={siteMetadata.twitter} />
               </div>
-              <div className="w-32 py-2 mx-auto my-4 font-bold rounded text-md bg-green-dark">
+              <div className="w-32 py-2 mx-auto font-bold rounded text-md bg-green-dark">
                 <Link href="/about" className="text-white">
                   Get in touch!
                 </Link>
