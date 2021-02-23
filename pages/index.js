@@ -74,12 +74,12 @@ export default function Home() {
                   analysis of the Middle East and Central/West Asia.
                 </p>
                 <p className="py-4">
-                  <a
+                  <Link
                     className="text-black underline hover:no-underline"
                     href="/about"
                   >
                     Read more
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>
