@@ -14,7 +14,7 @@ const FooterNav = () => {
             {link.title}
           </Link>
         ))}
-      </div>{" "}
+      </div>
     </div>
   )
 }
