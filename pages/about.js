@@ -41,12 +41,7 @@ export default function About() {
               Stanford University
             </div>
             <div className="flex pt-6 space-x-3">
-              <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
-              <SocialIcon kind="github" href={siteMetadata.github} />
-              <SocialIcon kind="facebook" href={siteMetadata.facebook} />
-              <SocialIcon kind="youtube" href={siteMetadata.youtube} />
-              <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
-              <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+              <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
