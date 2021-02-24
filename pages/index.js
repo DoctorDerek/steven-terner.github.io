@@ -60,7 +60,7 @@ export default function Home() {
           </CardList>
         </SectionContainer>
       </div>
-      <div className="py-12 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-t">
+      <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-t">
         <SectionContainer>
           <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
             <div className="col-span-1 sm:col-span-4">
@@ -83,12 +83,12 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="hidden col-span-1 sm:visible"></div>
-            <div className="col-span-1 text-center sm:col-span-3">
-              <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
+            <div className="col-span-1 py-1"></div>
+            <div className="col-span-1 py-12 space-y-12 text-center border-2 border-gray-800 border-solid sm:py-0 sm:space-y-0 rounded-3xl sm:col-span-3 sm:border-0">
+              <h2 className="font-serif text-4xl font-bold sm:py-4 md:text-4xl">
                 Steven Terner
               </h2>{" "}
-              <div className="flex justify-center py-10 mb-3 space-x-4">
+              <div className="flex flex-wrap justify-center space-x-4 sm:py-12">
                 <SocialIcon
                   kind="email"
                   href={`mailto:${siteMetadata.email}`}
@@ -97,9 +97,11 @@ export default function Home() {
                 <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
                 <SocialIcon kind="twitter" href={siteMetadata.twitter} />
               </div>
-              <div className="w-32 py-2 mx-auto font-bold rounded text-md bg-green-dark">
+              <div className="sm:py-4">
                 <Link href="/about" className="text-white">
-                  Get in touch!
+                  <div className="w-32 py-2 mx-auto font-bold rounded text-md bg-green-dark">
+                    Get in touch!
+                  </div>
                 </Link>
               </div>
             </div>
