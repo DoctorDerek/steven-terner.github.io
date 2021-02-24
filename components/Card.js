@@ -5,7 +5,7 @@ const Card = ({ alt, src, link, heading, children }) => {
   return (
     <div>
       {src && (
-        <div className="relative h-48 max-w-xs m-auto md:h-36">
+        <div className="relative max-w-xs m-auto h-36 ">
           <Image
             alt={alt}
             src={src}
