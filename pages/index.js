@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-span-1"></div>
+            <div className="hidden col-span-1 sm:visible"></div>
             <div className="col-span-1 text-center sm:col-span-3">
               <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
                 Steven Terner
