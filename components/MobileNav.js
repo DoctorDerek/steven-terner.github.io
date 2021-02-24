@@ -60,15 +60,15 @@ const MobileNav = () => {
           className="fixed flex content-center w-full h-full py-24 border-0 border-black border-solid cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed flex flex-col justify-between w-64 mt-8 text-center transform -translate-x-1/2 border-0 border-red-900 border-solid align-center h-3/5 left-1/2">
+        <nav className="fixed flex flex-col content-center justify-between w-full px-4 mx-auto mt-8 text-center transform -translate-x-1/2 border-0 border-red-900 border-solid h-3/5 left-1/2">
           {headerNavLinks.map((link) => (
             <Link
               href={link.href}
-              className="font-serif text-2xl font-bold tracking-widest"
+              className="w-full font-serif text-2xl font-bold tracking-widest"
               onClick={onToggleNav}
               key={link.title}
             >
-              <div className="h-auto px-0 py-4 mx-0 my-2 rounded bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
+              <div className="w-full h-auto max-w-sm px-0 py-4 mx-auto rounded-xl bg-green-lightest text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
                 {link.title}
               </div>
             </Link>
