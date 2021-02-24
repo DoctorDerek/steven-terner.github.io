@@ -31,7 +31,7 @@ const ThemeSwitch = () => {
     <CSSTransition
       aria-label="Toggle Dark Mode"
       type="button"
-      className="p-1 ml-1 mr-1 text-gray-900 bg-transparent w-36 sm:w-24 md:w-32 xl:w-36"
+      className="p-1 ml-1 mr-1 text-gray-900 bg-transparent w-36 sm:w-28 md:w-32 xl:w-36"
       onClick={() => {
         setTheme(resolvedTheme === "dark" ? "light" : "dark")
         setInProp(inProp ? false : true)
