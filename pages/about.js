@@ -1,7 +1,7 @@
 import siteMetadata from "@/data/siteMetadata"
-import SocialIcon from "@/components/social-icons"
+import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
-import Image from "next/image"
+import SectionContainer from "@/components/SectionContainer"
 
 export default function About() {
   return (
@@ -11,59 +11,52 @@ export default function About() {
         description={`About me - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/about`}
       />
-      <div className="divide-y">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
-          </h1>
-        </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="flex flex-col items-center pt-8 space-x-2">
-            <img
-              src={siteMetadata.image}
-              alt="avatar"
-              className="w-48 h-48 rounded-full"
-            />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
-              {siteMetadata.author}
-            </h3>
-            <Image
-              alt="ocean"
-              src="/static/images/StevenTernerPhoto2-cropped.jpg"
-              width={960}
-              height={772}
-              className="object-cover"
-            />
-            <div className="text-gray-500 dark:text-gray-400">
-              Professor of Atmospheric Science
+      <h2 className="pt-12 font-serif text-4xl font-bold text-center">About</h2>
+      <div className="py-8 md:py-16">
+        <SectionContainer fullWidth={true}>
+          <div className="grid grid-cols-1 space-y-6 sm:grid-cols-12 sm:space-y-0">
+            <div className="col-span-1 py-1"></div>
+            <AboutSidebar />
+            <div className="col-span-1 py-1"></div>
+
+            <div className="flex flex-col col-span-1 space-y-12 sm:col-span-6">
+              <h2 className="font-serif text-4xl font-bold ">
+                Your liaison for doing business in the Middle East and
+                Central/West Asia.{" "}
+              </h2>
+              <p className="text-xl leading-8">
+                Steven Terner is a multi-lingual American scholar and researcher
+                who has spent more than a decade specializing in socio-political
+                and economic analysis of the Middle East and Central/West Asia,
+                with a focus on Iran. His intent is to serve as a cultural
+                liaison, guiding international business in expanding global
+                markets.
+              </p>
+              <p className="text-xl leading-8">
+                Mr. Terner spent six years living, studying, and working in the
+                Middle East. His professional experience includes the Jerusalem
+                Post, the Indian Embassy in Israel, and the Atlantic Council and
+                Hudson Institute think tanks in Washington, DC. He holds an MA
+                in Middle East Studies, an MA in Government, and is completing a
+                PhD in Middle East History.
+              </p>
+              <ul className="grid grid-cols-2 gap-6 p-6 text-xl font-bold bg-gray-300">
+                <h3 className="col-span-2 mb-6 font-serif text-3xl">
+                  Consulting Services
+                </h3>
+                <li>• Written geopolitical analysis</li>
+                <li>• Foreign media monitoring</li>
+                <li>• Due diligence support</li>
+                <li>• Training and lectures</li>
+                <li className="mt-6 font-serif">
+                  View all service offerings ➡
+                </li>
+                <li className="mt-6 font-serif">Read sample publications ➡</li>
+              </ul>
             </div>
-            <div className="text-gray-500 dark:text-gray-400">
-              Stanford University
-            </div>
-            <div className="flex pt-6 space-x-3">
-              <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
-            </div>
+            <div className="col-span-1 py-1"></div>
           </div>
-          <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
-            <p>
-              Tails Azimuth is a professor of atmospheric sciences at the
-              Stanford AI Lab. His research interests includes complexity
-              modelling of tailwinds, headwinds and crosswinds.
-            </p>
-            <p>
-              He leads the clean energy group which develops 3D air
-              pollution-climate models, writes differential equation solvers,
-              and manufactures titanium plated air ballons. In his free time he
-              bakes raspberry pi.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin
-              eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet.
-              Duis dapibus diam vel metus tempus vulputate.
-            </p>
-          </div>
-        </div>
+        </SectionContainer>
       </div>
     </>
   )
