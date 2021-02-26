@@ -6,7 +6,7 @@ import Image from "@/components/Image"
 const AboutSidebar = ({ includePhoto = true }) => (
   <div className="flex flex-col items-center col-span-1 py-12 space-y-12 border-2 border-gray-800 border-solid sm:py-0 sm:space-y-0 rounded-3xl sm:col-span-3 sm:border-0">
     {includePhoto && (
-      <div className="grid grid-cols-1 w-60 h-60">
+      <div className="grid grid-cols-1 w-72 h-72">
         <Image
           alt="ocean"
           src="/static/images/StevenTernerPhoto2-cropped.jpg"
