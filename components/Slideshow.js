@@ -1,6 +1,6 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
-import Image from "next/image"
+import Image from "@/components/Image"
 import SlideshowSlide from "@/components/SlideshowSlide"
 
 const Slideshow = () => {
@@ -37,134 +37,61 @@ const Slideshow = () => {
     }
   }, [pause, slider])
 
-  // SectionContainer max-width:
-  // xl:max-w-5xl (1024px), max-w-3xl (768px)
-  //
-  // Tailwind breakpoints:
-  // xl: 1280px, lg: 1024px, md: 768px, sm: 640px (min-width media queries)
-  //
-  // Cropping occurs based on image width, so landscape vs. portrait matters.
-  // Portrait images: height is about 1.5x the width
-  // Landscape images: width is about 1.5x the height
-  //
-  // Resulting max image widths in image slideshow (3 columns) for portrait:
-  // xl: 1024px / 3 = 341px, 768px / 3 = 256px, 550px / 3 = 183px (~33vw)
-  //
-  // Resulting max image widths in image slideshow (3 columns) for landscape:
-  // xl: 1024px / 3 = 341px, 768px / 3 = 256px, 550px / 3 = 183px (~33vw)
-  //
-  // This results in the following "sizes" prop for the HTML image element.
-  //
-  // "The browser ignores everything after the first matching condition, so be careful how you order the media conditions." --https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-  //
-  // portrait image -> portrait crop
-  const portrait = "33vw" // "(max-width: 1280px) 384px, (max-width: 768px) 256px, 128px"
-  //
-  // landscape image -> portrait crop (needs to be 1.5x larger)
-  const landscape = "50vw" //"(max-width: 1280px) 576px, (max-width: 768px) 384px, 50vw"
-
-  const quality = 75 // default is 75
-
   return (
     <div
       ref={sliderRef}
       className="h-60 sm:h-80 md:h-112 lg:h-112 xl:h-128 keen-slider"
     >
       <SlideshowSlide>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={portrait}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={portrait}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={portrait}
-            quality={quality}
-          />
-        </div>
+        <Image
+          alt="ocean"
+          src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
+          sizes="portrait"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
+          sizes="portrait"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
+          sizes="portrait"
+        />
       </SlideshowSlide>
       <SlideshowSlide>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
+        <Image
+          alt="ocean"
+          src="/static/images/milad-b-fakurian-q539g9f0cYw-unsplash.jpg"
+          sizes="landscape"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/mostafa-meraji-wH_5YAylHnc-unsplash.jpg"
+          sizes="landscape"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/pourya-daneshvar-cYmRHwySr3U-unsplash.jpg"
+          sizes="landscape"
+        />
       </SlideshowSlide>
       <SlideshowSlide>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
-        <div className="relative">
-          <Image
-            alt="ocean"
-            src="/static/images/Imports, Exports, and International Partnerships photo.jpg"
-            layout="fill"
-            className="object-cover"
-            sizes={landscape}
-            quality={quality}
-          />
-        </div>
+        <Image
+          alt="ocean"
+          src="/static/images/roozbeh-eslami-o2E9zgoRFgc-unsplash.jpg"
+          sizes="landscape"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/sajad-nori-cacpYWjYEt0-unsplash.jpg"
+          sizes="landscape"
+        />
+        <Image
+          alt="ocean"
+          src="/static/images/Imports, Exports, and International Partnerships photo.jpg"
+          sizes="landscape"
+        />
       </SlideshowSlide>
     </div>
   )
