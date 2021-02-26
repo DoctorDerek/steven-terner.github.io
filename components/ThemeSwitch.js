@@ -4,7 +4,8 @@ import { CSSTransition } from "react-transition-group"
 
 const ThemeSwitch = () => {
   const [inProp, setInProp] = useState(false)
-  const { resolvedTheme, systemTheme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
+  // const { resolvedTheme, systemTheme, setTheme } = useTheme()
   /*  useTheme takes no parameters, but returns:
       theme: Active theme name
       
