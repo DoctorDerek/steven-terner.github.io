@@ -1,8 +1,9 @@
 import React from "react"
 import { useKeenSlider } from "keen-slider/react"
 import Image from "next/image"
+import SlideshowSlide from "@/components/SlideshowSlide"
 
-const ImageSlideshow = () => {
+const Slideshow = () => {
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
@@ -69,7 +70,7 @@ const ImageSlideshow = () => {
       ref={sliderRef}
       className="h-60 sm:h-80 md:h-112 lg:h-112 xl:h-128 keen-slider"
     >
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu">
+      <SlideshowSlide>
         <div className="relative">
           <Image
             alt="ocean"
@@ -100,8 +101,8 @@ const ImageSlideshow = () => {
             quality={quality}
           />
         </div>
-      </div>
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu min-w-full max-w-full">
+      </SlideshowSlide>
+      <SlideshowSlide>
         <div className="relative">
           <Image
             alt="ocean"
@@ -132,8 +133,8 @@ const ImageSlideshow = () => {
             quality={quality}
           />
         </div>
-      </div>
-      <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu min-w-full max-w-full">
+      </SlideshowSlide>
+      <SlideshowSlide>
         <div className="relative">
           <Image
             alt="ocean"
@@ -164,9 +165,9 @@ const ImageSlideshow = () => {
             quality={quality}
           />
         </div>
-      </div>
+      </SlideshowSlide>
     </div>
   )
 }
 
-export default ImageSlideshow
+export default Slideshow
