@@ -53,8 +53,8 @@ module.exports = {
         blue: {
           ...colors.lightBlue,
           // gradient colors for services page
-          dark: "#00a2b7",
-          light: "#007cba",
+          dark: "#007cba",
+          light: "#00a2b7",
           // table row color for services page
           pale: "#e7f5fe",
         },
