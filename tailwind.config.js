@@ -50,7 +50,14 @@ module.exports = {
         red: colors.rose,
         yellow: colors.amber,
         // gray: colors.coolGray,
-        blue: colors.lightBlue,
+        blue: {
+          ...colors.lightBlue,
+          // gradient colors for services page
+          dark: "#00a2b7",
+          light: "#007cba",
+          // table row color for services page
+          pale: "#e7f5fe",
+        },
         pink: colors.fuchsia,
         green: {
           // https://colorhunt.co/palette/201883
@@ -58,9 +65,11 @@ module.exports = {
           DEFAULT: "#81b214",
           light: "#bfdcae",
           lightest: "#f1f1e8",
-          // gradient colors
+          // gradient colors for homepage
           lighter: "#bfdcae", // gradient 1A
           aqua: "#206a5d", // gradient 1B
+          // table row color for services page
+          pale: "#e9fbe5",
         },
         social: {
           // brand colors for social icons
