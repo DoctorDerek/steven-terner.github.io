@@ -22,7 +22,7 @@ export default function About() {
             <div className="flex flex-col col-span-1 space-y-12 sm:col-span-6">
               <h2 className="font-serif text-4xl font-bold ">
                 Your liaison for doing business in the Middle East and
-                Central/West Asia.{" "}
+                Central/West Asia.
               </h2>
               <p className="text-xl leading-8">
                 Steven Terner is a multi-lingual American scholar and researcher
