@@ -2,6 +2,7 @@ import siteMetadata from "@/data/siteMetadata"
 import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
+import PageTitle from "@/components/PageTitle"
 
 export default function About() {
   return (
@@ -11,9 +12,7 @@ export default function About() {
         description={`About me - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/about`}
       />
-      <h2 className="pt-12 pb-8 font-serif text-4xl font-bold text-center md:pb-16">
-        About
-      </h2>
+      <PageTitle>About</PageTitle>
       <SectionContainer fullWidth={true}>
         <div className="grid grid-cols-1 space-y-6 sm:grid-cols-12 sm:space-y-0">
           <div className="col-span-1 py-1"></div>
