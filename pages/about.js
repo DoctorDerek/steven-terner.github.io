@@ -16,7 +16,7 @@ export default function About() {
       <SectionContainer fullWidth={true}>
         <div className="grid grid-cols-1 space-y-6 sm:grid-cols-12 sm:space-y-0">
           <div className="col-span-1 py-1"></div>
-          <AboutSidebar />
+          <AboutSidebar photo={true} />
           <div className="col-span-1 py-1"></div>
 
           <div className="flex flex-col col-span-1 space-y-12 sm:col-span-6">
