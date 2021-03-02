@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
       <header className="flex flex-col items-center justify-between w-full pt-10">
         <Link href="/" aria-label="Steven Terner" className="w-full">
           <div className="flex items-center justify-between w-full">
-            <div className="w-full overflow-x-hidden">
+            <div className="w-full">
               <SectionContainer className="w-full">
                 <Logo className="w-full" />
               </SectionContainer>
