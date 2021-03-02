@@ -37,7 +37,7 @@ module.exports = withBundleAnalyzer({
     ],
     // deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840], // default
 
-    domains: ["cdn-images-1.medium.com"],
+    domains: ["cdn-images-1.medium.com", "twemoji.maxcdn.com"],
   },
   pageExtensions: ["js", "jsx", "md", "mdx"],
   experimental: {

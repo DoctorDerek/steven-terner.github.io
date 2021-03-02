@@ -3,6 +3,7 @@ import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
+import Twemoji from "@/components/Twemoji"
 
 export default function Services() {
   return (
@@ -32,9 +33,7 @@ export default function Services() {
           </div>
           <ul>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                🤝
-              </span>{" "}
+              <Twemoji emoji="🤝" />
               Identify international business partners
             </li>
             <li>
