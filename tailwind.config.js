@@ -195,6 +195,9 @@ module.exports = {
   },
   variants: {
     typography: ["dark"],
+    extend: {
+      padding: ["first", "last"],
+    },
   },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 }
