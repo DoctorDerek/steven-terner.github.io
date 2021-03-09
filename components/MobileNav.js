@@ -57,22 +57,21 @@ const MobileNav = () => {
         <button
           type="button"
           aria-label="toggle modal"
-          className="fixed flex content-center w-full h-full py-24 border-0 border-black border-solid cursor-auto focus:outline-none"
+          className="fixed w-full h-full py-24 border-0 border-black border-solid cursor-auto focus:outline-none"
           onClick={onToggleNav}
         ></button>
-        <nav className="fixed flex flex-col content-center justify-between w-full px-4 mx-auto mt-8 text-center transform -translate-x-1/2 border-0 border-red-900 border-solid h-3/5 left-1/2">
+        <nav className="flex flex-col content-center justify-between w-full px-4 mx-auto mt-8 text-center transform border-0 border-red-900 border-solid h-3/5">
           {headerNavLinks.map((link) => (
             <Link
               href={link.href}
-              className="w-full font-serif text-2xl font-bold tracking-widest"
+              className="w-full max-w-sm py-2 mx-auto font-serif text-2xl font-bold tracking-widest rounded-3xl bg-green-lightest hover:text-black text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest"
               onClick={onToggleNav}
               key={link.title}
             >
-              <div className="flex-grow w-full max-w-sm py-2 mx-auto rounded-3xl bg-green-lightest hover:text-black text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest">
-                {link.title}
-              </div>
+              {link.title}
             </Link>
           ))}
+          <div>IEN</div>
         </nav>
       </div>
     </div>
