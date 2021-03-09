@@ -26,7 +26,7 @@ const AboutSidebar = ({ photo = false }) => (
     </div>
     <div className="sm:py-4">
       <Link href="/about" className="text-white">
-        <div className="w-32 py-2 mx-auto font-bold text-center rounded text-md bg-green-dark">
+        <div className="w-32 py-2 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-black">
           Get in touch!
         </div>
       </Link>
