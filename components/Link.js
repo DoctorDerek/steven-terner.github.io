@@ -10,6 +10,8 @@ const CustomLink = ({ href, className, ...rest }) => {
   if (className && !className.match(/text-/)) {
     // no-underline works as a prop, but not text-white, text-black, etc.
     className = className ? defaultClass + " " + className : defaultClass
+  } else {
+    className = defaultClass
   }
 
   if (isInternalLink) {
