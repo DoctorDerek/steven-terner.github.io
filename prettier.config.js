@@ -1,10 +1,20 @@
 module.exports = {
+  editorconfig: true, // Read .editorconfig
+  // These settings are handled in .editorconfig:
+  // tabWidth: 2, // indent_size = 2
+  // useTabs: false, // indent_style = space
+  // endOfLine: 'lf', // end_of_line = lf
   semi: false, // default: true
   singleQuote: false,
   printWidth: 80,
-  tabWidth: 2,
-  useTabs: false,
   trailingComma: "es5",
   bracketSpacing: true,
-  endOfLine: "lf",
+  overrides: [
+    {
+      files: "*.js",
+      options: {
+        parser: "flow",
+      },
+    },
+  ],
 }
