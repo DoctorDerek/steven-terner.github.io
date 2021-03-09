@@ -7,9 +7,11 @@ const CustomLink = ({ href, className, ...rest }) => {
 
   const defaultClass =
     "underline text-green-dark hover:text-gray-900 hover:bg-green-light hover:no-underline"
-  if (className && !className.match(/text-/)) {
-    // no-underline works as a prop, but not text-white, text-black, etc.
-    className = className ? defaultClass + " " + className : defaultClass
+  if (className) {
+    if (!className.match(/text-/)) {
+      // no-underline works as a prop, but not text-white, text-black, etc.
+      className = defaultClass + " " + className
+    }
   } else {
     className = defaultClass
   }
