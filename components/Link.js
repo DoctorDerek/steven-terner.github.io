@@ -12,7 +12,8 @@ const CustomLink = ({ href, className, ...rest }) => {
       // no-underline works as a prop, but not text-white, text-black, etc.
       className = defaultClass + " " + className
     }
-  } else {
+  } else if (className !== null) {
+    // null represents intentional absence of any className, like the logo
     className = defaultClass
   }
 
