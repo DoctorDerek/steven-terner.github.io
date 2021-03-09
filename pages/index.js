@@ -27,7 +27,7 @@ export default function Home() {
           <ImageSlideshow />
         </SectionContainer>
       </div>
-      <div className="py-12 bg-gray-300 md:py-32">
+      <div className="py-8 bg-gray-300 sm:py-12 md:py-32">
         <SectionContainer>
           <CardList>
             <Card
