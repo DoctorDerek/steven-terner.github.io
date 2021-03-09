@@ -60,11 +60,11 @@ export default function Home() {
           </CardList>
         </SectionContainer>
       </div>
-      <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-t">
+      <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-b">
         <SectionContainer>
           <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
             <div className="col-span-1 sm:col-span-4">
-              <h2 className="py-4 font-serif text-2xl font-bold md:text-4xl">
+              <h2 className="py-4 font-serif text-3xl font-bold sm:text-2xl md:text-4xl">
                 About
               </h2>
               <div className="text-lg xl:text-xl">
