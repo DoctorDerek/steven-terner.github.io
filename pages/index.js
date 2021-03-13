@@ -63,25 +63,23 @@ export default function Home() {
       <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-b">
         <SectionContainer>
           <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
-            <div className="col-span-1 sm:col-span-4">
+            <div className="flex flex-col justify-between col-span-1 text-lg sm:col-span-4 xl:text-xl">
               <h2 className="py-4 font-serif text-3xl font-bold sm:text-2xl md:text-4xl">
                 About
               </h2>
-              <div className="text-lg xl:text-xl">
-                <p className="py-4">
-                  Steven Terner is a multi-lingual American scholar and
-                  researcher specializing in socio-political and economic
-                  analysis of the Middle East and Central/West Asia.
-                </p>
-                <p className="py-4">
-                  <Link
-                    className="text-black underline hover:no-underline"
-                    href="/about"
-                  >
-                    Read more
-                  </Link>
-                </p>
-              </div>
+              <p className="py-4">
+                Steven Terner is a multi-lingual American scholar and researcher
+                specializing in socio-political and economic analysis of the
+                Middle East and Central/West Asia.
+              </p>
+              <p className="py-4">
+                <Link
+                  className="text-black underline hover:no-underline"
+                  href="/about"
+                >
+                  Read more
+                </Link>
+              </p>
             </div>
             <div className="col-span-1 py-1"></div>
             <AboutSidebar />
