@@ -56,7 +56,7 @@ module.exports = {
           dark: "#007cba",
           light: "#00a2b7",
           // table row color for services page
-          pale: "#e7f5fe",
+          pale: "#e7f5fe", // and contact page
         },
         pink: colors.fuchsia,
         green: {
