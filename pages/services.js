@@ -37,59 +37,41 @@ export default function Services() {
               Identify international business partners
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                📝
-              </span>{" "}
+              <Twemoji emoji="📝" />
               Negotiate contracts
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                📈
-              </span>{" "}
+              <Twemoji emoji="📈" />
               Design and oversee product strategy
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                📊
-              </span>{" "}
+              <Twemoji emoji="📊" />
               Foreign market analysis
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                🕵️‍♂️
-              </span>{" "}
+              <Twemoji emoji="🕵️‍♂️" />
               Due diligence support
             </li>
           </ul>
           <ul>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                💱
-              </span>{" "}
+              <Twemoji emoji="💱" />
               Assessment of economic opportunities
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                📰
-              </span>{" "}
+              <Twemoji emoji="📰" />
               Foreign media monitoring
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                📕
-              </span>{" "}
+              <Twemoji emoji="📕" />
               Training and lectures
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                ✍
-              </span>{" "}
+              <Twemoji emoji="✍" />
               Written geopolitical analysis
             </li>
             <li>
-              <span role="img" aria-label="Handshake emoji">
-                💭
-              </span>{" "}
+              <Twemoji emoji="💭" />
               Appraisal of geopolitical risks
             </li>
           </ul>
