@@ -4,7 +4,7 @@ import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 
 const AboutSidebar = ({ photo = false }) => (
-  <div className="flex flex-col items-center justify-between col-span-1 py-12 space-y-12 border-2 border-gray-800 border-solid sm:py-0 sm:space-y-0 rounded-3xl sm:col-span-3 sm:border-0">
+  <div className="flex flex-col items-center justify-between col-span-1 py-12 space-y-12 border-2 border-gray-800 border-solid text-md sm:py-0 sm:space-y-0 rounded-3xl sm:col-span-3 sm:border-0">
     {photo && (
       <div className="grid grid-cols-1 w-72 h-72">
         <Image
@@ -26,7 +26,7 @@ const AboutSidebar = ({ photo = false }) => (
     </div>
     <div className="sm:py-4">
       <Link href="/about" className="text-white">
-        <div className="w-32 py-2 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-black">
+        <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-black">
           Get in touch!
         </div>
       </Link>
