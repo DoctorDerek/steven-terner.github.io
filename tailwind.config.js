@@ -199,8 +199,5 @@ module.exports = {
       padding: ["first", "last"],
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography")({ modifiers: ["sm", "md", "lg", "xl"] }),
-  ],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 }
