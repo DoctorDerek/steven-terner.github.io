@@ -64,7 +64,7 @@ export default function Home() {
         <SectionContainer>
           <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
             <div className="flex flex-col justify-between col-span-1 text-lg sm:col-span-4 xl:text-xl">
-              <h2 className="py-4 font-serif text-3xl font-bold sm:text-2xl md:text-4xl">
+              <h2 className="py-4 font-serif text-3xl font-bold md:text-4xl">
                 About
               </h2>
               <p className="py-4">
