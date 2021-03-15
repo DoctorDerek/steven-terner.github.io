@@ -13,8 +13,8 @@ export default function Portfolio() {
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}
       />
-      <article>
-        <SectionContainer className="prose prose-xl sm:prose md:prose-lg lg:prose-xl xl:prose-2xl">
+      <article className="mx-auto prose prose-xl sm:prose md:prose-lg lg:prose-xl xl:prose-2xl">
+        <SectionContainer>
           <p>
             My portfolio showcases my writing analyzing complex geopolitical
             situations and international business opportunities in the Middle
