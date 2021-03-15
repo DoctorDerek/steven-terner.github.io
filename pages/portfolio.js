@@ -8,13 +8,13 @@ export default function Portfolio() {
   return (
     <>
       <PageTitle>Portfolio</PageTitle>
-      <div className="mx-auto text-xl prose xl:text-3xl">
-        <PageSeo
-          title={`Portfolio - ${siteMetadata.author}`}
-          description={`Portfolio - ${siteMetadata.author}`}
-          url={`${siteMetadata.siteUrl}/Portfolio`}
-        />
-        <SectionContainer>
+      <PageSeo
+        title={`Portfolio - ${siteMetadata.author}`}
+        description={`Portfolio - ${siteMetadata.author}`}
+        url={`${siteMetadata.siteUrl}/Portfolio`}
+      />
+      <article>
+        <SectionContainer className="prose prose-xl sm:prose md:prose-lg lg:prose-xl xl:prose-2xl">
           <p>
             My portfolio showcases my writing analyzing complex geopolitical
             situations and international business opportunities in the Middle
@@ -64,9 +64,8 @@ export default function Portfolio() {
             Central/West Asia.
           </h2>
         </SectionContainer>
-
         <AboutSidebar />
-      </div>
+      </article>
     </>
   )
 }

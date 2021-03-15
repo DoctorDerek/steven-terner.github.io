@@ -194,10 +194,13 @@ module.exports = {
     },
   },
   variants: {
-    typography: ["dark"],
+    typography: ["responsive", "dark"],
     extend: {
       padding: ["first", "last"],
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography")({ modifiers: ["sm", "md", "lg", "xl"] }),
+  ],
 }
