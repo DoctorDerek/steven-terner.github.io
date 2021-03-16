@@ -51,19 +51,26 @@ export default function Blog({ posts }) {
               <div className="flex">
                 <div className="flex-shrink-0">
                   <div className="relative w-40 h-40">
-                    <Image
-                      src={thumbnail}
-                      alt="ocean"
-                      className="object-cover"
-                      layout="fill"
-                    />
+                    <Link href={link}>
+                      <Image
+                        src={thumbnail}
+                        alt="ocean"
+                        className="object-cover"
+                        layout="fill"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-col mx-6 justify-evenly">
-                  <h2 className="text-lg font-bold">{title}</h2>
+                  <Link href={link} className="text-black">
+                    <h2 className="text-lg font-bold">{title}</h2>
+                  </Link>
                   <p className="text-base line-clamp-2">{interweave}</p>
                   <p className="text-gray-500">
-                    <Link href={link}>Medium</Link> | {author} | {pubDate}
+                    <Link href={link} className="text-gray-500">
+                      Medium
+                    </Link>{" "}
+                    | {author} | {pubDate}
                   </p>
                 </div>
               </div>
