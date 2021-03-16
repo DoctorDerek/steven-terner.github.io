@@ -2,6 +2,7 @@
 import siteMetadata from "@/data/siteMetadata"
 // import ListLayout from "@/layouts/ListLayout"
 import { PageSeo } from "@/components/SEO"
+import PageTitle from "@/components/PageTitle"
 import Image from "next/image"
 import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
@@ -27,6 +28,7 @@ export default function Blog({ posts }) {
         description={siteMetadata.description}
         url={`${siteMetadata.siteUrl}/blog`}
       />
+      <PageTitle>Blog</PageTitle>
       {posts.map((post) => {
         const {
           title,
