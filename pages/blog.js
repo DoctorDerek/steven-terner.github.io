@@ -5,6 +5,7 @@ import { PageSeo } from "@/components/SEO"
 import Image from "next/image"
 import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
+import Link from "@/components/Link"
 
 export async function getStaticProps() {
   const res = await fetch(
@@ -12,7 +13,7 @@ export async function getStaticProps() {
   )
 
   const data = await res.json()
-  const { url, title, link, author, description, image, items } = data.feed
+  // const { url, title, link, author, description, image, items } = data.feed
   const posts = data.items
 
   return { props: { posts } }
@@ -36,7 +37,9 @@ export default function Blog({ posts }) {
           thumbnail,
           description,
         } = post
-        let desc = /<p>(.*)<\/p>/i.exec(description)[1]
+        // The post's description is an HTML string that may contain an image
+        // and/or headings.We want the text just from the first paragraph:
+        const interweave = <Interweave content={description} noHtml={true} />
         return (
           <div
             key={title}
@@ -53,26 +56,12 @@ export default function Blog({ posts }) {
                   />
                 </div>
               </div>
-              <div className="flex flex-col justify-evenly">
-                <h2 className="flex-auto">{title}</h2>
-                <div className="flex-auto">
-                  <p className="truncate">
-                    <Interweave content={desc} noHtml={true} />
-                  </p>
-                </div>
-                <div className="flex-auto">
-                  <p className="text-gray-500">
-                    Medium | {author} | {pubDate}
-                  </p>
-                </div>
-              </div>
-              <div className="hidden">
-                <h2>{title}</h2>
-                <p>{pubDate}</p>
-                <p>{link}</p>
-                <p>{author}</p>
-                <p>{guid}</p>
-                <div dangerouslySetInnerHTML={{ __html: description }} />
+              <div className="flex flex-col mx-6 justify-evenly">
+                <h2 className="text-lg font-bold">{title}</h2>
+                <p className="text-base line-clamp-2">{interweave}</p>
+                <p className="text-gray-500">
+                  <Link href={link}>Medium</Link> | {author} | {pubDate}
+                </p>
               </div>
             </div>
           </div>
