@@ -4,10 +4,11 @@ import siteMetadata from "@/data/siteMetadata"
 import { PageSeo } from "@/components/SEO"
 import Image from "next/image"
 import SectionContainer from "@/components/SectionContainer"
+import Interweave from "interweave"
 
 export async function getStaticProps() {
   const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@steventerner"
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@steventerner&api_key=9rkqqkkxexestx4pzjna03qheok1it2ysrmxtbaa"
   )
 
   const data = await res.json()
@@ -35,15 +36,45 @@ export default function Blog({ posts }) {
           thumbnail,
           description,
         } = post
+        let desc = /<p>(.*)<\/p>/i.exec(description)[1]
         return (
-          <div key={title}>
-            <h2>{title}</h2>
-            <p>{pubDate}</p>
-            <p>{link}</p>
-            <p>{author}</p>
-            <Image src={thumbnail} width="600" height="300"></Image>
-            <p>{guid}</p>
-            <div dangerouslySetInnerHTML={{ __html: description }} />
+          <div
+            key={title}
+            className="overflow-auto border border-gray-400 border-solid"
+          >
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="relative w-40 h-40">
+                  <Image
+                    src={thumbnail}
+                    alt="ocean"
+                    className="object-cover"
+                    layout="fill"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col justify-evenly">
+                <h2 className="flex-auto">{title}</h2>
+                <div className="flex-auto">
+                  <p className="truncate">
+                    <Interweave content={desc} noHtml={true} />
+                  </p>
+                </div>
+                <div className="flex-auto">
+                  <p className="text-gray-500">
+                    Medium | {author} | {pubDate}
+                  </p>
+                </div>
+              </div>
+              <div className="hidden">
+                <h2>{title}</h2>
+                <p>{pubDate}</p>
+                <p>{link}</p>
+                <p>{author}</p>
+                <p>{guid}</p>
+                <div dangerouslySetInnerHTML={{ __html: description }} />
+              </div>
+            </div>
           </div>
         )
       })}
