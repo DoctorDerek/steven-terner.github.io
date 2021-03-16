@@ -20,6 +20,7 @@
     "classnames": "^2.2.6",
     "gray-matter": "^4.0.2",
     "image-size": "0.9.3",
+    "interweave": "^12.7.1",
     "keen-slider": "^5.4.0",
     "next": "10.0.5",
     "next-mdx-remote": "^2.1.3",
