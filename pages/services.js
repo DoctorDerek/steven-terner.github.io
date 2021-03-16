@@ -6,6 +6,12 @@ import PageTitle from "@/components/PageTitle"
 import Twemoji from "@/components/Twemoji"
 
 export default function Services() {
+  const UL = ({ children }) => (
+    <ul className="flex flex-col space-y-2">{children}</ul>
+  )
+  const LI = ({ children }) => (
+    <li className="flex items-center space-x-2">{children}</li>
+  )
   return (
     <>
       <PageSeo
@@ -31,50 +37,50 @@ export default function Services() {
             </p>
             <p className="pt-8 text-right">—Steven Terner</p>
           </div>
-          <ul>
-            <li>
+          <UL>
+            <LI>
               <Twemoji emoji="🤝" />
-              Identify international business partners
-            </li>
-            <li>
+              <p>Identify international business partners</p>
+            </LI>
+            <LI>
               <Twemoji emoji="📝" />
-              Negotiate contracts
-            </li>
-            <li>
+              <p>Negotiate contracts</p>
+            </LI>
+            <LI>
               <Twemoji emoji="📈" />
-              Design and oversee product strategy
-            </li>
-            <li>
+              <p>Design and oversee product strategy</p>
+            </LI>
+            <LI>
               <Twemoji emoji="📊" />
-              Foreign market analysis
-            </li>
-            <li>
+              <p>Foreign market analysis</p>
+            </LI>
+            <LI>
               <Twemoji emoji="🕵️‍♂️" />
-              Due diligence support
-            </li>
-          </ul>
-          <ul>
-            <li>
+              <p>Due diligence support</p>
+            </LI>
+          </UL>
+          <UL>
+            <LI>
               <Twemoji emoji="💱" />
-              Assessment of economic opportunities
-            </li>
-            <li>
+              <p>Assessment of economic opportunities</p>
+            </LI>
+            <LI>
               <Twemoji emoji="📰" />
-              Foreign media monitoring
-            </li>
-            <li>
+              <p>Foreign media monitoring</p>
+            </LI>
+            <LI>
               <Twemoji emoji="📕" />
-              Training and lectures
-            </li>
-            <li>
+              <p>Training and lectures</p>
+            </LI>
+            <LI>
               <Twemoji emoji="✍" />
-              Written geopolitical analysis
-            </li>
-            <li>
+              <p>Written geopolitical analysis</p>
+            </LI>
+            <LI>
               <Twemoji emoji="💭" />
-              Appraisal of geopolitical risks
-            </li>
-          </ul>
+              <p>Appraisal of geopolitical risks</p>
+            </LI>
+          </UL>
         </div>
       </SectionContainer>
       <div className="text-white bg-black">
