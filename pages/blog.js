@@ -29,46 +29,48 @@ export default function Blog({ posts }) {
         url={`${siteMetadata.siteUrl}/blog`}
       />
       <PageTitle>Blog</PageTitle>
-      {posts.map((post) => {
-        const {
-          title,
-          pubDate,
-          link,
-          guid,
-          author,
-          thumbnail,
-          description,
-        } = post
-        // The post's description is an HTML string that may contain an image
-        // and/or headings.We want the text just from the first paragraph:
-        const interweave = <Interweave content={description} noHtml={true} />
-        return (
-          <div
-            key={title}
-            className="overflow-auto border border-gray-400 border-solid"
-          >
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <div className="relative w-40 h-40">
-                  <Image
-                    src={thumbnail}
-                    alt="ocean"
-                    className="object-cover"
-                    layout="fill"
-                  />
+      <div className="space-y-6">
+        {posts.map((post) => {
+          const {
+            title,
+            pubDate,
+            link,
+            guid,
+            author,
+            thumbnail,
+            description,
+          } = post
+          // The post's description is an HTML string that may contain an image
+          // and/or headings.We want the text just from the first paragraph:
+          const interweave = <Interweave content={description} noHtml={true} />
+          return (
+            <div
+              key={title}
+              className="overflow-auto border border-gray-400 border-solid"
+            >
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <div className="relative w-40 h-40">
+                    <Image
+                      src={thumbnail}
+                      alt="ocean"
+                      className="object-cover"
+                      layout="fill"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col mx-6 justify-evenly">
+                  <h2 className="text-lg font-bold">{title}</h2>
+                  <p className="text-base line-clamp-2">{interweave}</p>
+                  <p className="text-gray-500">
+                    <Link href={link}>Medium</Link> | {author} | {pubDate}
+                  </p>
                 </div>
               </div>
-              <div className="flex flex-col mx-6 justify-evenly">
-                <h2 className="text-lg font-bold">{title}</h2>
-                <p className="text-base line-clamp-2">{interweave}</p>
-                <p className="text-gray-500">
-                  <Link href={link}>Medium</Link> | {author} | {pubDate}
-                </p>
-              </div>
             </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
     </SectionContainer>
   )
 }
