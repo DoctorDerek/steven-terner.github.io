@@ -23,6 +23,7 @@ const LayoutWrapper = ({ children }) => {
                 key={link.title}
                 href={link.href}
                 className="px-3 py-1 no-underline rounded-3xl xl:px-8 text-green-dark hover:bg-green-light hover:text-gray-900"
+                //style={{ webkitTextStroke: "1px rgb(2,132,199)" }} // text-blue-600
               >
                 {link.title}
               </Link>
