@@ -62,12 +62,15 @@ export default function Blog({ posts }) {
                   </div>
                 </div>
                 <div className="flex flex-col mx-6 justify-evenly">
-                  <Link href={link} className="text-black">
+                  <Link href={link} className="text-black dark:text-gray-100">
                     <h2 className="text-lg font-bold">{title}</h2>
                   </Link>
                   <p className="text-base line-clamp-2">{interweave}</p>
-                  <p className="text-gray-500">
-                    <Link href={link} className="text-gray-500">
+                  <p className="text-gray-500 dark:text-gray-300">
+                    <Link
+                      href={link}
+                      className="text-gray-500 dark:text-gray-300"
+                    >
                       Medium
                     </Link>{" "}
                     | {author} | {pubDate}
