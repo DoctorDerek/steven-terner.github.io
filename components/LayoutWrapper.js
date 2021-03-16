@@ -12,7 +12,7 @@ const LayoutWrapper = ({ children }) => {
     <>
       <SectionContainer header={true} className="pt-10">
         <Link href="/" aria-label="Steven Terner" className={null}>
-          <div className="fill-green-dark">
+          <div className="text-blue-600 stroke-current stroke-0 dark:stroke-1 fill-green-dark">
             <Logo />
           </div>
         </Link>
