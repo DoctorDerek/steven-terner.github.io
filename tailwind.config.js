@@ -15,6 +15,10 @@ module.exports = {
   },
   darkMode: "class",
   theme: {
+    fill: {
+      current: "currentColor",
+      "green-dark": "#206a5d", // brand color (logo)
+    },
     extend: {
       spacing: {
         "9/16": "56.25%",
@@ -61,7 +65,7 @@ module.exports = {
         pink: colors.fuchsia,
         green: {
           // https://colorhunt.co/palette/201883
-          dark: "#206a5d",
+          dark: "#206a5d", // brand color (logo)
           DEFAULT: "#81b214",
           light: "#bfdcae",
           lightest: "#f1f1e8",
