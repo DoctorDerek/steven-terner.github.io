@@ -202,5 +202,9 @@ module.exports = {
   },*/
   /* Tailwind has a new engine called jit (just-in-time) compiler changes;
      see: https://youtu.be/3O_3X7InOw8?t=333 (Adam Wathan 3/15/2021) */
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 }
