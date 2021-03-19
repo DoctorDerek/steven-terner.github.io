@@ -27,7 +27,7 @@ export default function Home() {
           <ImageSlideshow />
         </SectionContainer>
       </div>
-      <div className="py-8 bg-gray-300 sm:py-12 md:py-32">
+      <div className="py-8 bg-gray-300 sm:py-12 md:py-32 dark:bg-transparent">
         <SectionContainer>
           <CardList>
             <Card
@@ -60,7 +60,7 @@ export default function Home() {
           </CardList>
         </SectionContainer>
       </div>
-      <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-aqua bg-gradient-to-b">
+      <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
         <SectionContainer>
           <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
             <div className="flex flex-col justify-between col-span-1 text-lg sm:col-span-4 xl:text-xl">
