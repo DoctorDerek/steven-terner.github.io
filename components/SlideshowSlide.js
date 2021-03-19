@@ -1,7 +1,6 @@
 import React from "react"
-
 const SlideshowSlide = ({ children }) => (
-  <div className="grid grid-cols-3 gap-1 px-0.5 md:px-1 xl:px-1.5 text-center keen-slider__slide md:gap-2 xl:gap-3 transform-gpu">
+  <div className="grid grid-cols-3 space-x-0.5 sm:space-x-1 md:space-x-1.5 xl:space-x-2 transform-gpu keen-slider__slide">
     {children}
   </div>
 )
