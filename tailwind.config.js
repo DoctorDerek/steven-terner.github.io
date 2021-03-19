@@ -71,7 +71,7 @@ module.exports = {
           lightest: "#f1f1e8",
           // gradient colors for homepage
           lighter: "#bfdcae", // gradient 1A
-          aqua: "#206a5d", // gradient 1B
+          // aqua: "#206a5d", // gradient 1B
           // table row color for services page
           pale: "#e9fbe5",
         },
