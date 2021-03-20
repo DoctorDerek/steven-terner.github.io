@@ -12,12 +12,45 @@ const components = {
   twitter: Twitter,
 }
 
-const SocialIcon = ({ kind, href, size = 5 }) => {
+const socialColors = {
+  twitter: "#1DA1F2",
+  linkedin: "#2867B2",
+  medium: "#12100E",
+  email: "#206a5d",
+}
+
+const SocialIcon = ({
+  kind = () => {
+    "Missing required kind prop in SocialIcon"
+  },
+  href,
+  size = 5,
+}) => {
   const SocialSvg = components[kind]
+
+  const defaultClass = "text-sm text-gray-100 rounded-full "
+
+  let className = defaultClass
+  switch (kind) {
+    // brand colors for social icons
+    // arbitrary values enabled by Tailwind CSS JIT (Just-In-Time) Engine
+    case "twitter":
+      className += "bg-[#1DA1F2]"
+      break
+    case "linkedin":
+      className += "bg-[#2867B2]"
+      break
+    case "medium":
+      className += "bg-[#12100E]"
+      break
+    case "email":
+      className += "bg-[#206a5d]"
+      break
+  }
 
   return (
     <a
-      className={`rounded-full bg-social-${kind} text-sm text-gray-100 dark:text-gray-200 hover:text-green-dark dark:hover:text-blue-400`}
+      className={className}
       target="_blank"
       rel="noopener noreferrer"
       href={href}
