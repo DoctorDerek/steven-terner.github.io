@@ -6,7 +6,7 @@ const CustomLink = ({ href, className, ...rest }) => {
   const isAnchorLink = href && href.startsWith("#")
 
   const defaultClass =
-    "underline text-green-dark hover:text-gray-900 hover:bg-green-light"
+    "underline text-green-dark hover:text-gray-900 hover:bg-green-light dark:text-gray-100 dark:hover:text-gray-900 dark:border-b-2 dark:border-solid dark:border-green-dark dark:no-underline"
   if (className) {
     if (!className.match(/text-/)) {
       // no-underline works as a prop, but not text-white, text-black, etc.

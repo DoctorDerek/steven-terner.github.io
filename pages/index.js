@@ -74,7 +74,7 @@ export default function Home() {
               </p>
               <p className="py-4">
                 <Link
-                  className="text-black underline hover:no-underline"
+                  className="text-gray-900 underline hover:bg-green-light dark:text-gray-100 dark:hover:text-gray-900 dark:no-underline dark:border-b-2 dark:border-solid dark:border-gray-100"
                   href="/about"
                 >
                   Read more
