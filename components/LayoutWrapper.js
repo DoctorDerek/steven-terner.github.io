@@ -22,7 +22,7 @@ const LayoutWrapper = ({ children }) => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="px-3 py-1 no-underline rounded-3xl xl:px-8 text-green-dark hover:text-gray-900 dark:text-gray-100"
+                className="px-3 py-1 no-underline rounded-3xl xl:px-8 text-green-dark dark:text-gray-100 dark:hover:text-gray-900 hover:underline"
               >
                 {link.title}
               </Link>
