@@ -1,11 +1,11 @@
 // import siteMetadata from "@/data/siteMetadata"
-import headerNavLinks from "@/data/headerNavLinks"
 import Logo from "@/data/logo.svg"
 import Link from "./Link"
 import SectionContainer from "./SectionContainer"
 import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
+import HeaderNavLinks from "./HeaderNavLinks"
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -18,15 +18,7 @@ const LayoutWrapper = ({ children }) => {
         </Link>
         <div className="flex flex-row-reverse items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-row ">
           <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded-3xl dark:border-gray-100 xl:text-2xl md:text-xl sm:flex sm:text-l dark:bg-green-dark">
-            {headerNavLinks.map((link) => (
-              <Link
-                key={link.title}
-                href={link.href}
-                className="px-3 py-1 no-underline rounded-3xl xl:px-8 text-green-dark dark:text-gray-100 dark:hover:text-gray-900 hover:underline"
-              >
-                {link.title}
-              </Link>
-            ))}
+            <HeaderNavLinks />
           </div>
           <ThemeSwitch />
           <MobileNav />
