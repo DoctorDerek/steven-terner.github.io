@@ -25,8 +25,8 @@ const AboutSidebar = ({ photo = false }) => (
       <SocialIcon kind="twitter" href={siteMetadata.twitter} />
     </div>
     <div className="sm:py-4">
-      <Link href="/about" className="text-white">
-        <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-black">
+      <Link href="/about" className="text-gray-100">
+        <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-gray-900">
           Get in touch!
         </div>
       </Link>

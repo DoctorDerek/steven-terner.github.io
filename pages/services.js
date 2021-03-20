@@ -83,7 +83,7 @@ export default function Services() {
           </UL>
         </div>
       </SectionContainer>
-      <div className="text-white bg-black">
+      <div className="text-gray-100 bg-black">
         <SectionContainer fullWidth={true}>
           <div className="grid grid-cols-8 px-16 py-32">
             <p className="col-span-5 py-16 text-3xl leading-relaxed">

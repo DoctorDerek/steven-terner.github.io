@@ -64,7 +64,7 @@ const MobileNav = () => {
           {headerNavLinks.map((link) => (
             <Link
               href={link.href}
-              className="w-full max-w-sm py-2 mx-auto font-serif text-2xl font-bold tracking-widest rounded-3xl bg-green-lightest hover:text-black text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest"
+              className="w-full max-w-sm py-2 mx-auto font-serif text-2xl font-bold tracking-widest rounded-3xl bg-green-lightest hover:text-gray-900 text-green-dark dark:bg-gray-200 hover:bg-green-light dark:hover:bg-green-light dark:hover:text-green-dark dark:hover:bg-gradient-to-r dark:hover:from-gray-500 dark:hover:to-green-lightest"
               onClick={onToggleNav}
               key={link.title}
             >

@@ -15,7 +15,7 @@ export default function Footer() {
           <Link
             key={link.title}
             href={link.href}
-            className="px-3 py-1 text-black no-underline rounded hover:bg-green-light dark:hover:text-green-dark"
+            className="px-3 py-1 text-gray-900 no-underline rounded hover:bg-green-light dark:hover:text-green-dark"
           >
             {link.title}
           </Link>
