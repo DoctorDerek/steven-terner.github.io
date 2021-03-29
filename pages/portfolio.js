@@ -13,7 +13,7 @@ export default function Portfolio() {
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}
       />
-      <article className="mx-auto prose prose-xl sm:prose md:prose-lg lg:prose-xl xl:prose-2xl">
+      <article className="mx-auto space-y-6">
         <SectionContainer>
           <p>
             My portfolio showcases my writing analyzing complex geopolitical
@@ -63,8 +63,8 @@ export default function Portfolio() {
             Let me help you act on business opportunities in the Middle East and
             Central/West Asia.
           </h2>
+          <AboutSidebar />
         </SectionContainer>
-        <AboutSidebar />
       </article>
     </>
   )
