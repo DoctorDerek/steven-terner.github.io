@@ -29,7 +29,7 @@ export default function Contact() {
       placeholder = nameUpperCase
     }
     const defaultClass =
-      "w-full border-2 border-black border-solid rounded-xl align-top"
+      "w-full border-2 border-black border-solid rounded-xl align-top pl-1"
     const className = defaultClass + " " + height
 
     return (
