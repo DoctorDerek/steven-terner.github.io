@@ -55,7 +55,7 @@ export default function Contact() {
       />
       <PageTitle>Contact</PageTitle>
       <SectionContainer fullWidth={true} className="text-gray-900 bg-blue-pale">
-        <div className="grid grid-cols-8 px-16 py-32">
+        <div className="grid grid-cols-1 px-16 py-32 md:grid-cols-8">
           <div className="flex flex-col items-center justify-center flex-shrink col-span-5 py-16 space-y-16 leading-relaxed text-center">
             <h2 className="font-serif text-3xl font-bold">
               I’m looking forward to working with you.
