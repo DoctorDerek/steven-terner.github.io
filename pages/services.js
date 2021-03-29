@@ -29,9 +29,9 @@ export default function Services() {
         </SectionContainer>
       </div>
       <SectionContainer fullWidth={true}>
-        <div className="grid grid-cols-1 px-16 py-32 text-xl sm:gap-16 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-16 px-16 py-32 text-xl md:grid-cols-3">
           <div>
-            <p className="text-4xl">
+            <p className="text-2xl md:text-4xl">
               “I can help your business access new markets with
               culturally-sensitive and effective business strategy.”
             </p>
@@ -85,7 +85,7 @@ export default function Services() {
       </SectionContainer>
       <div className="text-gray-100 bg-black">
         <SectionContainer fullWidth={true}>
-          <div className="grid grid-cols-1 px-16 py-32 sm:grid-cols-8">
+          <div className="grid grid-cols-1 px-16 py-32 md:grid-cols-8">
             <p className="col-span-5 py-16 text-3xl leading-relaxed">
               My consulting experience includes the <em>Jerusalem Post</em>, the
               Indian Embassy in Israel, and the Atlantic Council and Hudson
