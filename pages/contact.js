@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
       </SectionContainer>
       <SectionContainer fullWidth={true} className="text-gray-900">
-        <div className="grid grid-cols-1 gap-8 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 md:grid-cols-8">
+        <div className="grid grid-cols-1 gap-8 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 xl:grid-cols-8">
           <div className="col-span-4 space-y-6 text-2xl leading-relaxed md:text-3xl">
             <Input field="Name" />
             <Input field="Email" />
@@ -79,7 +79,7 @@ export default function Contact() {
               placeholder="Let me know how I can help"
             />
           </div>
-          <div className="grid col-span-4">
+          <div className="grid col-span-4 h-96 xl:h-full">
             <Image
               alt="ocean"
               src="/static/images/kyle-glenn-nxt5htlmlge-unsplash.jpg"
