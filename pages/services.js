@@ -23,8 +23,9 @@ export default function Services() {
       <div className="bg-gradient-to-b from-blue-light to-blue-dark">
         <SectionContainer fullWidth={true}>
           <h2 className="px-16 py-16 font-serif text-5xl font-bold max-w-7xl leading-14">
-            Multi-linguistic international business consulting for the Middle
-            East and Central/West Asia.
+            Multi-lingual politico-economic analysis, due diligence research,
+            and risk assessments aimed at identifying market opportunities and
+            challenges in the Middle East and Central Asia.
           </h2>
         </SectionContainer>
       </div>
