@@ -16,7 +16,7 @@ const AboutSidebar = ({ photo = false }) => (
       </div>
     )}
     <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-4xl">
-      Steven Terner
+      Steven Terner, LLC
     </h2>
     <div className="flex flex-wrap justify-center space-x-4 sm:py-12">
       <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />

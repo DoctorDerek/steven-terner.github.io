@@ -69,9 +69,9 @@ export default function Home() {
                 About
               </h2>
               <p className="py-4">
-                Steven Terner is a multi-lingual American scholar and researcher
-                specializing in socio-political and economic analysis of the
-                Middle East and Central/West Asia.
+                Steven Terner, LLC is a multi-lingual American scholar and
+                researcher specializing in socio-political and economic analysis
+                of the Middle East and Central/West Asia.
               </p>
               <p className="py-4">
                 <Link

@@ -25,12 +25,12 @@ export default function About() {
               Central/West Asia.
             </h2>
             <p className="text-xl leading-8">
-              Steven Terner is a multi-lingual American scholar and researcher
-              who has spent more than a decade specializing in socio-political
-              and economic analysis of the Middle East and Central/West Asia,
-              with a focus on Iran. His intent is to serve as a cultural
-              liaison, guiding international business in expanding global
-              markets.
+              Steven Terner, LLC is a multi-lingual American scholar and
+              researcher who has spent more than a decade specializing in
+              socio-political and economic analysis of the Middle East and
+              Central/West Asia, with a focus on Iran. His intent is to serve as
+              a cultural liaison, guiding international business in expanding
+              global markets.
             </p>
             <p className="text-xl leading-8">
               Mr. Terner spent six years living, studying, and working in the

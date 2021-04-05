@@ -35,7 +35,7 @@ export default function Services() {
               “I can help your business access new markets with
               culturally-sensitive and effective business strategy.”
             </p>
-            <p className="pt-8 text-right">—Steven Terner</p>
+            <p className="pt-8 text-right">—Steven Terner, LLC</p>
           </div>
           <UL>
             <LI>
