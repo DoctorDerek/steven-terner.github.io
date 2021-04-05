@@ -33,10 +33,11 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-16 px-16 py-32 text-xl md:grid-cols-3">
           <div>
             <p className="text-2xl md:text-4xl">
-              “I can help your business access new markets with
-              culturally-sensitive and effective business strategy.”
+              Consulting and business intelligence services include due
+              diligence research, economic analysis, political forecasting, and
+              cultural liaising.
             </p>
-            <p className="pt-8 text-right">—Steven Terner, LLC</p>
+            <p className="pt-8 text-right">Steven Terner, LLC</p>
           </div>
           <UL>
             <LI>
