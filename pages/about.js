@@ -21,8 +21,9 @@ export default function About() {
 
           <div className="flex flex-col col-span-1 space-y-12 sm:col-span-6">
             <h2 className="font-serif text-4xl font-bold ">
-              Your liaison for doing business in the Middle East and
-              Central/West Asia.
+              Your resource for diligence research, politico-economic analysis,
+              and cultural liaising services in the Middle East and Central
+              Asia.
             </h2>
             <p className="text-xl leading-8">
               Steven Terner, LLC is a multi-lingual American scholar and
