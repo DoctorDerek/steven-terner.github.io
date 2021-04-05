@@ -91,12 +91,12 @@ export default function Services() {
               specializing in the political economics of the Middle East and
               Central Asia.
             </p>
-            <p>
+            <p className="col-span-5 py-16 text-3xl leading-relaxed">
               Steven Terner, LLC provides bespoke reports including geopolitical
               analysis, economic forecasting, and due diligence assessments for
               public and private sector institutions.
             </p>
-            <p>
+            <p className="col-span-5 py-16 text-3xl leading-relaxed">
               Steven Terner frequently publishes articles with foreign policy
               think tanks and international news sites, and presents original
               research on socio-political, intelligence, corporate, and
