@@ -87,9 +87,20 @@ export default function Services() {
         <SectionContainer fullWidth={true}>
           <div className="grid grid-cols-1 px-16 py-32 md:grid-cols-8">
             <p className="col-span-5 py-16 text-3xl leading-relaxed">
-              My consulting experience includes the <em>Jerusalem Post</em>, the
-              Indian Embassy in Israel, and the Atlantic Council and Hudson
-              Institute think tanks in Washington, DC.
+              Steven Terner is a multilingual analyst, scholar, and consultant
+              specializing in the political economics of the Middle East and
+              Central Asia.
+            </p>
+            <p>
+              Steven Terner, LLC provides bespoke reports including geopolitical
+              analysis, economic forecasting, and due diligence assessments for
+              public and private sector institutions.
+            </p>
+            <p>
+              Steven Terner frequently publishes articles with foreign policy
+              think tanks and international news sites, and presents original
+              research on socio-political, intelligence, corporate, and
+              leadership analysis to a wide variety of audiences.
             </p>
             <AboutSidebar />
           </div>
