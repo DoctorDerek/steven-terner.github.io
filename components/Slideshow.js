@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import SlideshowSlides from "@/components/SlideshowSlides"
+import "keen-slider/keen-slider.min.css"
 
 const Slideshow = () => {
   const [pause, setPause] = useState(false)
