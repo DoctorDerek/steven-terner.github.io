@@ -40,8 +40,8 @@ module.exports = withBundleAnalyzer({
     domains: ["cdn-images-1.medium.com", "twemoji.maxcdn.com"],
   },
   pageExtensions: ["js", "jsx", "md", "mdx"],
-  experimental: {
-    modern: true,
+  future: {
+    webpack5: true,
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
