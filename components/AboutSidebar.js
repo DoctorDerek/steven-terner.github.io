@@ -4,7 +4,7 @@ import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 
 const AboutSidebar = ({ photo = false }) => (
-  <div className="flex flex-col items-center space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
+  <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
     {photo && (
       <div className="hidden md:grid w-72 h-72">
         <Image
