@@ -1,5 +1,5 @@
 module.exports = {
-  // These settings are duplicated in .editorconfig:
+  // These settings are handled in .editorconfig:
   tabWidth: 2, // indent_size = 2
   useTabs: false, // indent_style = space
   endOfLine: "lf", // end_of_line = lf
