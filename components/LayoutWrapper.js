@@ -6,8 +6,37 @@ import Footer from "./Footer"
 import MobileNav from "./MobileNav"
 import ThemeSwitch from "./ThemeSwitch"
 import HeaderNavLinks from "./HeaderNavLinks"
+import { useState, useEffect } from "react"
+
+const DEBUG_BREAKPOINTS = true
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window
+  return {
+    width,
+    height,
+  }
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  )
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions())
+    }
+
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  return windowDimensions
+}
 
 const LayoutWrapper = ({ children }) => {
+  const { width } = useWindowDimensions()
   return (
     <>
       <SectionContainer header={true} className="pt-10">
@@ -23,6 +52,17 @@ const LayoutWrapper = ({ children }) => {
           <ThemeSwitch />
           <MobileNav />
         </div>
+        {DEBUG_BREAKPOINTS && (
+          <div className="text-3xl text-center">
+            Current breakpoint is{" "}
+            <span className="font-bold sm:hidden">mobile</span>
+            <span className="hidden font-bold sm:inline md:hidden">small</span>
+            <span className="hidden font-bold md:inline lg:hidden">medium</span>
+            <span className="hidden font-bold lg:inline xl:hidden">large</span>
+            <span className="hidden font-bold xl:inline">x-large</span> ({width}
+            px)
+          </div>
+        )}
       </SectionContainer>
 
       <main>{children}</main>
