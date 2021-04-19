@@ -19,7 +19,7 @@ export default function About() {
           <AboutSidebar photo={true} />
 
           <div className="flex flex-col space-y-12">
-            <h2 className="font-serif text-4xl font-bold">
+            <h2 className="font-serif text-2xl font-bold sm:text-3xl md:text-4xl">
               <div className="block pb-12 md:hidden">
                 <div className="grid w-40 h-40 max-w-full mx-auto border-2 border-gray-800 border-solid rounded-full sm:w-60 sm:h-60">
                   <Image
@@ -37,7 +37,7 @@ export default function About() {
               and cultural liaising services in the Middle East and Central
               Asia.
             </h2>
-            <p className="text-xl leading-8">
+            <p className="text-lg sm:text-xl sm:leading-8">
               Steven Terner is a multi-lingual American scholar and researcher
               who has spent more than a decade specializing in socio-political
               and economic analysis of the Middle East and Central/West Asia,
@@ -45,7 +45,7 @@ export default function About() {
               liaison, guiding international business in expanding global
               markets.
             </p>
-            <p className="text-xl leading-8">
+            <p className="text-lg sm:text-xl sm:leading-8">
               Mr. Terner spent six years living, studying, and working in the
               Middle East. His professional experience includes the Jerusalem
               Post, the Indian Embassy in Israel, and the Atlantic Council and
