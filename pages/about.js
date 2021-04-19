@@ -3,6 +3,7 @@ import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
+import Image from "@/components/Image"
 
 export default function About() {
   return (
@@ -14,13 +15,24 @@ export default function About() {
       />
       <PageTitle>About</PageTitle>
       <SectionContainer fullWidth={true}>
-        <div className="grid grid-cols-1 space-y-6 sm:grid-cols-12 sm:space-y-0">
-          <div className="col-span-1 py-1"></div>
+        <div className="flex flex-col-reverse md:flex-row md:space-x-6">
           <AboutSidebar photo={true} />
-          <div className="col-span-1 py-1"></div>
 
-          <div className="flex flex-col col-span-1 space-y-12 sm:col-span-6">
-            <h2 className="font-serif text-4xl font-bold ">
+          <div className="flex flex-col space-y-12">
+            <h2 className="font-serif text-4xl font-bold">
+              <div className="block pb-12 md:hidden">
+                <div className="grid w-40 h-40 max-w-full mx-auto border-2 border-gray-800 border-solid rounded-full sm:w-60 sm:h-60">
+                  <Image
+                    alt="ocean"
+                    src="/static/images/StevenTernerPhoto2-cropped.jpg"
+                    className="rounded-full"
+                    sizes="portrait"
+                  />
+                </div>
+                <p className="font-serif text-2xl font-bold text-center sm:text-4xl">
+                  Steven Terner
+                </p>
+              </div>
               Your resource for diligence research, politico-economic analysis,
               and cultural liaising services in the Middle East and Central
               Asia.

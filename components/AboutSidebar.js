@@ -6,7 +6,7 @@ import Image from "@/components/Image"
 const AboutSidebar = ({ photo = false }) => (
   <div className="flex flex-col items-center space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
     {photo && (
-      <div className="grid grid-cols-1 w-72 h-72">
+      <div className="hidden md:grid w-72 h-72">
         <Image
           alt="ocean"
           src="/static/images/StevenTernerPhoto2-cropped.jpg"
