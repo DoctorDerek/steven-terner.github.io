@@ -11,11 +11,16 @@ import { useState, useEffect } from "react"
 const DEBUG_BREAKPOINTS = true
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window
-  return {
-    width,
-    height,
+  try {
+    const { innerWidth: width, innerHeight: height } = window
+    return {
+      width,
+      height,
+    }
+  } catch (e) {
+    console.log(e)
   }
+  return { width: 0, height: 0 }
 }
 
 function useWindowDimensions() {
