@@ -35,7 +35,7 @@ export default function Blog({ posts }) {
             title,
             pubDate,
             link,
-            guid,
+            //guid,
             author,
             thumbnail,
             description,
