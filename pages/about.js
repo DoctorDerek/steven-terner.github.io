@@ -133,7 +133,7 @@ export default function About() {
                     sizes="portrait"
                   />
                 </div>
-                <p className="font-serif text-2xl font-bold text-center sm:text-4xl">
+                <p className="font-serif text-3xl font-bold text-center sm:text-4xl">
                   Steven Terner
                 </p>
               </div>
@@ -160,7 +160,7 @@ export default function About() {
           </div>
         </div>
 
-        <ul className="grid grid-cols-2 gap-6 p-6 text-xl font-bold bg-gray-300">
+        <ul className="grid grid-cols-2 gap-6 p-6 mt-12 text-xl font-bold bg-gray-300">
           <h3 className="col-span-2 mb-6 font-serif text-3xl">
             Consulting Services
           </h3>
