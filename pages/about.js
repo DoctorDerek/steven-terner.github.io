@@ -118,14 +118,14 @@ export default function About() {
         url={`${siteMetadata.siteUrl}/about`}
       />
       <PageTitle>About</PageTitle>
-      <SectionContainer fullWidth={true}>
-        <div className="flex flex-col-reverse justify-center md:flex-row md:space-x-4 lg:space-x-12 xl:space-x-24 xl:pl-24 xl:pr-12">
+      <SectionContainer>
+        <div className="flex flex-col-reverse justify-between md:flex-row md:space-x-8 lg:space-x-12">
           <AboutSidebar photo={true} />
 
-          <div className="flex flex-col max-w-2xl space-y-12">
-            <h2 className="font-serif text-2xl font-bold sm:text-3xl md:text-4xl">
-              <div className="block pb-12 md:hidden">
-                <div className="grid w-40 h-40 max-w-full mx-auto border-2 border-gray-800 border-solid rounded-full sm:w-60 sm:h-60">
+          <div className="flex flex-col max-w-2xl space-y-6 xl:space-y-12 lg:space-y-9">
+            <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
+              <div className="flex items-center md:hidden">
+                <div className="grid w-40 h-40 max-w-full mx-auto mb-4 border-2 border-gray-800 border-solid rounded-full sm:w-48 sm:h-48">
                   <Image
                     alt="ocean"
                     src="/static/images/StevenTernerPhoto2-cropped.jpg"
@@ -133,15 +133,15 @@ export default function About() {
                     sizes="portrait"
                   />
                 </div>
-                <p className="font-serif text-3xl font-bold text-center sm:text-4xl">
-                  Steven Terner
-                </p>
+                <div className="w-full text-3xl text-center sm:text-4xl">
+                  Steven Terner, LLC
+                </div>
               </div>
               Your resource for diligence research, politico-economic analysis,
               and cultural liaising services in the Middle East and Central
               Asia.
             </h2>
-            <p className="text-lg sm:text-xl sm:leading-8">
+            <p className="text-lg xl:text-2xl xl:leading-8">
               Steven Terner is a multi-lingual American scholar and researcher
               who has spent more than a decade specializing in socio-political
               and economic analysis of the Middle East and Central/West Asia,
@@ -149,7 +149,7 @@ export default function About() {
               liaison, guiding international business in expanding global
               markets.
             </p>
-            <p className="text-lg sm:text-xl sm:leading-8">
+            <p className="text-lg xl:text-2xl xl:leading-8">
               Mr. Terner spent six years living, studying, and working in the
               Middle East. His professional experience includes the Jerusalem
               Post, the Indian Embassy in Israel, and the Atlantic Council and
@@ -161,7 +161,7 @@ export default function About() {
         </div>
       </SectionContainer>
       <SectionContainer>
-        <ul className="grid grid-cols-2 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300">
+        <ul className="grid grid-cols-2 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300 rounded-3xl">
           <h3 className="col-span-2 mb-6 font-serif text-3xl">
             Consulting Services
           </h3>

@@ -30,8 +30,8 @@ const AboutSidebar = ({ photo = false }) => {
     return (
       <>
         <div className="hidden md:block">
-          <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
-            <div className="grid w-72 h-72">
+          <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 rounded-3xl">
+            <div className="grid w-48 h-48 border-2 border-gray-800 border-solid rounded-full lg:w-60 lg:h-60 xl:w-72 xl:h-72">
               <Image
                 alt="ocean"
                 src="/static/images/StevenTernerPhoto2-cropped.jpg"
@@ -42,11 +42,11 @@ const AboutSidebar = ({ photo = false }) => {
             <AboutSidebarHomePage />
           </div>
         </div>
-        <div className="flex flex-col items-center w-full max-w-sm px-2 py-12 mx-auto mt-12 space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 md:border-0 sm:py-0 sm:px-0 md:hidden">
+        <div className="flex flex-col items-center w-full max-w-sm px-2 py-12 mx-auto mt-12 space-y-12 border-2 border-gray-800 border-solid rounded-3xl md:hidden">
           <h2 className="font-serif text-4xl font-bold text-center sm:py-4">
             Steven Terner, LLC
           </h2>
-          <div className="flex flex-wrap w-full justify-evenly sm:justify-center md:justify-evenly sm:space-x-6 sm:py-12">
+          <div className="flex flex-wrap w-full justify-evenly sm:justify-center md:justify-evenly sm:space-x-6">
             <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
             <SocialIcon kind="medium" href={siteMetadata.medium} />
             <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
