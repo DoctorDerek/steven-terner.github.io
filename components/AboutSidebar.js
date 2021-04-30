@@ -3,18 +3,8 @@ import Link from "@/components/Link"
 import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 
-const AboutSidebar = ({ photo = false }) => (
-  <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
-    {photo && (
-      <div className="hidden md:grid w-72 h-72">
-        <Image
-          alt="ocean"
-          src="/static/images/StevenTernerPhoto2-cropped.jpg"
-          className="rounded-full"
-          sizes="portrait"
-        />
-      </div>
-    )}
+const AboutSidebarInner = () => (
+  <>
     <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-3xl">
       Steven Terner, LLC
     </h2>
@@ -31,7 +21,31 @@ const AboutSidebar = ({ photo = false }) => (
         </div>
       </Link>
     </div>
-  </div>
+  </>
 )
+
+// photo layout only used on About page
+const AboutSidebar = ({ photo = false }) => {
+  if (photo) {
+    return (
+      <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
+        <div className="hidden md:grid w-72 h-72">
+          <Image
+            alt="ocean"
+            src="/static/images/StevenTernerPhoto2-cropped.jpg"
+            className="rounded-full"
+            sizes="portrait"
+          />
+        </div>
+        <AboutSidebarInner />
+      </div>
+    )
+  }
+  return (
+    <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
+      <AboutSidebarInner />
+    </div>
+  )
+}
 
 export default AboutSidebar
