@@ -3,8 +3,8 @@ import Link from "@/components/Link"
 import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 
-const AboutSidebarInner = () => (
-  <>
+const AboutSidebarHomePage = () => (
+  <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
     <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-4xl">
       Steven Terner, LLC
     </h2>
@@ -21,16 +21,11 @@ const AboutSidebarInner = () => (
         </div>
       </Link>
     </div>
-  </>
+  </div>
 )
 
 // photo layout only used on About page
 const AboutSidebar = ({ photo = false }) => {
-  const AboutSidebarNormal = () => (
-    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
-      <AboutSidebarInner />
-    </div>
-  )
   if (photo) {
     return (
       <>
@@ -44,16 +39,31 @@ const AboutSidebar = ({ photo = false }) => {
                 sizes="portrait"
               />
             </div>
-            <AboutSidebarInner />
+            <AboutSidebarHomePage />
           </div>
         </div>
-        <div className="md:hidden">
-          <AboutSidebarNormal />
+        <div className="flex flex-col items-center w-full max-w-sm px-2 py-12 mx-auto mt-12 space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 md:border-0 sm:py-0 sm:px-0 md:hidden">
+          <h2 className="font-serif text-4xl font-bold text-center sm:py-4">
+            Steven Terner, LLC
+          </h2>
+          <div className="flex flex-wrap w-full justify-evenly sm:justify-center md:justify-evenly sm:space-x-6 md:space-x-0 sm:py-12">
+            <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
+            <SocialIcon kind="medium" href={siteMetadata.medium} />
+            <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
+            <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+          </div>
+          <div className="sm:py-4">
+            <Link href="/about" className="text-gray-100">
+              <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-gray-900">
+                Get in touch!
+              </div>
+            </Link>
+          </div>
         </div>
       </>
     )
   }
-  return <AboutSidebarNormal />
+  return <AboutSidebarHomePage />
 }
 
 export default AboutSidebar
