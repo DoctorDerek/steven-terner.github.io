@@ -119,10 +119,10 @@ export default function About() {
       />
       <PageTitle>About</PageTitle>
       <SectionContainer fullWidth={true}>
-        <div className="flex flex-col-reverse md:flex-row md:space-x-24 md:pl-24 md:pr-12">
+        <div className="flex flex-col-reverse justify-center md:flex-row md:space-x-4 lg:space-x-12 xl:space-x-24 xl:pl-24 xl:pr-12">
           <AboutSidebar photo={true} />
 
-          <div className="flex flex-col space-y-12">
+          <div className="flex flex-col max-w-2xl space-y-12">
             <h2 className="font-serif text-2xl font-bold sm:text-3xl md:text-4xl">
               <div className="block pb-12 md:hidden">
                 <div className="grid w-40 h-40 max-w-full mx-auto border-2 border-gray-800 border-solid rounded-full sm:w-60 sm:h-60">
