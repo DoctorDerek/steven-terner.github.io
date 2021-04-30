@@ -5,7 +5,7 @@ import Image from "@/components/Image"
 
 const AboutSidebarInner = () => (
   <>
-    <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-3xl">
+    <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-4xl">
       Steven Terner, LLC
     </h2>
     <div className="flex flex-wrap w-full justify-evenly sm:py-12">
