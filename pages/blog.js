@@ -21,6 +21,9 @@ export async function getStaticProps() {
 }
 
 export default function Blog({ posts }) {
+  const VerticalBar = () => (
+    <span className="text-gray-300 dark:text-gray-600">|</span>
+  )
   return (
     <SectionContainer>
       <PageSeo
@@ -44,13 +47,10 @@ export default function Blog({ posts }) {
           // and/or headings.We want the text just from the first paragraph:
           const interweave = <Interweave content={description} noHtml={true} />
           return (
-            <div
-              key={title}
-              className="overflow-auto border border-gray-400 border-solid"
-            >
-              <div className="flex">
+            <div key={title} className="max-w-xs mx-auto lg:max-w-full">
+              <div className="flex mx-auto sm:flex-col">
                 <div className="flex-shrink-0">
-                  <div className="relative w-40 h-40">
+                  <div className="relative w-24 h-24 sm:w-full sm:h-40 lg:h-80">
                     <Link href={link}>
                       <Image
                         src={thumbnail}
@@ -61,22 +61,30 @@ export default function Blog({ posts }) {
                     </Link>
                   </div>
                 </div>
-                <div className="flex flex-col mx-6 justify-evenly">
+                <div className="flex flex-col align-left justify-evenly">
                   <Link
                     href={link}
                     className="text-gray-900 dark:text-gray-100"
                   >
-                    <h2 className="text-lg font-bold">{title}</h2>
+                    <h2 className="text-base font-bold sm:text-lg">{title}</h2>
                   </Link>
-                  <p className="text-base line-clamp-2">{interweave}</p>
-                  <p className="text-gray-500 dark:text-gray-300">
+                  <p className="text-xs sm:text-base line-clamp-2">
+                    {interweave}
+                  </p>
+                  <p className="text-xs text-gray-400 dark:text-gray-300 sm:text-base">
                     <Link
                       href={link}
-                      className="text-gray-500 dark:text-gray-300"
+                      className="text-gray-400 dark:text-gray-300"
                     >
                       Medium
                     </Link>{" "}
-                    | {author} | {pubDate}
+                    <VerticalBar /> {author} <VerticalBar />{" "}
+                    {new Date(pubDate).toLocaleString("en-us", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}{" "}
+                    {/*2021-02-19*/}
                   </p>
                 </div>
               </div>
