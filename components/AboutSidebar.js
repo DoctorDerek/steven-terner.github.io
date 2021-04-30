@@ -8,7 +8,7 @@ const AboutSidebarHomePage = () => (
     <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-4xl">
       Steven Terner, LLC
     </h2>
-    <div className="flex flex-wrap w-full justify-evenly sm:py-12">
+    <div className="flex w-full space-x-2 justify-evenly sm:py-12">
       <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
       <SocialIcon kind="medium" href={siteMetadata.medium} />
       <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
@@ -46,7 +46,7 @@ const AboutSidebar = ({ photo = false }) => {
           <h2 className="font-serif text-4xl font-bold text-center sm:py-4">
             Steven Terner, LLC
           </h2>
-          <div className="flex flex-wrap w-full justify-evenly sm:justify-center md:justify-evenly sm:space-x-6 md:space-x-0 sm:py-12">
+          <div className="flex flex-wrap w-full justify-evenly sm:justify-center md:justify-evenly sm:space-x-6 sm:py-12">
             <SocialIcon kind="email" href={`mailto:${siteMetadata.email}`} />
             <SocialIcon kind="medium" href={siteMetadata.medium} />
             <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />

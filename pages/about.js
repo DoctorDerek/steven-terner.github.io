@@ -157,19 +157,20 @@ export default function About() {
               Middle East Studies, an MA in Government, and is completing a PhD
               in Middle East History.
             </p>
-            <ul className="grid grid-cols-2 gap-6 p-6 text-xl font-bold bg-gray-300">
-              <h3 className="col-span-2 mb-6 font-serif text-3xl">
-                Consulting Services
-              </h3>
-              <li>• Written geopolitical analysis</li>
-              <li>• Foreign media monitoring</li>
-              <li>• Due diligence support</li>
-              <li>• Training and lectures</li>
-              <li className="mt-6 font-serif">View all service offerings ➡</li>
-              <li className="mt-6 font-serif">Read sample publications ➡</li>
-            </ul>
           </div>
         </div>
+
+        <ul className="grid grid-cols-2 gap-6 p-6 text-xl font-bold bg-gray-300">
+          <h3 className="col-span-2 mb-6 font-serif text-3xl">
+            Consulting Services
+          </h3>
+          <li>• Written geopolitical analysis</li>
+          <li>• Foreign media monitoring</li>
+          <li>• Due diligence support</li>
+          <li>• Training and lectures</li>
+          <li className="mt-6 font-serif">View all service offerings ➡</li>
+          <li className="mt-6 font-serif">Read sample publications ➡</li>
+        </ul>
       </SectionContainer>
     </>
   )
