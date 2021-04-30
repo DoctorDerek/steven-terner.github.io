@@ -6,6 +6,7 @@ import PageTitle from "@/components/PageTitle"
 import Image from "next/image"
 import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
+import { Filter } from "interweave"
 import Link from "@/components/Link"
 
 export async function getStaticProps() {
@@ -22,7 +23,7 @@ export async function getStaticProps() {
 
 export default function Blog({ posts }) {
   const VerticalBar = () => (
-    <span className="text-gray-300 dark:text-gray-600">|</span>
+    <span className="px-1 text-gray-300 dark:text-gray-600">|</span>
   )
   return (
     <SectionContainer>
@@ -45,12 +46,40 @@ export default function Blog({ posts }) {
           } = post
           // The post's description is an HTML string that may contain an image
           // and/or headings.We want the text just from the first paragraph:
-          const interweave = <Interweave content={description} noHtml={true} />
+          class ParagraphFilter extends Filter {
+            attribute(name, value) {
+              return value
+            }
+
+            node(name, node) {
+              console.log(name)
+              if (name === "p") {
+                return node
+              }
+
+              return null
+            }
+          }
+          const filter = new ParagraphFilter()
+
+          // interweave will strip all the HTML except <p>
+          const interweave = (
+            <Interweave
+              content={description}
+              noWrap={true}
+              filters={[filter]}
+              noHtml={true}
+            />
+          )
+
           return (
-            <div key={title} className="max-w-xs mx-auto lg:max-w-full">
-              <div className="flex mx-auto sm:flex-col">
-                <div className="flex-shrink-0">
-                  <div className="relative w-24 h-24 sm:w-full sm:h-40 lg:h-80">
+            <div
+              key={title}
+              className="max-w-md pr-2 mx-auto border-2 border-gray-300 border-solid md:pr-0 md:max-w-md lg:max-w-xl xl:max-w-2xl"
+            >
+              <div className="flex pr-2 mx-auto space-x-2 md:pr-0 md:flex-col md:space-x-0">
+                <div className="flex items-center flex-shrink-0">
+                  <div className="relative w-16 h-16 xs:w-24 xs:h-24 sm:w-32 sm:h-32 md:w-full md:h-60 lg:h-80 xl:h-96">
                     <Link href={link}>
                       <Image
                         src={thumbnail}
@@ -61,30 +90,35 @@ export default function Blog({ posts }) {
                     </Link>
                   </div>
                 </div>
-                <div className="flex flex-col align-left justify-evenly">
+                <div className="flex flex-col justify-around md:space-y-1 lg:space-y-2 md:px-3 md:py-2 align-left">
                   <Link
                     href={link}
                     className="text-gray-900 dark:text-gray-100"
                   >
-                    <h2 className="text-base font-bold sm:text-lg">{title}</h2>
+                    <h2 className="font-bold sm:text-xl md:text-base lg:text-xl xl:text-2xl">
+                      {title}
+                    </h2>
                   </Link>
-                  <p className="text-xs sm:text-base line-clamp-2">
+                  <p className="hidden text-xs sm:text-base xs:line-clamp-2 lg:text-lg">
                     {interweave}
                   </p>
-                  <p className="text-xs text-gray-400 dark:text-gray-300 sm:text-base">
-                    <Link
-                      href={link}
-                      className="text-gray-400 dark:text-gray-300"
-                    >
+                  <p className="flex flex-wrap text-gray-400 text-2xs sm:text-base lg:text-lg">
+                    <Link href={link} className="text-gray-400">
                       Medium
-                    </Link>{" "}
-                    <VerticalBar /> {author} <VerticalBar />{" "}
-                    {new Date(pubDate).toLocaleString("en-us", {
-                      month: "short",
-                      day: "numeric",
-                      year: "numeric",
-                    })}{" "}
-                    {/*2021-02-19*/}
+                      <VerticalBar />
+                    </Link>
+                    <span>
+                      {author}
+                      <VerticalBar />
+                    </span>
+                    <span>
+                      {new Date(pubDate).toLocaleString("en-us", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      })}{" "}
+                      {/*Feb 19, 2021*/}
+                    </span>
                   </p>
                 </div>
               </div>
