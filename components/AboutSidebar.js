@@ -26,26 +26,34 @@ const AboutSidebarInner = () => (
 
 // photo layout only used on About page
 const AboutSidebar = ({ photo = false }) => {
-  if (photo) {
-    return (
-      <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
-        <div className="hidden md:grid w-72 h-72">
-          <Image
-            alt="ocean"
-            src="/static/images/StevenTernerPhoto2-cropped.jpg"
-            className="rounded-full"
-            sizes="portrait"
-          />
-        </div>
-        <AboutSidebarInner />
-      </div>
-    )
-  }
-  return (
+  const AboutSidebarNormal = () => (
     <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
       <AboutSidebarInner />
     </div>
   )
+  if (photo) {
+    return (
+      <>
+        <div className="hidden md:block">
+          <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0">
+            <div className="grid w-72 h-72">
+              <Image
+                alt="ocean"
+                src="/static/images/StevenTernerPhoto2-cropped.jpg"
+                className="rounded-full"
+                sizes="portrait"
+              />
+            </div>
+            <AboutSidebarInner />
+          </div>
+        </div>
+        <div className="md:hidden">
+          <AboutSidebarNormal />
+        </div>
+      </>
+    )
+  }
+  return <AboutSidebarNormal />
 }
 
 export default AboutSidebar
