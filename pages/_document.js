@@ -38,22 +38,9 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link
-            rel="preload"
-            as="style"
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
-          />
-          <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
-            media="print"
-            onLoad="this.media='all'"
           />
-          <noscript>
-            <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
-            />
-          </noscript>
         </Head>
         <body className="antialiased text-gray-900 bg-gray-100 dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-900 dark:via-gray-800 dark:text-gray-100">
           <Main />
