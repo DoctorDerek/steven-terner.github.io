@@ -15,17 +15,17 @@ const AboutSidebarHomePage = () => (
       <SocialIcon kind="twitter" href={siteMetadata.twitter} />
     </div>
     <div className="sm:py-4">
-      <Link href="/about" className="text-gray-100">
-        <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-gray-900">
-          Get in touch!
+      <Link href="/contact" className="text-gray-100">
+        <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark hover:bg-green-light hover:text-gray-900">
+          Get in touch
         </div>
       </Link>
     </div>
   </div>
 )
 
-// photo layout only used on About page
 const AboutSidebar = ({ photo = false }) => {
+  // photo layout only used on About page
   if (photo) {
     return (
       <>
@@ -53,9 +53,9 @@ const AboutSidebar = ({ photo = false }) => {
             <SocialIcon kind="twitter" href={siteMetadata.twitter} />
           </div>
           <div className="sm:py-4">
-            <Link href="/about" className="text-gray-100">
-              <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-md bg-green-dark hover:bg-green-light hover:text-gray-900">
-                Get in touch!
+            <Link href="/contact" className="text-gray-100">
+              <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark hover:bg-green-light hover:text-gray-900">
+                Get in touch
               </div>
             </Link>
           </div>
@@ -63,6 +63,7 @@ const AboutSidebar = ({ photo = false }) => {
       </>
     )
   }
+  // every other page, including Home
   return <AboutSidebarHomePage />
 }
 
