@@ -6,6 +6,8 @@ const isRequired = () => {
 }
 
 const Twemoji = ({ emoji = isRequired() }) => {
+  if (!emoji) isRequired() // handle falsy
+
   const img = emoji.codePointAt(0).toString(16)
 
   return (
