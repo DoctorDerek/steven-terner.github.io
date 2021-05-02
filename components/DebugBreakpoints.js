@@ -30,13 +30,33 @@ function useWindowDimensions() {
   return windowDimensions
 }
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ")
+}
+
 export default function DebugBreakpoints() {
   if (!DEBUG_BREAKPOINTS) {
     return null
   }
   const { width } = useWindowDimensions()
+  const [stickyFixedPosition, setStickyFixedPosition] = useState(true)
   return (
-    <div className="fixed inset-x-0 top-0 z-10 text-3xl text-center bg-gray-500">
+    <div
+      className={classNames(
+        stickyFixedPosition ? "fixed" : "absolute",
+        "inset-x-0 top-0 z-10 text-3xl text-center bg-gray-500"
+      )}
+    >
+      <button
+        className={
+          (stickyFixedPosition ? "bg-red-100" : "bg-red-800",
+          "absolute right-1")
+        }
+        onClick={() => setStickyFixedPosition((state) => !state)}
+      >
+        {stickyFixedPosition ? "sticky" : "fixed"}
+        🕸
+      </button>
       <span className="hidden font-bold sm:inline">Current breakpoint is </span>
       <span className="font-bold sm:hidden">mobile</span>
       <span className="hidden font-bold sm:inline md:hidden">small</span>
