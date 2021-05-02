@@ -16,11 +16,33 @@ module.exports = {
   },
   darkMode: "class",
   theme: {
-    fill: {
-      current: "currentColor",
-      "green-dark": "#206a5d", // brand color (logo)
+    screens: {
+      xs: "384px",
+      // => @media (min-width: 384px) { ... }
+
+      sm: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1536px",
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontSize: {
+        "2xs": [".625rem", ".875rem"],
+      },
+      fill: {
+        //current: "currentColor", // Tailwind defaul
+        "green-dark": "#206a5d", // brand color (logo)
+      },
       spacing: {
         "9/16": "56.25%",
         13: "3.25rem",
