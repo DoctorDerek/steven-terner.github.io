@@ -7,7 +7,7 @@ import Twemoji from "@/components/Twemoji"
 
 export default function Services() {
   const UL = ({ children }) => (
-    <ul className="flex flex-col space-y-2 divide-y-2">{children}</ul>
+    <ul className="flex flex-col pt-6 space-y-2 divide-y-2">{children}</ul>
   )
   const LI = ({ children }) => (
     <li className="flex items-center pt-2 space-x-2">{children}</li>
@@ -34,7 +34,7 @@ export default function Services() {
         </SectionContainer>
       </div>
       <SectionContainer fullWidth={true}>
-        <div className="grid grid-cols-1 gap-8 py-16 text-xl divide-y-2 xl:py-32 xl:px-16 md:px-48 lg:gap-4 xl:gap-16 md:text-2xl lg:text-base lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 px-8 py-4 text-base divide-y-4 lg:divide-y-0 sm:text-xl sm:py-8 sm:px-16 xl:py-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
           <UL>
             <LI>
               <Twemoji emoji="🌏" />
@@ -105,12 +105,22 @@ export default function Services() {
       </SectionContainer>
       <div className="text-gray-100 bg-black">
         <SectionContainer fullWidth={true}>
-          <div className="grid grid-cols-1 px-16 py-32 text-2xl leading-relaxed sm:text-3xl lg:grid-cols-6">
-            <p className="col-span-3 px-2 py-16">
-              Consulting and business intelligence services include due
+          <div className="grid grid-cols-1 px-16 py-32 text-xl leading-relaxed sm:text-2xl lg:grid-cols-6">
+            {/*Consulting and business intelligence services include due
               diligence research, economic analysis, political forecasting, and
-              cultural liaising.
-            </p>
+            cultural liaising.*/}
+            <div className="col-span-3 px-2 py-16 space-y-8">
+              <p>
+                Steven Terner, LLC was founded to provide multi-linguistic
+                business intelligence consulting to help you meet your goals.
+              </p>
+              <p>
+                Our business intelligence services include due diligence
+                research, economic analysis, political forecasting, and cultural
+                liaising.
+              </p>
+              <p>We're currently accepting new clients.</p>
+            </div>
             <div className="flex items-center col-span-3">
               <AboutSidebar />
             </div>

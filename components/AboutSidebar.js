@@ -4,8 +4,8 @@ import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 
 const AboutSidebarHomePage = () => (
-  <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
-    <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl sm:py-4 md:text-4xl">
+  <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-20 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
+    <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl md:text-4xl">
       Steven Terner, LLC
     </h2>
     <div className="flex w-full space-x-2 justify-evenly">
@@ -14,7 +14,7 @@ const AboutSidebarHomePage = () => (
       <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
       <SocialIcon kind="twitter" href={siteMetadata.twitter} />
     </div>
-    <div className="sm:py-4">
+    <div className="">
       <Link href="/contact" className="text-gray-100">
         <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark hover:bg-green-light hover:text-gray-900">
           Get in touch
@@ -52,7 +52,7 @@ const AboutSidebar = ({ photo = false }) => {
             <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
             <SocialIcon kind="twitter" href={siteMetadata.twitter} />
           </div>
-          <div className="sm:py-4">
+          <div className="">
             <Link href="/contact" className="text-gray-100">
               <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark hover:bg-green-light hover:text-gray-900">
                 Get in touch
