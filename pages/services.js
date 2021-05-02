@@ -34,7 +34,7 @@ export default function Services() {
         </SectionContainer>
       </div>
       <SectionContainer fullWidth={true}>
-        <div className="grid grid-cols-1 gap-16 px-16 py-32 text-xl md:text-2xl lg:text-xl lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 py-16 text-xl divide-y-2 xl:py-32 xl:px-16 md:px-48 lg:gap-4 xl:gap-16 md:text-2xl lg:text-base lg:grid-cols-3">
           <UL>
             <LI>
               <Twemoji emoji="🌏" />
