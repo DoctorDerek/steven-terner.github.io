@@ -36,8 +36,9 @@ export default function DebugBreakpoints() {
   }
   const { width } = useWindowDimensions()
   return (
-    <div className="text-3xl text-center">
-      Current breakpoint is <span className="font-bold sm:hidden">mobile</span>
+    <div className="fixed inset-x-0 top-0 z-10 text-3xl text-center bg-gray-500">
+      <span className="hidden font-bold sm:inline">Current breakpoint is </span>
+      <span className="font-bold sm:hidden">mobile</span>
       <span className="hidden font-bold sm:inline md:hidden">small</span>
       <span className="hidden font-bold md:inline lg:hidden">medium</span>
       <span className="hidden font-bold lg:inline xl:hidden">large</span>
