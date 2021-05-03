@@ -28,7 +28,7 @@ export default function Portfolio() {
             <Link href="/contact">get in touch</Link>.
           </p>
           <hr />
-          <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
+          <h2 className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl">
             Publicly Available Work
           </h2>
           <p className="text-lg xl:text-2xl xl:leading-8">
@@ -53,7 +53,7 @@ export default function Portfolio() {
           <hr />
           <div className="float-right">
             <Link href="https://iranianeconomicnews.com/">
-              <div className="grid w-60 h-60">
+              <div className="grid w-20 h-20 sm:w-40 sm:h-40 md:w-60 md:h-60">
                 <Image
                   src="/static/images/IEN-logo.png"
                   alt="The logo for Iranian Economic News is based on the Iranian flag."
@@ -61,7 +61,7 @@ export default function Portfolio() {
               </div>
             </Link>
           </div>
-          <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
+          <h2 className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl">
             Iranian Economic News
           </h2>
           <p className="text-lg xl:text-2xl xl:leading-8">
@@ -72,7 +72,7 @@ export default function Portfolio() {
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             Iranian Economic News features analysis of current trends in the
-            economy of Iran, including the COVID-19 pandemic.
+            economy of Iran, including COVID-19.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             {" "}
@@ -100,25 +100,22 @@ export default function Portfolio() {
         </article>
       </SectionContainer>
       <div className="mt-12 bg-gradient-to-b from-blue-light to-blue-dark">
-        <SectionContainer fullWidth={true}>
-          <div className="grid grid-cols-6 px-8 py-8 space-y-6 sm:space-y-0 sm:px-16 sm:py-32">
-            <div className="flex flex-col max-w-6xl col-span-3">
-              <h2 className="font-serif text-xl font-bold sm:text-2xl">
+        <SectionContainer>
+          <div className="grid grid-cols-1 py-12 space-y-12 sm:space-y-16 md:grid-cols-7 md:space-y-0 sm:py-16 md:py-20 lg:py-24 xl:py-32">
+            <div className="flex flex-col max-w-6xl col-span-4">
+              <h2 className="font-serif text-2xl font-bold">
                 Recent Projects Include:
               </h2>{" "}
-              <ul className="text-lg list-disc">
-                <li>-Due Diligence on Israeli companies</li>
-                <li>-Iranian Economic and Political Forecasting</li>
-                <li>
-                  {" "}
-                  -Comparative Assessment of Regional Fintech Ecosystems{" "}
-                </li>
-                <li>-Historical Reports on Religious Communities</li>
-                <li>-NIMA Banking System</li>
-                <li>-FATF and GDPR Compliance</li>
-                <li>-Data Policy Modernization</li>
-                <li>-Negative Press Investigations</li>
-                <li>-Litigation Reports</li>
+              <ul className="ml-6 text-xl list-disc">
+                <li>Due Diligence on Israeli Companies</li>
+                <li>Iranian Economic and Political Forecasting</li>
+                <li>Comparative Assessment of Regional Fintech Ecosystems</li>
+                <li>Historical Reports on Religious Communities</li>
+                <li>NIMA Banking System</li>
+                <li>FATF and GDPR Compliance</li>
+                <li>Data Policy Modernization</li>
+                <li>Negative Press Investigations</li>
+                <li>Litigation Reports</li>
               </ul>
             </div>
             <AboutSidebar />
