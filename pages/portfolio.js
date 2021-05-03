@@ -14,7 +14,7 @@ export default function Portfolio() {
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}
       />
-      <article className="mx-auto space-y-6 prose">
+      <article className="mx-auto space-y-6">
         <SectionContainer>
           <p>
             My portfolio showcases my writing analyzing complex geopolitical
