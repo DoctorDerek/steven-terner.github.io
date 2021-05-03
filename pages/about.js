@@ -4,6 +4,8 @@ import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
 import Image from "@/components/Image"
+import Twemoji from "@/components/Twemoji"
+import Link from "@/components/Link"
 
 /*
 I just updated my LinkedIn with the following paragraphs in the About section. So if you are looking for more content, feel free to draw it from here:
@@ -161,16 +163,34 @@ export default function About() {
         </div>
       </SectionContainer>
       <SectionContainer>
-        <ul className="grid grid-cols-2 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300 rounded-3xl">
-          <h3 className="col-span-2 mb-6 font-serif text-3xl">
+        <ul className="grid grid-cols-1 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300 rounded-3xl sm:grid-cols-2">
+          <h3 className="col-span-1 font-serif text-3xl sm:col-span-2">
             Consulting Services
           </h3>
-          <li>• Written geopolitical analysis</li>
-          <li>• Foreign media monitoring</li>
-          <li>• Due diligence support</li>
-          <li>• Training and lectures</li>
-          <li className="mt-6 font-serif">View all service offerings ➡</li>
-          <li className="mt-6 font-serif">Read sample publications ➡</li>
+          <li className="flex items-center mt-6 space-x-2 sm:col-span-1">
+            <Twemoji emoji="📝" size="w-8 h-8" />
+            <span>Written geopolitical analysis</span>
+          </li>
+          <li className="flex items-center mt-6 space-x-2">
+            <Twemoji emoji="📰" size="w-8 h-8" />
+            <span>Foreign media monitoring</span>
+          </li>
+          <li className="flex items-center mt-6 space-x-2">
+            <Twemoji emoji="🔍" size="w-8 h-8" />
+            <span>Due diligence support</span>
+          </li>
+          <li className="flex items-center mt-6 space-x-2">
+            <Twemoji emoji="📕" size="w-8 h-8" />
+            <span>Training and lectures</span>
+          </li>
+          <li className="flex items-center mt-6 space-x-2 font-serif">
+            <Link href="/services">View all service offerings</Link>
+            <Twemoji emoji="➡" size="w-6 h-6" />
+          </li>
+          <li className="flex items-center mt-6 space-x-2 font-serif">
+            <Link href="/portfolio">Read sample publications</Link>
+            <Twemoji emoji="➡" size="w-6 h-6" />
+          </li>
         </ul>
       </SectionContainer>
     </>
