@@ -48,10 +48,7 @@ export default function DebugBreakpoints() {
       )}
     >
       <button
-        className={
-          (stickyFixedPosition ? "bg-red-100" : "bg-red-800",
-          "absolute right-1")
-        }
+        className={"absolute right-1"}
         onClick={() => setStickyFixedPosition((state) => !state)}
       >
         {stickyFixedPosition ? "sticky" : "fixed"}
