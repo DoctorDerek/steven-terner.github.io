@@ -4,6 +4,7 @@ import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
 import Link from "@/components/Link"
+import Image from "@/components/Image"
 
 export default function Portfolio() {
   return (
@@ -14,73 +15,116 @@ export default function Portfolio() {
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}
       />
-      <article className="mx-auto space-y-6">
-        <SectionContainer>
-          <p>
-            My portfolio showcases my writing analyzing complex geopolitical
+      <SectionContainer>
+        <article className="mx-auto space-y-12">
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            Our portfolio showcase our writing analyzing complex geopolitical
             situations and international business opportunities in the Middle
             East and Central/West Asia.
           </p>
-          <p>
-            I’m available for immediate hire for{" "}
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            We're available for immediate hire for{" "}
             <Link href="/services">consulting services</Link>. Please{" "}
             <Link href="/contact">get in touch</Link>.
           </p>
-        </SectionContainer>
-        <hr />
-        <SectionContainer>
-          <h3>Publicly Available Work</h3>
-          <p>
-            A selection of my written analysis about the Middle East and
+          <hr />
+          <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
+            Publicly Available Work
+          </h2>
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            A selection of our written analysis about the Middle East and
             Central/West Asia.{" "}
           </p>
-          <p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://www.fairobserver.com/region/middle_east_north_africa/steven-terner-us-interests-syria-russia-turkey-iran-isis-news-13211/">
               “How the US Can Win Back Clout in Syria”
-            </Link>{" "}
-            in <em>Fair Observer</em>, October 6, 2020
+            </Link>
+            <br />
+            in <em>Fair Observer</em>. October 6, 2020.
           </p>{" "}
-          <p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://www.atlanticcouncil.org/blogs/iransource/irans-muddled-relationship-with-cryptocurrency-is-self-inflicted/">
               “Iran’s muddled relationship with cryptocurrency is
               self-inflicted”
             </Link>
-            in <em>Atlantic Council</em>, June 18, 2020
+            <br />
+            <em>Atlantic Council</em>. June 18, 2020.
           </p>
-        </SectionContainer>
-        <SectionContainer>
-          <h3> Iranian Economic News </h3>
-          <p>
-            Analysis of current trends in the economy of Iran, including
-            COVID-19.
+          <hr />
+          <div className="float-right">
+            <Link href="https://iranianeconomicnews.com/">
+              <div className="grid w-60 h-60">
+                <Image
+                  src="/static/images/IEN-logo.png"
+                  alt="The logo for Iranian Economic News is based on the Iranian flag."
+                />
+              </div>
+            </Link>
+          </div>
+          <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
+            Iranian Economic News
+          </h2>
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            <Link href="https://iranianeconomicnews.com/">
+              Iranian Economic News
+            </Link>{" "}
+            is a free email newsletter by Steven Terner.
           </p>
-          <p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            Iranian Economic News features analysis of current trends in the
+            economy of Iran, including the COVID-19 pandemic.
+          </p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             {" "}
             <Link href="https://steventerner.files.wordpress.com/2020/11/ien-may-2020.pdf">
               “Corona is the latest battleground between Rouhani and the IRGC”
             </Link>{" "}
-            (PDF) in <em>Iranian Economic News</em>, May 1, 2020
+            (PDF)
+            <br />
+            <em>Iranian Economic News</em>. May 1, 2020.
           </p>
-          <p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://steventerner.files.wordpress.com/2020/11/ien-january-2020.pdf">
               “Economists Make Policy Recommendations in Open Letter to
               President”
-            </Link>
-            (PDF) in <em>Iranian Economic News</em>, January 20, 2020
+            </Link>{" "}
+            (PDF) <br />
+            <em>Iranian Economic News</em>. January 20, 2020.
           </p>
-          <p>
-            Subscribe to the Iranian Economic News newsletter to receive the
-            latest insights from Steven Terner, LLC.
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            <Link href="https://iranianeconomicnews.com/subscribe-free">
+              Subscribe free to Iranian Economic News
+            </Link>{" "}
+            to receive the latest insights on Iran.
           </p>
-        </SectionContainer>
-      </article>
-      <SectionContainer>
-        <h2>
-          Let us help you act on business opportunities in the Middle East and
-          Central/West Asia.
-        </h2>
+        </article>
       </SectionContainer>
-      <AboutSidebar />
+      <div className="mt-12 bg-gradient-to-b from-blue-light to-blue-dark">
+        <SectionContainer fullWidth={true}>
+          <div className="grid grid-cols-6 px-8 py-8 space-y-6 sm:space-y-0 sm:px-16 sm:py-32">
+            <div className="flex flex-col max-w-6xl col-span-3">
+              <h2 className="font-serif text-xl font-bold sm:text-2xl">
+                Recent Projects Include:
+              </h2>{" "}
+              <ul className="text-lg list-disc">
+                <li>-Due Diligence on Israeli companies</li>
+                <li>-Iranian Economic and Political Forecasting</li>
+                <li>
+                  {" "}
+                  -Comparative Assessment of Regional Fintech Ecosystems{" "}
+                </li>
+                <li>-Historical Reports on Religious Communities</li>
+                <li>-NIMA Banking System</li>
+                <li>-FATF and GDPR Compliance</li>
+                <li>-Data Policy Modernization</li>
+                <li>-Negative Press Investigations</li>
+                <li>-Litigation Reports</li>
+              </ul>
+            </div>
+            <AboutSidebar />
+          </div>
+        </SectionContainer>
+      </div>
     </>
   )
 }
