@@ -3,6 +3,7 @@ import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
+import Link from "@/components/Link"
 
 export default function Portfolio() {
   return (
@@ -13,7 +14,7 @@ export default function Portfolio() {
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}
       />
-      <article className="mx-auto space-y-6">
+      <article className="mx-auto space-y-6 prose">
         <SectionContainer>
           <p>
             My portfolio showcases my writing analyzing complex geopolitical
@@ -21,8 +22,9 @@ export default function Portfolio() {
             East and Central/West Asia.
           </p>
           <p>
-            I’m available for immediate hire for consulting services. Please get
-            in touch.
+            I’m available for immediate hire for{" "}
+            <Link href="/services">consulting services</Link>. Please{" "}
+            <Link href="/contact">get in touch</Link>.
           </p>
         </SectionContainer>
         <hr />
@@ -33,12 +35,17 @@ export default function Portfolio() {
             Central/West Asia.{" "}
           </p>
           <p>
-            “How the US Can Win Back Clout in Syria” in Fair Observer, Oct 06,
-            2020
+            <Link href="https://www.fairobserver.com/region/middle_east_north_africa/steven-terner-us-interests-syria-russia-turkey-iran-isis-news-13211/">
+              “How the US Can Win Back Clout in Syria”
+            </Link>{" "}
+            in <em>Fair Observer</em>, October 6, 2020
           </p>{" "}
           <p>
-            “Iran’s muddled relationship with cryptocurrency is self-inflicted”
-            in Atlantic Council, Jun 18, 2020
+            <Link href="https://www.atlanticcouncil.org/blogs/iransource/irans-muddled-relationship-with-cryptocurrency-is-self-inflicted/">
+              “Iran’s muddled relationship with cryptocurrency is
+              self-inflicted”
+            </Link>
+            in <em>Atlantic Council</em>, June 18, 2020
           </p>
         </SectionContainer>
         <SectionContainer>
@@ -49,23 +56,31 @@ export default function Portfolio() {
           </p>
           <p>
             {" "}
-            “Corona is the latest battleground between Rouhani and the IRGC”
-            (PDF) in Iranian Economic News, May 1, 2020
+            <Link href="https://steventerner.files.wordpress.com/2020/11/ien-may-2020.pdf">
+              “Corona is the latest battleground between Rouhani and the IRGC”
+            </Link>{" "}
+            (PDF) in <em>Iranian Economic News</em>, May 1, 2020
           </p>
           <p>
-            {" "}
-            “Economists Make Policy Recommendations in Open Letter to President”
-            (PDF) in Iranian Economic News, Jan 20, 2020
+            <Link href="https://steventerner.files.wordpress.com/2020/11/ien-january-2020.pdf">
+              “Economists Make Policy Recommendations in Open Letter to
+              President”
+            </Link>
+            (PDF) in <em>Iranian Economic News</em>, January 20, 2020
+          </p>
+          <p>
+            Subscribe to the Iranian Economic News newsletter to receive the
+            latest insights from Steven Terner, LLC.
           </p>
         </SectionContainer>
-        <SectionContainer>
-          <h2>
-            Let me help you act on business opportunities in the Middle East and
-            Central/West Asia.
-          </h2>
-          <AboutSidebar />
-        </SectionContainer>
       </article>
+      <SectionContainer>
+        <h2>
+          Let us help you act on business opportunities in the Middle East and
+          Central/West Asia.
+        </h2>
+      </SectionContainer>
+      <AboutSidebar />
     </>
   )
 }
