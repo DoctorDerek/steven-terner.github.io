@@ -4,7 +4,6 @@ import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
 import Image from "@/components/Image"
-import { useState } from "react"
 import { useForm, ValidationError } from "@formspree/react"
 
 function ContactForm() {
@@ -67,32 +66,6 @@ export default function Contact() {
       </div>
     )
   }
-  const [query, setQuery] = useState({
-    name: "",
-    email: "",
-  })
-
-  // Update inputs value
-  const handleParam = () => (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setQuery((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }))
-  }
-  // Form Submit function
-  const formSubmit = (e) => {
-    e.preventDefault()
-    const formData = new FormData()
-    Object.entries(query).forEach(([key, value]) => {
-      formData.append(key, value)
-    })
-    fetch("https://getform.io/f/3391bf8b-9b28-430c-b394-cd69095451ae", {
-      method: "POST",
-      body: formData,
-    }).then(() => setQuery({ name: "", email: "", message: "" }))
-  }
   return (
     <>
       <PageSeo
@@ -115,64 +88,6 @@ export default function Contact() {
           <AboutSidebar />
         </div>
       </SectionContainer>
-      <h2>Getform</h2>
-      <form
-        acceptCharset="UTF-8"
-        action="https://formspree.io/f/xrgreylk"
-        method="POST"
-      >
-        {/*https://getform.io/f/3391bf8b-9b28-430c-b394-cd69095451ae*/}
-        <input type="email" name="email" placeholder="Your Email" />
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="text" name="message" placeholder="Your Message" />
-        <button type="submit">Send</button>
-      </form>
-      <div className="App">
-        <h1>NextJS form using Getform.io</h1>
-        <form onSubmit={formSubmit}>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required
-              placeholder="Name"
-              className="form-control"
-              value={query.name}
-              onChange={handleParam()}
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              required
-              placeholder="Email"
-              className="form-control"
-              value={query.email}
-              onChange={handleParam()}
-            />
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <input
-              type="text"
-              name="message"
-              id="message"
-              required
-              placeholder="Message"
-              className="form-control"
-              value={query.message}
-              onChange={handleParam()}
-            />
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-      <hr />
       <h2>Formspree</h2>
       <ContactForm />
       <SectionContainer fullWidth={true} className="text-gray-900">
