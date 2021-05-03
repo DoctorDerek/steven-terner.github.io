@@ -13,59 +13,45 @@ function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="email">Email Address</label>
-      <input id="email" type="email" name="email" />
+      <label htmlFor="name">
+        <strong>Name</strong>{" "}
+        <span className="text-xl md:text-2xl">(required)</span>
+      </label>
+      <input
+        type="text"
+        className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
+        name="email"
+        id="email"
+      />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <textarea id="message" name="message" />
+      <label htmlFor="email">
+        <strong>Email</strong>{" "}
+        <span className="text-xl md:text-2xl">(required)</span>
+      </label>
+      <input
+        type="text"
+        className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
+        name="name"
+        id="name"
+      />
+      <label htmlFor="message">
+        <strong>Name</strong>{" "}
+        <span className="text-xl md:text-2xl">(required)</span>
+      </label>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
+      <input
+        type="textarea"
+        className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-xl h-60"
+        placeholder="Let me know how I can help"
+        name="message"
+        id="message"
+      />
+      {/*padding-bottom for vertical alignment of placeholder to top*/}
     </form>
   )
 }
 
 export default function Contact() {
-  const Input = ({
-    field = () => {
-      throw new Error("Argument field is required in Input component")
-    },
-    placeholder = "default",
-    type = "text",
-  }) => {
-    const HEIGHTS = {
-      text: "h-10",
-      textarea: "h-60 pb-48",
-      // padding-bottom for vertical alignment of placeholder to top
-    }
-    const height = HEIGHTS[type]
-    if (!height) {
-      throw new Error("Unsupported type in Input component")
-    }
-
-    const name = field.toLocaleLowerCase()
-    const nameUpperCase = name[0].toLocaleUpperCase() + name.slice(1)
-    if (placeholder === "default") {
-      placeholder = nameUpperCase
-    }
-    const defaultClass =
-      "w-full border-2 border-black border-solid rounded-xl align-top pl-1"
-    const className = defaultClass + " " + height
-
-    return (
-      <div>
-        <label htmlFor={name}>
-          <strong>{nameUpperCase}</strong>{" "}
-          <span className="text-xl md:text-2xl">(required)</span>
-        </label>
-
-        <input
-          type="textarea"
-          {...{ placeholder, name, id: name, className }}
-        />
-      </div>
-    )
-  }
   return (
     <>
       <PageSeo
@@ -88,18 +74,10 @@ export default function Contact() {
           <AboutSidebar />
         </div>
       </SectionContainer>
-      <h2>Formspree</h2>
-      <ContactForm />
       <SectionContainer fullWidth={true} className="text-gray-900">
         <div className="grid grid-cols-1 gap-8 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 xl:grid-cols-8">
           <div className="col-span-4 space-y-6 text-2xl leading-relaxed md:text-3xl">
-            <Input field="Name" />
-            <Input field="Email" />
-            <Input
-              field="Message"
-              type="textarea"
-              placeholder="Let me know how I can help"
-            />
+            <ContactForm />
           </div>
           <div className="grid col-span-4 h-96 xl:h-full">
             <Image
