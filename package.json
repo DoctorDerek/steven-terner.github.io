@@ -37,7 +37,8 @@
     "remark-code-titles": "^0.1.1",
     "remark-footnotes": "^2.0.0",
     "remark-math": "^4.0.0",
-    "remark-slug": "^6.0.0"
+    "remark-slug": "^6.0.0",
+    "tinytime": "^0.2.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.2.0",
