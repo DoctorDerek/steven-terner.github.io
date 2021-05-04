@@ -6,7 +6,7 @@ export default function ContactForm() {
     return <p>Thanks for joining!</p>
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id="get-in-touch">
       <label htmlFor="name">
         <strong>Name</strong>{" "}
         <span className="text-xl md:text-2xl">(required)</span>
