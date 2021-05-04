@@ -16,6 +16,7 @@ export default function ContactForm() {
         className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
         name="email"
         id="email"
+        placeholder="Steven Terner, LLC"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <label htmlFor="email">
@@ -27,16 +28,17 @@ export default function ContactForm() {
         className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
         name="name"
         id="name"
+        placeholder="hello@gmail.com"
       />
       <label htmlFor="message">
-        <strong>Name</strong>{" "}
+        <strong>Message</strong>{" "}
         <span className="text-xl md:text-2xl">(required)</span>
       </label>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <input
         type="textarea"
-        className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-xl h-60"
-        placeholder="Let me know how I can help"
+        className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-3xl h-60"
+        placeholder="Let me know how we can help"
         name="message"
         id="message"
       />
