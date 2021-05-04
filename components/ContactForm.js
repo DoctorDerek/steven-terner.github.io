@@ -13,7 +13,7 @@ export default function ContactForm() {
       </label>
       <input
         type="text"
-        className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
+        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl"
         name="email"
         id="email"
         placeholder="Steven Terner, LLC"
@@ -25,7 +25,7 @@ export default function ContactForm() {
       </label>
       <input
         type="text"
-        className="w-full h-10 pl-1 align-top border-2 border-black border-solid rounded-xl"
+        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl"
         name="name"
         id="name"
         placeholder="hello@gmail.com"
@@ -38,7 +38,7 @@ export default function ContactForm() {
       <input
         type="textarea"
         className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-3xl h-60"
-        placeholder="Let us know how we can help"
+        placeholder="Let us know how we can help 💼"
         name="message"
         id="message"
       />
