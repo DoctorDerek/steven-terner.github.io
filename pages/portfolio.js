@@ -18,7 +18,7 @@ export default function Portfolio() {
       <SectionContainer>
         <article className="mx-auto space-y-12">
           <p className="text-lg xl:text-2xl xl:leading-8">
-            Our portfolio showcase our writing analyzing complex geopolitical
+            Our portfolio showcases our writing analyzing complex geopolitical
             situations and international business opportunities in the Middle
             East and Central/West Asia.
           </p>

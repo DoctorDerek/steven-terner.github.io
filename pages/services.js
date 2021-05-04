@@ -105,11 +105,11 @@ export default function Services() {
       </SectionContainer>
       <div className="text-gray-100 bg-black">
         <SectionContainer fullWidth={true}>
-          <div className="grid grid-cols-1 px-16 py-32 text-xl leading-relaxed sm:text-2xl lg:grid-cols-6">
+          <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
             {/*Consulting and business intelligence services include due
               diligence research, economic analysis, political forecasting, and
             cultural liaising.*/}
-            <div className="col-span-3 px-2 py-16 space-y-8">
+            <div className="flex flex-col justify-between max-w-xl col-span-4 px-2 mb-12 space-y-8 md:mb-0">
               <p>
                 Steven Terner, LLC was founded to provide multi-linguistic
                 business intelligence consulting to help you meet your goals.

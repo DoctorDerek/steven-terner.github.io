@@ -4,48 +4,9 @@ import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
 import Image from "@/components/Image"
+import ContactForm from "@/components/ContactForm"
 
 export default function Contact() {
-  const Input = ({
-    field = () => {
-      throw new Error("Argument field is required in Input component")
-    },
-    placeholder = "default",
-    type = "text",
-  }) => {
-    const HEIGHTS = {
-      text: "h-10",
-      textarea: "h-60 pb-48",
-      // padding-bottom for vertical alignment of placeholder to top
-    }
-    const height = HEIGHTS[type]
-    if (!height) {
-      throw new Error("Unsupported type in Input component")
-    }
-
-    const name = field.toLocaleLowerCase()
-    const nameUpperCase = name[0].toLocaleUpperCase() + name.slice(1)
-    if (placeholder === "default") {
-      placeholder = nameUpperCase
-    }
-    const defaultClass =
-      "w-full border-2 border-black border-solid rounded-xl align-top pl-1"
-    const className = defaultClass + " " + height
-
-    return (
-      <div>
-        <label htmlFor={name}>
-          <strong>{nameUpperCase}</strong>{" "}
-          <span className="text-xl md:text-2xl">(required)</span>
-        </label>
-
-        <input
-          type="textarea"
-          {...{ placeholder, name, id: name, className }}
-        />
-      </div>
-    )
-  }
   return (
     <>
       <PageSeo
@@ -56,12 +17,12 @@ export default function Contact() {
       <PageTitle>Contact</PageTitle>
       <SectionContainer fullWidth={true} className="text-gray-900 bg-blue-pale">
         <div className="grid grid-cols-1 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 md:grid-cols-8">
-          <div className="flex flex-col items-center justify-center col-span-5 py-16 space-y-16 leading-relaxed text-center">
+          <div className="flex flex-col items-center justify-between col-span-5 pb-16 pr-4 space-y-16 leading-relaxed text-center border-gray-400 border-solid md:border-r-2 sm:pr-6 md:pr-8 lg:pr-16 md:pb-0 md:space-y-0">
             <h2 className="font-serif text-3xl font-bold">
-              I’m looking forward to working with you.
+              We're looking forward to working with you.
             </h2>
             <h3 className="text-2xl">
-              For consulting opportunities, please contact me using the form
+              For consulting opportunities, please contact us using the form
               below.
             </h3>
           </div>
@@ -71,18 +32,13 @@ export default function Contact() {
       <SectionContainer fullWidth={true} className="text-gray-900">
         <div className="grid grid-cols-1 gap-8 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 xl:grid-cols-8">
           <div className="col-span-4 space-y-6 text-2xl leading-relaxed md:text-3xl">
-            <Input field="Name" />
-            <Input field="Email" />
-            <Input
-              field="Message"
-              type="textarea"
-              placeholder="Let me know how I can help"
-            />
+            <ContactForm />
           </div>
           <div className="grid col-span-4 h-96 xl:h-full">
             <Image
               alt="ocean"
               src="/static/images/kyle-glenn-nxt5htlmlge-unsplash.jpg"
+              className="rounded-3xl"
             />
           </div>
         </div>
