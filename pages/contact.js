@@ -19,10 +19,10 @@ export default function Contact() {
         <div className="grid grid-cols-1 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 md:grid-cols-8">
           <div className="flex flex-col items-center justify-center col-span-5 py-16 space-y-16 leading-relaxed text-center">
             <h2 className="font-serif text-3xl font-bold">
-              I’m looking forward to working with you.
+              We're looking forward to working with you.
             </h2>
             <h3 className="text-2xl">
-              For consulting opportunities, please contact me using the form
+              For consulting opportunities, please contact us using the form
               below.
             </h3>
           </div>
