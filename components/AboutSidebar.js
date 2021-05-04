@@ -14,8 +14,8 @@ const useCurrentPath = () => {
 const AboutSidebarHomePage = () => {
   const currentPagePath = useCurrentPath()
   return (
-    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-20 border-2 border-gray-800 border-solid text-md rounded-3xl sm:col-span-3 sm:border-0 sm:py-0 sm:px-0">
-      <h2 className="font-serif text-4xl font-bold text-center sm:text-3xl md:text-4xl">
+    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-20 border-2 border-gray-800 border-solid sm:px-8 text-md rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0 md:pl-8 xl:pl-10">
+      <h2 className="font-serif text-4xl font-bold text-center">
         Steven Terner, LLC
       </h2>
       <div className="flex w-full space-x-2 justify-evenly">

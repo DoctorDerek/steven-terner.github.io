@@ -63,8 +63,8 @@ export default function Home() {
       </div>
       <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
         <SectionContainer>
-          <div className="grid grid-cols-1 space-y-6 sm:grid-cols-8 sm:space-y-0">
-            <div className="flex flex-col justify-between col-span-1 text-lg sm:col-span-4 xl:text-xl">
+          <div className="grid grid-cols-1 space-y-6 sm:pr-2 md:pr-0 md:grid-cols-8 md:space-y-0">
+            <div className="flex flex-col justify-between col-span-1 text-lg md:col-span-4 xl:text-xl">
               <h2 className="py-4 font-serif text-3xl font-bold md:text-4xl">
                 About
               </h2>
