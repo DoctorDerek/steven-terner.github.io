@@ -38,7 +38,7 @@ export default function ContactForm() {
       <input
         type="textarea"
         className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-3xl h-60"
-        placeholder="Let me know how we can help"
+        placeholder="Let us know how we can help"
         name="message"
         id="message"
       />
