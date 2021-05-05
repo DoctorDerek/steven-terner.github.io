@@ -122,7 +122,7 @@ export default function About() {
       <PageTitle>About</PageTitle>
       <SectionContainer>
         <div className="flex flex-col-reverse justify-between md:flex-row md:space-x-8 lg:space-x-12">
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <AboutSidebar photo={true} />
           </div>
 
@@ -196,7 +196,7 @@ export default function About() {
         </ul>
       </SectionContainer>
       <SectionContainer>
-        <div className="md:hidden">
+        <div className="mt-16 md:hidden">
           <AboutSidebar />
         </div>
       </SectionContainer>
