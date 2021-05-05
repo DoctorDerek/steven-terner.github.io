@@ -11,9 +11,13 @@ const HeaderNavLinks = ({ location = "header" }) => {
     <>
       {headerNavLinks.map((link) => {
         const className = classNames(
-          currentPagePath === link ? "underline" : "no-underline",
+          // underline active page in nav menu
+          (link.href.length > 1 && currentPagePath.includes(link.href)) ||
+            currentPagePath === link.href // handle homepage
+            ? "underline"
+            : "no-underline",
           location === "footer" ? "text-gray-900" : "text-green-dark",
-          "px-3 py-1 no-underline rounded-3xl xl:px-8 dark:text-gray-100 hover:underline"
+          "px-3 py-1 rounded-3xl xl:px-8 dark:text-gray-100 hover:underline"
         )
         return (
           <Link key={link.title} href={link.href} className={className}>
