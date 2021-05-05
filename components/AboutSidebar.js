@@ -7,7 +7,7 @@ import { useCurrentPath } from "@/components/useCurrentPath"
 const AboutSidebarHomePage = () => {
   const currentPagePath = useCurrentPath()
   return (
-    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-20 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
+    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
       <h2 className="font-serif text-4xl font-bold text-center sm:py-4">
         Steven Terner, LLC
       </h2>
@@ -41,7 +41,7 @@ const AboutSidebar = ({ photo = false }) => {
     return (
       <>
         <div className="hidden md:block">
-          <div className="flex flex-col items-center max-w-sm mx-auto space-y-12 rounded-3xl">
+          <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
             <div className="grid w-48 h-48 border-2 border-gray-800 border-solid rounded-full lg:w-60 lg:h-60 xl:w-72 xl:h-72">
               <Image
                 alt="ocean"
