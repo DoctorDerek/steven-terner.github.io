@@ -11,14 +11,14 @@ const components = {
   linkedin: Linkedin,
   twitter: Twitter,
 }
-
+/*
 const socialColors = {
   twitter: "#1DA1F2",
   linkedin: "#2867B2",
   medium: "#12100E",
   email: "#206a5d",
 }
-
+*/
 const SocialIcon = ({
   kind = () => {
     "Missing required kind prop in SocialIcon"
