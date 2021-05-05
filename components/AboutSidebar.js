@@ -22,7 +22,7 @@ const AboutSidebarHomePage = () => {
           href={
             currentPagePath.includes("/contact")
               ? "/contact#get-in-touch"
-              : "contact"
+              : "/contact"
           }
           className="text-gray-100"
         >
