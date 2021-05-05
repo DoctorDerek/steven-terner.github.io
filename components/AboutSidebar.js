@@ -26,7 +26,7 @@ const AboutSidebarHomePage = () => {
           }
           className="text-gray-100"
         >
-          <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark border-transparent border-2 border-solid hover:border-gray-100">
+          <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark border-transparent border-2 border-solid hover:border-gray-100 hover:underline">
             Get in touch
           </div>
         </Link>
