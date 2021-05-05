@@ -18,7 +18,7 @@ const HeaderNavLinks = ({ location = "header" }) => {
             ? "underline"
             : "no-underline",
           location === "footer" ? "text-gray-900" : "text-green-dark",
-          "px-3 py-1 rounded-3xl dark:text-gray-100 hover:underline"
+          "px-1 py-1 rounded-3xl dark:text-gray-100 hover:underline"
         )
         return (
           <Link key={link.title} href={link.href} className={className}>
