@@ -35,7 +35,7 @@ const SocialIcon = ({
   return (
     <a
       className={classNames(
-        "text-sm text-gray-100 rounded-full",
+        "text-sm text-gray-100 rounded-full border-2 border-transparent hover:border-gray-100 border-solid",
         socialColors[kind]
       )}
       target="_blank"
