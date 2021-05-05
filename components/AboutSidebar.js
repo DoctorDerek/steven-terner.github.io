@@ -65,7 +65,7 @@ const AboutSidebar = ({ photo = false }) => {
           </div>
           <div>
             <Link href="/contact" className="text-gray-100">
-              <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark hover:bg-green-light hover:text-gray-900">
+              <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark border-transparent border-2 border-solid hover:border-gray-100">
                 Get in touch
               </div>
             </Link>
