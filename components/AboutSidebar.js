@@ -2,14 +2,7 @@ import siteMetadata from "@/data/siteMetadata"
 import Link from "@/components/Link"
 import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
-import { useRouter } from "next/router"
-const useCurrentPath = () => {
-  // fetch current page URL
-  const router = useRouter() // next/router
-  const currentPagePath = router.asPath
-
-  return currentPagePath
-}
+import { useCurrentPath } from "@/components/useCurrentPath"
 
 const AboutSidebarHomePage = () => {
   const currentPagePath = useCurrentPath()
