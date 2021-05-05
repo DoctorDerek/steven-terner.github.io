@@ -122,7 +122,9 @@ export default function About() {
       <PageTitle>About</PageTitle>
       <SectionContainer>
         <div className="flex flex-col-reverse justify-between md:flex-row md:space-x-8 lg:space-x-12">
-          <AboutSidebar photo={true} />
+          <div className="hidden md:block">
+            <AboutSidebar photo={true} />
+          </div>
 
           <div className="flex flex-col max-w-2xl space-y-6 xl:space-y-12 lg:space-y-9">
             <h2 className="font-serif text-2xl font-bold lg:text-3xl xl:text-4xl">
@@ -192,6 +194,11 @@ export default function About() {
             <Twemoji emoji="➡" size="w-6 h-6" />
           </li>
         </ul>
+      </SectionContainer>
+      <SectionContainer>
+        <div className="mt-16 md:hidden">
+          <AboutSidebar />
+        </div>
       </SectionContainer>
     </>
   )
