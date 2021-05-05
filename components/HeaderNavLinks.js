@@ -4,6 +4,7 @@ import { useCurrentPath } from "@/components/useCurrentPath"
 
 const classNames = (...classes) => classes.join(" ")
 
+// location can also be "footer"
 const HeaderNavLinks = ({ location = "header" }) => {
   const currentPagePath = useCurrentPath()
 
@@ -17,7 +18,7 @@ const HeaderNavLinks = ({ location = "header" }) => {
             ? "underline"
             : "no-underline",
           location === "footer" ? "text-gray-900" : "text-green-dark",
-          "px-3 py-1 rounded-3xl xl:px-8 dark:text-gray-100 hover:underline"
+          "px-3 py-1 rounded-3xl dark:text-gray-100 hover:underline"
         )
         return (
           <Link key={link.title} href={link.href} className={className}>
