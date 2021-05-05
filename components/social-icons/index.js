@@ -29,14 +29,14 @@ const SocialIcon = ({
     twitter: "bg-[#1DA1F2]",
     linkedin: "bg-[#2867B2]",
     medium: "bg-[#12100E]",
-    email: "bg-[#206a5d]",
+    email: "bg-[#206A5D]",
   }
 
   return (
     <a
       className={classNames(
         "text-sm text-gray-100 rounded-full",
-        socialColors.kind
+        socialColors[kind]
       )}
       target="_blank"
       rel="noopener noreferrer"
