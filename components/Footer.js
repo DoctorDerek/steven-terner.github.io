@@ -18,7 +18,7 @@ export default function Footer() {
           key="IEN"
           href="https://IranianEconomicNews.com"
           className={
-            "px-1 py-1 rounded-3xl dark:text-gray-100 hover:underline text-gray-900"
+            "xl:px-5 px-1 py-1 rounded-3xl dark:text-gray-100 hover:underline text-gray-900"
           }
         >
           Subscribe free to Iranian Economic News, an email newsletter by Steven
