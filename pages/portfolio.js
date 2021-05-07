@@ -61,14 +61,17 @@ export default function Portfolio() {
               </div>
             </Link>
           </div>
-          <h2 className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl">
+          <h2
+            className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl"
+            id="IEN"
+          >
             Iranian Economic News
           </h2>
           <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://iranianeconomicnews.com/">
               Iranian Economic News
             </Link>{" "}
-            is a free email newsletter by Steven Terner.
+            is our free email newsletter.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             Iranian Economic News features analysis of current trends in the
