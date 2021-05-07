@@ -2,18 +2,11 @@ import ThemeSwitch from "@/components/ThemeSwitch"
 import HeaderNavLinks from "@/components/HeaderNavLinks"
 import { useState } from "react"
 
-const classNames = (...classes) => classes.join(" ")
-
 export default function Header() {
   const [showNav, setShowNav] = useState(false)
   return (
-    <div className="flex flex-wrap items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-nowrap">
-      <div
-        className={classNames(
-          showNav ? "hidden sm:flex" : "flex flex-col flex-shrink-0",
-          "items-center justify-around w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded-3xl dark:border-gray-100 xl:text-2xl md:text-xl dark:bg-green-dark"
-        )}
-      >
+    <nav className="flex flex-wrap items-center justify-between w-full mt-8 mb-4 text-base leading-5 sm:flex-nowrap">
+      <div className="items-center justify-around hidden w-full py-1 mr-2 font-serif font-bold text-center border-2 border-gray-900 border-solid rounded-3xl dark:border-gray-100 xl:text-2xl md:text-xl dark:bg-green-dark sm:flex">
         <HeaderNavLinks />
       </div>
       <div className="sm:hidden">
@@ -48,6 +41,11 @@ export default function Header() {
         </button>
       </div>
       <ThemeSwitch />
-    </div>
+      {showNav && (
+        <nav className="flex flex-col flex-wrap w-full py-1 mt-8 mb-0 font-serif text-2xl font-bold text-center rounded xl:left-[-1.25rem] sm:left-[-0.25rem] relative sm:text-xl sm:mb-8 sm:flex-row sm:hidden">
+          <HeaderNavLinks location={"footer"} />
+        </nav>
+      )}
+    </nav>
   )
 }
