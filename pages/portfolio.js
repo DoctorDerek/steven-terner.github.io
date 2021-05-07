@@ -61,14 +61,17 @@ export default function Portfolio() {
               </div>
             </Link>
           </div>
-          <h2 className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl">
+          <h2
+            className="font-serif text-2xl font-bold md:text-3xl xl:text-4xl"
+            id="IEN"
+          >
             Iranian Economic News
           </h2>
           <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://iranianeconomicnews.com/">
               Iranian Economic News
             </Link>{" "}
-            is a free email newsletter by Steven Terner.
+            is our free email newsletter.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             Iranian Economic News features analysis of current trends in the
@@ -103,10 +106,10 @@ export default function Portfolio() {
         <SectionContainer>
           <div className="grid grid-cols-1 py-12 space-y-12 sm:space-y-16 md:grid-cols-7 md:space-y-0 sm:py-16 md:py-20 lg:py-24 xl:py-32">
             <div className="flex flex-col max-w-6xl col-span-4">
-              <h2 className="font-serif text-2xl font-bold">
+              <h2 className="font-serif text-2xl font-bold lg:text-3xl">
                 Recent Projects Include:
               </h2>{" "}
-              <ul className="ml-6 text-xl list-disc">
+              <ul className="ml-6 text-xl list-disc md:text-base lg:text-lg xl:text-xl">
                 <li>Due Diligence on Israeli Companies</li>
                 <li>Iranian Economic and Political Forecasting</li>
                 <li>Comparative Assessment of Regional Fintech Ecosystems</li>
