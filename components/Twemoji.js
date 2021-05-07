@@ -18,6 +18,7 @@ const Twemoji = ({ emoji = isRequired(), size = "w-16 h-16" }) => {
         src={`https://twemoji.maxcdn.com/v/latest/svg/${img}.svg`}
         alt={emoji}
       />
+      {/* For accessibility, non-decorative emojis need actual alt text */}
     </div>
   )
 }
