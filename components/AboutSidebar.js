@@ -7,7 +7,7 @@ import { useCurrentPath } from "@/components/useCurrentPath"
 const AboutSidebarHomePage = () => {
   const currentPagePath = useCurrentPath()
   return (
-    <div className="flex flex-col items-center max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
+    <div className="flex flex-col items-center justify-between max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
       <h2 className="font-serif text-4xl font-bold text-center sm:py-4">
         Steven Terner, LLC
       </h2>
