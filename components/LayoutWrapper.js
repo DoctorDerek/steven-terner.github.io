@@ -1,16 +1,19 @@
 // import siteMetadata from "@/data/siteMetadata"
 import Logo from "@/data/logo.svg"
-import Link from "./Link"
-import SectionContainer from "./SectionContainer"
-import Footer from "./Footer"
-import MobileNav from "./MobileNav"
-import ThemeSwitch from "./ThemeSwitch"
-import HeaderNavLinks from "./HeaderNavLinks"
+import Link from "@/components/Link"
+import SectionContainer from "@/components/SectionContainer"
+import Footer from "@/components/Footer"
+import MobileNav from "@/components/MobileNav"
+import ThemeSwitch from "@/components/ThemeSwitch"
+import HeaderNavLinks from "@/components/HeaderNavLinks"
 import dynamic from "next/dynamic"
 
-const DebugBreakpoints = dynamic(() => import("./DebugBreakpoints"), {
-  ssr: false,
-})
+const DebugBreakpoints = dynamic(
+  () => import("@/components/DebugBreakpoints"),
+  {
+    ssr: false,
+  }
+)
 
 const LayoutWrapper = ({ children }) => {
   return (
