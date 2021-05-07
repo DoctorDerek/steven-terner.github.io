@@ -106,10 +106,10 @@ export default function Portfolio() {
         <SectionContainer>
           <div className="grid grid-cols-1 py-12 space-y-12 sm:space-y-16 md:grid-cols-7 md:space-y-0 sm:py-16 md:py-20 lg:py-24 xl:py-32">
             <div className="flex flex-col max-w-6xl col-span-4">
-              <h2 className="font-serif text-2xl font-bold">
+              <h2 className="font-serif text-2xl font-bold lg:text-3xl">
                 Recent Projects Include:
               </h2>{" "}
-              <ul className="ml-6 text-xl list-disc">
+              <ul className="ml-6 text-xl list-disc md:text-base lg:text-lg xl:text-xl">
                 <li>Due Diligence on Israeli Companies</li>
                 <li>Iranian Economic and Political Forecasting</li>
                 <li>Comparative Assessment of Regional Fintech Ecosystems</li>
