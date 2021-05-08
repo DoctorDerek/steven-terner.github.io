@@ -103,7 +103,7 @@ export default function Services() {
           </UL>
         </div>
       </SectionContainer>
-      <div className="text-gray-100 bg-black">
+      <div className="text-gray-100 from-gray-900 to-gray-800 bg-gradient-to-b">
         <SectionContainer fullWidth={true}>
           <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
             {/*Consulting and business intelligence services include due
