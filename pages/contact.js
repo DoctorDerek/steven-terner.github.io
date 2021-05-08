@@ -26,7 +26,9 @@ export default function Contact() {
               below.
             </h3>
           </div>
-          <AboutSidebar />
+          <div className="hidden col-span-3 md:block">
+            <AboutSidebar />
+          </div>
         </div>
       </SectionContainer>
       <SectionContainer fullWidth={true} className="text-gray-900">
@@ -41,6 +43,11 @@ export default function Contact() {
               className="rounded-3xl"
             />
           </div>
+        </div>
+      </SectionContainer>
+      <SectionContainer>
+        <div className="mt-16 md:hidden">
+          <AboutSidebar />
         </div>
       </SectionContainer>
     </>
