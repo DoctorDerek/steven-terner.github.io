@@ -37,7 +37,7 @@ export default function ContactForm() {
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <input
         type="textarea"
-        className="w-full pb-48 pl-1 align-top border-2 border-black border-solid rounded-3xl h-60"
+        className="w-full pb-48 pl-1 text-lg align-top border-2 border-black border-solid md:text-3xl sm:text-2xl rounded-3xl h-60"
         placeholder="Let us know how we can help 💼"
         name="message"
         id="message"
