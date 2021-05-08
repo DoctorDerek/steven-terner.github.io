@@ -8,6 +8,7 @@ import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
 import { Filter } from "interweave"
 import Link from "@/components/Link"
+import AboutSidebar from "@/components/AboutSidebar"
 
 export async function getStaticProps() {
   const res = await fetch(
@@ -26,106 +27,153 @@ export default function Blog({ posts }) {
     <span className="px-1 text-gray-300 dark:text-gray-600">|</span>
   )
   return (
-    <SectionContainer>
-      <PageSeo
-        title={`Blog - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-        url={`${siteMetadata.siteUrl}/blog`}
-      />
-      <PageTitle>Blog</PageTitle>
-      <div className="space-y-6">
-        {posts.map((post) => {
-          const {
-            title,
-            pubDate,
-            link,
-            //guid,
-            author,
-            thumbnail,
-            description,
-          } = post
-          // The post's description is an HTML string that may contain an image
-          // and/or headings.We want the text just from the first paragraph:
-          class ParagraphFilter extends Filter {
-            attribute(name, value) {
-              return value
-            }
-
-            node(name, node) {
-              console.log(name)
-              if (name === "p") {
-                return node
+    <>
+      <SectionContainer>
+        <PageSeo
+          title={`Blog - ${siteMetadata.author}`}
+          description={siteMetadata.description}
+          url={`${siteMetadata.siteUrl}/blog`}
+        />
+        <PageTitle>Blog</PageTitle>
+        <div className="space-y-6">
+          {posts.map((post) => {
+            const {
+              title,
+              pubDate,
+              link,
+              //guid,
+              author,
+              thumbnail,
+              description,
+            } = post
+            // The post's description is an HTML string that may contain an image
+            // and/or headings.We want the text just from the first paragraph:
+            class ParagraphFilter extends Filter {
+              attribute(name, value) {
+                return value
               }
 
-              return null
+              node(name, node) {
+                console.log(name)
+                if (name === "p") {
+                  return node
+                }
+
+                return null
+              }
             }
-          }
-          const filter = new ParagraphFilter()
+            const filter = new ParagraphFilter()
 
-          // interweave will strip all the HTML except <p>
-          const interweave = (
-            <Interweave
-              content={description}
-              noWrap={true}
-              filters={[filter]}
-              noHtml={true}
-            />
-          )
+            // interweave will strip all the HTML except <p>
+            const interweave = (
+              <Interweave
+                content={description}
+                noWrap={true}
+                filters={[filter]}
+                noHtml={true}
+              />
+            )
 
-          return (
-            <div
-              key={title}
-              className="max-w-md pr-2 mx-auto border-2 border-gray-300 border-solid md:pr-0 md:max-w-md lg:max-w-xl xl:max-w-2xl"
-            >
-              <div className="flex pr-2 mx-auto space-x-2 md:pr-0 md:flex-col md:space-x-0">
-                <div className="flex items-center flex-shrink-0">
-                  <div className="relative w-16 h-16 xs:w-24 xs:h-24 sm:w-32 sm:h-32 md:w-full md:h-60 lg:h-80 xl:h-96">
-                    <Link href={link}>
-                      <Image
-                        src={thumbnail}
-                        alt="ocean"
-                        className="object-cover"
-                        layout="fill"
-                      />
+            return (
+              <div
+                key={title}
+                className="max-w-md pr-2 mx-auto border-2 border-gray-300 border-solid md:pr-0 md:max-w-md lg:max-w-xl xl:max-w-2xl"
+              >
+                <div className="flex pr-2 mx-auto space-x-2 md:pr-0 md:flex-col md:space-x-0">
+                  <div className="flex items-center flex-shrink-0">
+                    <div className="relative w-16 h-16 xs:w-24 xs:h-24 sm:w-32 sm:h-32 md:w-full md:h-60 lg:h-80 xl:h-96">
+                      <Link href={link}>
+                        <Image
+                          src={thumbnail}
+                          alt="ocean"
+                          className="object-cover"
+                          layout="fill"
+                        />
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex flex-col justify-around md:space-y-1 lg:space-y-2 md:px-3 md:py-2 align-left">
+                    <Link
+                      href={link}
+                      className="text-gray-900 dark:text-gray-100"
+                    >
+                      <h2 className="font-bold sm:text-xl md:text-base lg:text-xl xl:text-2xl">
+                        {title}
+                      </h2>
                     </Link>
+                    <p className="hidden text-xs sm:text-base xs:line-clamp-2 lg:text-lg">
+                      {interweave}
+                    </p>
+                    <p className="flex flex-wrap text-gray-400 text-2xs sm:text-base lg:text-lg">
+                      <Link href={link} className="text-gray-400">
+                        Medium
+                        <VerticalBar />
+                      </Link>
+                      <span>
+                        {author}
+                        <VerticalBar />
+                      </span>
+                      <span>
+                        {new Date(pubDate).toLocaleString("en-us", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}{" "}
+                        {/*Feb 19, 2021*/}
+                      </span>
+                    </p>
                   </div>
                 </div>
-                <div className="flex flex-col justify-around md:space-y-1 lg:space-y-2 md:px-3 md:py-2 align-left">
-                  <Link
-                    href={link}
-                    className="text-gray-900 dark:text-gray-100"
-                  >
-                    <h2 className="font-bold sm:text-xl md:text-base lg:text-xl xl:text-2xl">
-                      {title}
-                    </h2>
-                  </Link>
-                  <p className="hidden text-xs sm:text-base xs:line-clamp-2 lg:text-lg">
-                    {interweave}
-                  </p>
-                  <p className="flex flex-wrap text-gray-400 text-2xs sm:text-base lg:text-lg">
-                    <Link href={link} className="text-gray-400">
-                      Medium
-                      <VerticalBar />
-                    </Link>
-                    <span>
-                      {author}
-                      <VerticalBar />
-                    </span>
-                    <span>
-                      {new Date(pubDate).toLocaleString("en-us", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      })}{" "}
-                      {/*Feb 19, 2021*/}
-                    </span>
-                  </p>
-                </div>
               </div>
+            )
+          })}
+        </div>
+      </SectionContainer>
+      <div className="from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
+        <SectionContainer fullWidth={true}>
+          <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
+            {/*I am a multilingual analyst, scholar, consultant, and cultural liaison. I specialize in the political economics of the Middle East and Central Asia. I provide bespoke reports including geopolitical analysis, economic forecasting, and due diligence assessments for public and private sector institutions. I frequently publish articles with foreign policy think tanks and international news sites, and present original research on socio-political, intelligence, corporate, and leadership analysis to a wide variety of audiences.
+
+Areas of Expertise Include:
+-Economics: Sector and Country-Specific Analysis, Data Policy, Banking Regulations, Infrastructure Development, Emerging Market Ecosystems, Resource Allocation
+-Politics: Election and Legislative Forecasting, Policy Assessment, Foreign Policy Decision-Making and Leadership Analysis, Inter- and Intra-Party Factionalism
+-Foreign Language Research
+-Due Diligence: Company and Executive Profiles, Litigation Reports, Press, Risk and Liability Assessment
+-Historical Reports on People, Places, Populations, and Political Context
+-Religious and Social Customs and Practices
+-Resource and Crisis Management
+-Cultural Liaising and Translation*/}
+            <div className="flex flex-col justify-between max-w-xl col-span-4 px-2 mb-12 space-y-8 md:mb-0">
+              <p>
+                We specialize in the political economics of the Middle East and
+                Central Asia.
+              </p>
+              <p>
+                We frequently publish articles with foreign policy think tanks
+                and international news sites, and present original research on
+                socio-political, intelligence, corporate, and leadership
+                analysis to a wide variety of audiences.
+              </p>
+              <p>Our Medium blog features some of our latest work.</p>
             </div>
-          )
-        })}
+            <div className="flex col-span-3">
+              <AboutSidebar />
+            </div>
+          </div>
+        </SectionContainer>
+        <p>
+          .-Economics: Sector and Country-Specific Analysis, Data Policy,
+          Banking Regulations, Infrastructure Development, Emerging Market
+          Ecosystems, Resource Allocation -Politics: Election and Legislative
+          Forecasting, Policy Assessment, Foreign Policy Decision-Making and
+          Leadership Analysis, Inter- and Intra-Party Factionalism -Foreign
+          Language Research -Due Diligence: Company and Executive Profiles,
+          Litigation Reports, Press, Risk and Liability Assessment -Historical
+          Reports on People, Places, Populations, and Political Context
+          -Religious and Social Customs and Practices -Resource and Crisis
+          Management -Cultural Liaising and Translation
+        </p>
       </div>
-    </SectionContainer>
+    </>
   )
 }
