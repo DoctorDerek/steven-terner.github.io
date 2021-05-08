@@ -28,6 +28,39 @@ export default function Blog({ posts }) {
   )
   return (
     <>
+      <div className="from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
+        <SectionContainer fullWidth={true}>
+          <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
+            {/*I am a multilingual analyst, scholar, consultant, and cultural liaison. I specialize in the political economics of the Middle East and Central Asia. I provide bespoke reports including geopolitical analysis, economic forecasting, and due diligence assessments for public and private sector institutions. I frequently publish articles with foreign policy think tanks and international news sites, and present original research on socio-political, intelligence, corporate, and leadership analysis to a wide variety of audiences.
+
+Areas of Expertise Include:
+-Economics: Sector and Country-Specific Analysis, Data Policy, Banking Regulations, Infrastructure Development, Emerging Market Ecosystems, Resource Allocation
+-Politics: Election and Legislative Forecasting, Policy Assessment, Foreign Policy Decision-Making and Leadership Analysis, Inter- and Intra-Party Factionalism
+-Foreign Language Research
+-Due Diligence: Company and Executive Profiles, Litigation Reports, Press, Risk and Liability Assessment
+-Historical Reports on People, Places, Populations, and Political Context
+-Religious and Social Customs and Practices
+-Resource and Crisis Management
+-Cultural Liaising and Translation*/}
+            <div className="flex flex-col justify-between max-w-xl col-span-4 px-2 mb-12 space-y-8 md:mb-0">
+              <p>
+                We specialize in the political economics of the Middle East and
+                Central Asia.
+              </p>
+              <p>
+                We frequently publish articles with foreign policy think tanks
+                and international news sites, and present original research on
+                socio-political, intelligence, corporate, and leadership
+                analysis to a wide variety of audiences.
+              </p>
+              <p>Our Medium blog features some of our latest work.</p>
+            </div>
+            <div className="flex col-span-3">
+              <AboutSidebar />
+            </div>
+          </div>
+        </SectionContainer>
+      </div>
       <SectionContainer>
         <PageSeo
           title={`Blog - ${siteMetadata.author}`}
@@ -129,50 +162,45 @@ export default function Blog({ posts }) {
           })}
         </div>
       </SectionContainer>
-      <div className="from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
-        <SectionContainer fullWidth={true}>
-          <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
-            {/*I am a multilingual analyst, scholar, consultant, and cultural liaison. I specialize in the political economics of the Middle East and Central Asia. I provide bespoke reports including geopolitical analysis, economic forecasting, and due diligence assessments for public and private sector institutions. I frequently publish articles with foreign policy think tanks and international news sites, and present original research on socio-political, intelligence, corporate, and leadership analysis to a wide variety of audiences.
 
-Areas of Expertise Include:
--Economics: Sector and Country-Specific Analysis, Data Policy, Banking Regulations, Infrastructure Development, Emerging Market Ecosystems, Resource Allocation
--Politics: Election and Legislative Forecasting, Policy Assessment, Foreign Policy Decision-Making and Leadership Analysis, Inter- and Intra-Party Factionalism
--Foreign Language Research
--Due Diligence: Company and Executive Profiles, Litigation Reports, Press, Risk and Liability Assessment
--Historical Reports on People, Places, Populations, and Political Context
--Religious and Social Customs and Practices
--Resource and Crisis Management
--Cultural Liaising and Translation*/}
-            <div className="flex flex-col justify-between max-w-xl col-span-4 px-2 mb-12 space-y-8 md:mb-0">
-              <p>
-                We specialize in the political economics of the Middle East and
-                Central Asia.
-              </p>
-              <p>
-                We frequently publish articles with foreign policy think tanks
-                and international news sites, and present original research on
-                socio-political, intelligence, corporate, and leadership
-                analysis to a wide variety of audiences.
-              </p>
-              <p>Our Medium blog features some of our latest work.</p>
+      <div className="mt-12 bg-gradient-to-b from-blue-light to-blue-dark">
+        <SectionContainer>
+          <div className="grid grid-cols-1 py-12 space-y-12 sm:space-y-16 md:grid-cols-7 md:space-y-0 sm:py-16 md:py-20 lg:py-24 xl:py-32">
+            <div className="flex flex-col max-w-6xl col-span-4">
+              <h2 className="font-serif text-2xl font-bold lg:text-3xl">
+                Areas Of Expertise Include:
+              </h2>{" "}
+              <ul className="ml-6 text-xl list-disc md:text-base lg:text-lg xl:text-xl">
+                <li>
+                  -Economics: Sector and Country-Specific Analysis, Data Policy,
+                  Banking Regulations, Infrastructure Development, Emerging
+                  Market Ecosystems, Resource Allocation
+                </li>
+                <li>
+                  -Politics: Election and Legislative Forecasting, Policy
+                  Assessment, Foreign Policy Decision
+                </li>
+                <li>
+                  -Making and Leadership Analysis, Inter- and Intra-Party
+                  Factionalism
+                </li>
+                <li>-Foreign Language Research</li>
+                <li>
+                  -Due Diligence: Company and Executive Profiles, Litigation
+                  Reports, Press, Risk and Liability Assessment
+                </li>
+                <li>
+                  -Historical Reports on People, Places, Populations, and
+                  Political Context
+                </li>
+                <li>-Religious and Social Customs and Practices</li>
+                <li>-Resource and Crisis Management</li>
+                <li>-Cultural Liaising and Translation</li>
+              </ul>
             </div>
-            <div className="flex col-span-3">
-              <AboutSidebar />
-            </div>
+            <AboutSidebar />
           </div>
         </SectionContainer>
-        <p>
-          .-Economics: Sector and Country-Specific Analysis, Data Policy,
-          Banking Regulations, Infrastructure Development, Emerging Market
-          Ecosystems, Resource Allocation -Politics: Election and Legislative
-          Forecasting, Policy Assessment, Foreign Policy Decision-Making and
-          Leadership Analysis, Inter- and Intra-Party Factionalism -Foreign
-          Language Research -Due Diligence: Company and Executive Profiles,
-          Litigation Reports, Press, Risk and Liability Assessment -Historical
-          Reports on People, Places, Populations, and Political Context
-          -Religious and Social Customs and Practices -Resource and Crisis
-          Management -Cultural Liaising and Translation
-        </p>
       </div>
     </>
   )
