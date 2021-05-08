@@ -17,7 +17,7 @@ export default function Contact() {
       <PageTitle>Contact</PageTitle>
       <SectionContainer fullWidth={true} className="text-gray-900 bg-blue-pale">
         <div className="grid grid-cols-1 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 md:grid-cols-8">
-          <div className="flex flex-col items-center justify-between col-span-5 pb-16 pr-4 space-y-16 leading-relaxed text-center border-gray-400 border-solid md:border-r-2 sm:pr-6 md:pr-8 lg:pr-16 md:pb-0 md:space-y-0">
+          <div className="flex flex-col items-center justify-between w-full col-span-5 space-y-16 leading-relaxed text-center border-gray-400 border-solid md:pr-2 lg:pr-4 xl:pr-8 md:border-r-2 md:pb-0 md:space-y-0">
             <h2 className="font-serif text-3xl font-bold">
               We're looking forward to working with you.
             </h2>
@@ -26,7 +26,7 @@ export default function Contact() {
               below.
             </h3>
           </div>
-          <div className="hidden col-span-3 md:block">
+          <div className="hidden col-span-3 md:pl-2 md:block">
             <AboutSidebar />
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
       </SectionContainer>
       <SectionContainer>
-        <div className="mt-16 md:hidden">
+        <div className="md:hidden">
           <AboutSidebar />
         </div>
       </SectionContainer>
