@@ -121,7 +121,7 @@ export default function Services() {
               </p>
               <p>We're currently accepting new clients.</p>
             </div>
-            <div className="flex items-center col-span-3">
+            <div className="flex col-span-3">
               <AboutSidebar />
             </div>
           </div>
