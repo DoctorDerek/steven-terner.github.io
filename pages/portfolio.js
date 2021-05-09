@@ -23,6 +23,12 @@ export default function Portfolio() {
             East and Central/West Asia.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
+            We frequently publish articles with foreign policy think tanks and
+            international news sites, and present original research on
+            socio-political, intelligence, corporate, and leadership analysis to
+            a wide variety of audiences.
+          </p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             We're available for immediate hire for{" "}
             <Link href="/services">consulting services</Link>. Please{" "}
             <Link href="/contact">get in touch</Link>.
