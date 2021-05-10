@@ -17,7 +17,7 @@ export default function Contact() {
       <PageTitle>Contact</PageTitle>
       <SectionContainer
         fullWidth={true}
-        className="text-gray-900 from-blue-pale to-blue-200 bg-gradient-to-b dark:text-gray-200 dark:to-blue-800 dark:from-blue-600"
+        className="text-gray-900 from-blue-pale to-blue-200 bg-gradient-to-b dark:text-gray-100 dark:to-blue-800 dark:from-blue-600"
       >
         <div className="grid grid-cols-1 px-4 py-8 sm:px-6 sm:py-16 md:px-8 md:py-24 lg:px-16 lg:py-32 md:grid-cols-8">
           <div className="flex flex-col items-center justify-between w-full col-span-5 space-y-16 leading-relaxed text-center border-gray-400 border-solid md:pr-2 lg:pr-4 xl:pr-8 md:border-r-2 md:pb-0 md:space-y-0">

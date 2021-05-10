@@ -6,14 +6,18 @@ export default function ContactForm() {
     return <p>Thanks for joining!</p>
   }
   return (
-    <form onSubmit={handleSubmit} id="get-in-touch">
+    <form
+      onSubmit={handleSubmit}
+      id="get-in-touch"
+      className="text-gray-900 dark:text-gray-100"
+    >
       <label htmlFor="name">
         <strong>Name</strong>{" "}
         <span className="text-xl md:text-2xl">(required)</span>
       </label>
       <input
         type="text"
-        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl"
+        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl dark:bg-gray-700"
         name="email"
         id="email"
         placeholder="Steven Terner, LLC"
@@ -25,7 +29,7 @@ export default function ContactForm() {
       </label>
       <input
         type="text"
-        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl"
+        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl dark:bg-gray-700"
         name="name"
         id="name"
         placeholder="hello@gmail.com"
