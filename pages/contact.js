@@ -10,8 +10,8 @@ export default function Contact() {
   return (
     <>
       <PageSeo
-        title="About Steven Terner, LLC - Middle East Business Consulting"
-        description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
+        title="Contact Steven Terner, LLC - Middle East Business Consultants"
+        description="We are multi-linguistic business intelligence consultants serving both public & private sector institutions. We're available for hire for consulting services."
         url={`${siteMetadata.siteUrl}/contact`}
       />
       <PageTitle>Contact</PageTitle>
