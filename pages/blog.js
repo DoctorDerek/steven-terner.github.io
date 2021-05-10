@@ -29,8 +29,8 @@ export default function Blog({ posts }) {
   return (
     <>
       <PageSeo
-        title="About Steven Terner, LLC - Middle East Business Consulting"
-        description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
+        title="Middle East & Central Asia Economics Blog Steven Terner, LLC"
+        description="We specialize in the political economics of the Middle East and Central Asia. Our blog features some of our latest original research and geopolitical analysis."
         url={`${siteMetadata.siteUrl}/blog`}
       />
       <PageTitle>Blog</PageTitle>
