@@ -11,6 +11,11 @@ export default function Portfolio() {
     <>
       <PageTitle>Portfolio</PageTitle>
       <PageSeo
+        title="Middle East & Central Asia Business Intelligence Consultants"
+        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liasing."
+        url={siteMetadata.siteUrl}
+      />
+      <PageSeo
         title={`Portfolio - ${siteMetadata.author}`}
         description={`Portfolio - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/Portfolio`}

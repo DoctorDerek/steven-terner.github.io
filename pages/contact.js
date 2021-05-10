@@ -10,9 +10,9 @@ export default function Contact() {
   return (
     <>
       <PageSeo
-        title={`Contact - ${siteMetadata.author}`}
-        description={`Contact - ${siteMetadata.author}`}
-        url={`${siteMetadata.siteUrl}/contact`}
+        title="Middle East & Central Asia Business Intelligence Consultants"
+        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liasing."
+        url={siteMetadata.siteUrl}
       />
       <PageTitle>Contact</PageTitle>
       <SectionContainer
