@@ -20,7 +20,7 @@ export default function Services() {
   return (
     <>
       <PageSeo
-        title="About Steven Terner, LLC - Middle East Business Consulting"
+        title="Business Intelligence Consulting Services for the Middle East"
         description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
         url={`${siteMetadata.siteUrl}/services`}
       />
