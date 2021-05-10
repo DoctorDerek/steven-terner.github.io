@@ -164,7 +164,7 @@ Areas of Expertise Include:
               <h2 className="font-serif text-2xl font-bold lg:text-3xl">
                 Areas Of Expertise Include:
               </h2>{" "}
-              <ul className="ml-6 text-sm list-disc sm:text-base lg:text-lg xl:text-xl">
+              <ul className="ml-6 text-sm list-disc xs:text-base sm:text-lg xl:text-xl">
                 <li>
                   <u>Economics</u>: Sector and Country-Specific Analysis, Data
                   Policy, Banking Regulations, Infrastructure Development,
