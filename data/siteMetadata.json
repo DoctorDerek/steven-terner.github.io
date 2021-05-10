@@ -1,16 +1,11 @@
 {
   "title": "Steven Terner, LLC - StevenTerner.com",
   "author": "Steven Terner, LLC",
-  "headerTitle": "",
   "description": "Steven Terner, LLC is a multi-lingual American scholar and researcher specializing in socio-political and economic analysis of the Middle East and Central/West Asia.",
   "language": "en-us",
-  "siteUrl": "https://steven-terner-github-io.vercel.app",
-  "siteRepo": "https://github.com/DoctorDerek/steven-terner.github.io",
-  "image": "/static/images/avatar.png",
-  "socialBanner": "/static/images/twitter-card.png",
-  "email": "steven@StevenTerner.com",
-  "github": "https://github.com",
-  "twitter": "https://twitter.com/Twitter",
-  "medium": "https://steventerner.medium.com/",
-  "linkedin": "https://www.linkedin.com"
+  "siteUrl": "https://StevenTerner.com",
+  "email": "Steven@StevenTerner.com",
+  "twitter": "https://Twitter.com/IranianEconomy",
+  "medium": "https://StevenTerner.Medium.com/",
+  "linkedin": "https://LinkedIn.com/in/Steven-Terner/"
 }
