@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <PageSeo
-        title={siteMetadata.title}
-        description={siteMetadata.description}
+        title="Business Intelligence Consulting Services for the Middle East"
+        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liaising."
         url={siteMetadata.siteUrl}
       />
       <div className="py-8 bg-gray-900 md:py-12">
