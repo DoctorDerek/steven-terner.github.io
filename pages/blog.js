@@ -42,7 +42,7 @@ export default function Blog({ posts }) {
             <span>
               We specialize in the political economics of the Middle East and
               Central Asia.
-            </span>{" "}
+            </span>
             <span>
               Our blog features some of our latest original research and
               analysis.
