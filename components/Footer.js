@@ -11,7 +11,7 @@ export default function Footer() {
         <HeaderNavLinks location={"footer"} />
         <div className="flex justify-center flex-grow py-8 space-x-2 text-gray-900 sm:py-0 sm:justify-end dark:text-gray-100">
           <div className="py-1 text-gray-900 rounded-3xl dark:text-gray-100 hover:underline">{`© ${new Date().getFullYear()}`}</div>
-          <div className="py-1 pr-1 text-gray-900 rounded-3xl dark:text-gray-100 hover:underline">
+          <div className="py-1 pr-1 text-gray-900 rounded-3xl dark:text-gray-100 hover:underline dark:hover:no-underline">
             <Link href="/">{siteMetadata.author}</Link>
           </div>
         </div>

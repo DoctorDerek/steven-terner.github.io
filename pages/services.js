@@ -34,7 +34,37 @@ export default function Services() {
         </SectionContainer>
       </div>
       <SectionContainer fullWidth={true}>
-        <div className="grid grid-cols-1 gap-8 px-8 py-4 text-base divide-y-4 lg:divide-y-0 sm:text-xl sm:py-8 sm:px-16 xl:py-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 px-8 pt-8 text-base lg:divide-y-0 sm:text-xl sm:px-16 xl:pt-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
+          <hr className="h-1 bg-black rounded lg:col-span-3" />
+          <p className="lg:col-span-3">
+            <span className="font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              Why choose Steven Terner, LLC?
+            </span>
+          </p>
+          <p className="flex">
+            <span className="mr-1 font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              1.
+            </span>
+            We are consultants specialized in the political economics of the
+            Middle East and Central Asia.
+          </p>
+          <p className="flex space-x-6">
+            <span className="font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              2.&nbsp;
+            </span>{" "}
+            We prepare bespoke reports for institutional clients in both the
+            public and private sectors.
+          </p>
+          <p className="flex space-x-6">
+            <span className="font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+              3.&nbsp;
+            </span>{" "}
+            We can help with geopolitical analysis, economic forecasting, due
+            diligence, and more.
+          </p>
+          <hr className="h-1 bg-black rounded lg:col-span-3" />
+        </div>
+        <div className="grid grid-cols-1 gap-8 px-8 pt-4 pb-8 text-base divide-y-4 lg:divide-y-0 sm:text-xl sm:py-8 sm:px-16 xl:pt-16 xl:pb-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
           <UL>
             <LI>
               <Twemoji emoji="🌏" />
@@ -103,7 +133,7 @@ export default function Services() {
           </UL>
         </div>
       </SectionContainer>
-      <div className="text-gray-100 bg-black">
+      <div className="text-gray-100 from-gray-900 to-gray-800 bg-gradient-to-b">
         <SectionContainer fullWidth={true}>
           <div className="grid grid-cols-1 px-0 py-16 text-xl leading-relaxed lg:px-16 lg:py-32 sm:text-2xl md:text-xl xl:text-2xl md:grid-cols-7">
             {/*Consulting and business intelligence services include due
@@ -115,13 +145,13 @@ export default function Services() {
                 business intelligence consulting to help you meet your goals.
               </p>
               <p>
-                Our business intelligence services include due diligence
-                research, economic analysis, political forecasting, and cultural
-                liaising.
+                Our most popular business intelligence services include due
+                diligence assessments, economic analysis, political forecasting,
+                and cultural liaising.
               </p>
               <p>We're currently accepting new clients.</p>
             </div>
-            <div className="flex items-center col-span-3">
+            <div className="flex col-span-3">
               <AboutSidebar />
             </div>
           </div>

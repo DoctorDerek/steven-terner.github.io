@@ -165,7 +165,7 @@ export default function About() {
         </div>
       </SectionContainer>
       <SectionContainer>
-        <ul className="grid grid-cols-1 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300 rounded-3xl sm:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-6 p-6 mx-auto mt-12 text-xl font-bold bg-gray-300 rounded-3xl sm:grid-cols-2 dark:bg-gray-700">
           <h3 className="col-span-1 font-serif text-3xl sm:col-span-2">
             Consulting Services
           </h3>
