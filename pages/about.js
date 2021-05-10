@@ -115,18 +115,8 @@ export default function About() {
   return (
     <>
       <PageSeo
-        title="Middle East & Central Asia Business Intelligence Consultants"
-        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liasing."
-        url={siteMetadata.siteUrl}
-      />
-      <PageSeo
-        title={`Blog - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-        url={`${siteMetadata.siteUrl}/blog`}
-      />
-      <PageSeo
-        title={`About - ${siteMetadata.author}`}
-        description={`About me - ${siteMetadata.author}`}
+        title="About Steven Terner, LLC - Middle East Business Consulting"
+        description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
         url={`${siteMetadata.siteUrl}/about`}
       />
       <PageTitle>About</PageTitle>
