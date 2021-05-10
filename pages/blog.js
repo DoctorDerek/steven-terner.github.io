@@ -33,9 +33,7 @@ export default function Blog({ posts }) {
         description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
         url={`${siteMetadata.siteUrl}/blog`}
       />
-      <SectionContainer>
-        <PageTitle>Blog</PageTitle>
-      </SectionContainer>
+      <PageTitle>Blog</PageTitle>
       <div className="from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
         <SectionContainer fullWidth={true}>
           <h2 className="flex flex-col max-w-6xl px-8 py-8 space-y-6 font-serif text-xl font-bold sm:space-y-16 sm:px-16 sm:py-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
