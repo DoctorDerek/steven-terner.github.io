@@ -16,12 +16,11 @@ export default function Services() {
 
   "Consulting and business intelligence services include due diligence research, economic analysis, political forecasting, and cultural liaising."
   */
-
   return (
     <>
       <PageSeo
-        title={`Services - ${siteMetadata.author}`}
-        description={`Services - ${siteMetadata.author}`}
+        title="Business Intelligence Consulting Services for the Middle East"
+        description="Steven Terner, LLC offers international business consulting for the Middle East & Central Asia including political analysis, due diligence & cultural liasing."
         url={`${siteMetadata.siteUrl}/services`}
       />
       <PageTitle>Services</PageTitle>

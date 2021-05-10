@@ -115,8 +115,8 @@ export default function About() {
   return (
     <>
       <PageSeo
-        title={`About - ${siteMetadata.author}`}
-        description={`About me - ${siteMetadata.author}`}
+        title="About Steven Terner, LLC - Middle East Business Consulting"
+        description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
         url={`${siteMetadata.siteUrl}/about`}
       />
       <PageTitle>About</PageTitle>

@@ -28,14 +28,12 @@ export default function Blog({ posts }) {
   )
   return (
     <>
-      <SectionContainer>
-        <PageSeo
-          title={`Blog - ${siteMetadata.author}`}
-          description={siteMetadata.description}
-          url={`${siteMetadata.siteUrl}/blog`}
-        />
-        <PageTitle>Blog</PageTitle>
-      </SectionContainer>
+      <PageSeo
+        title="Middle East & Central Asia Economics Blog Steven Terner, LLC"
+        description="We specialize in the political economics of the Middle East and Central Asia. Our blog features some of our latest original research and geopolitical analysis."
+        url={`${siteMetadata.siteUrl}/blog`}
+      />
+      <PageTitle>Blog</PageTitle>
       <div className="from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
         <SectionContainer fullWidth={true}>
           <h2 className="flex flex-col max-w-6xl px-8 py-8 space-y-6 font-serif text-xl font-bold sm:space-y-16 sm:px-16 sm:py-32 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">

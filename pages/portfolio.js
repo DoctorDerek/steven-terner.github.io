@@ -11,9 +11,9 @@ export default function Portfolio() {
     <>
       <PageTitle>Portfolio</PageTitle>
       <PageSeo
-        title={`Portfolio - ${siteMetadata.author}`}
-        description={`Portfolio - ${siteMetadata.author}`}
-        url={`${siteMetadata.siteUrl}/Portfolio`}
+        title="Business Consulting Portfolio for the Middle East & Central Asia"
+        description="Steven Terner, LLC offers bespoke reporting on complex geopolitical situations and international business opportunities in the Middle East & Central/West Asia."
+        url={`${siteMetadata.siteUrl}/portfolio`}
       />
       <SectionContainer>
         <article className="mx-auto space-y-12">
