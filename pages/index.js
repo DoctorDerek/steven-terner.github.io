@@ -22,7 +22,7 @@ export default function Home() {
         description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liaising."
         url={siteMetadata.siteUrl}
       />
-      <div className="py-8 bg-gray-900 md:py-12">
+      <div className="py-8 bg-gradient-to-b from-gray-900 to-gray-800 dark:from-transparent dark:to-black md:py-12">
         <SectionContainer>
           <ImageSlideshow />
         </SectionContainer>
