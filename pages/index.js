@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
       <PageSeo
-        title="Business Intelligence Consulting Services for the Middle East"
-        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liaising."
+        title="Middle East & Central Asia Business Intelligence Consultants"
+        description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liasing."
         url={siteMetadata.siteUrl}
       />
       <div className="py-8 bg-gradient-to-b from-gray-900 to-gray-800 dark:from-transparent dark:to-black md:py-12">
