@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next-remote-watch ./data",
-    "dev": "next dev",
+    "dev": "env TAILWIND_MODE=watch NODE_ENV=development next dev",
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "env ANALYZE=true next build",
