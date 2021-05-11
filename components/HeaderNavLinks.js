@@ -2,30 +2,38 @@ import Link from "./Link"
 import headerNavLinks from "@/data/headerNavLinks"
 import { useCurrentPath } from "@/components/useCurrentPath"
 
-const classNames = (...classes) => classes.join(" ")
-
 // location can also be "footer"
 const HeaderNavLinks = ({ location = "header" }) => {
   const currentPagePath = useCurrentPath()
-  const defaultClassName =
-    "px-1 xl:px-5 py-1 rounded-3xl dark:text-gray-100 hover:underline"
+  const className = "px-1 py-1 xl:px-5 dark:text-gray-100"
 
   return (
     <>
       {headerNavLinks.map((link) => {
-        const className = classNames(
-          // underline active page in nav menu
+        const isActivePage =
           (link.href.length > 1 && currentPagePath.includes(link.href)) ||
-            currentPagePath === link.href // handle homepage
-            ? "underline"
-            : "no-underline",
-          location === "footer" ? "text-gray-900" : "text-green-dark",
-          defaultClassName
-        )
+          currentPagePath === link.href // handle homepage
         return (
-          <Link key={link.title} href={link.href} className={className}>
-            {link.title}
-          </Link>
+          <div key={link.title} className={className}>
+            <Link
+              key={link.title}
+              href={link.href}
+              border={
+                // underline active page in nav menu
+                isActivePage ? "bottom" : "none"
+              }
+              color={
+                // footer nav menu links are black
+                location === "header" ? "green" : "black"
+              }
+              darkModeBorder={
+                // header nav menu underline is white in dark mode
+                location === "header" ? "white" : "green"
+              }
+            >
+              {link.title}
+            </Link>
+          </div>
         )
       })}
     </>
