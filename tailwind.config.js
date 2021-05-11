@@ -40,7 +40,7 @@ module.exports = {
         "2xs": [".625rem", ".875rem"],
       },
       fill: {
-        //current: "currentColor", // Tailwind defaul
+        //current: "currentColor", // Tailwind default
         "green-dark": "#206a5d", // brand color (logo)
       },
       spacing: {
