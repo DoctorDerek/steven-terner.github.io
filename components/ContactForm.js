@@ -3,13 +3,21 @@ import { useForm, ValidationError } from "@formspree/react"
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xrgreylk")
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>
+    return (
+      <div
+        id="get-in-touch"
+        className="flex flex-col justify-center w-full h-48 space-y-12 text-3xl text-gray-900 dark:text-gray-100 md:h-60 md:text-4xl md:space-y-16 lg:h-72 md:pb-16 lg:pb-24 xl:pb-0"
+      >
+        <p>Thanks for contacting us!</p>
+        <p>We'll be in touch shortly.</p>
+      </div>
+    )
   }
   return (
     <form
       onSubmit={handleSubmit}
       id="get-in-touch"
-      className="text-gray-900 dark:text-gray-100"
+      className="space-y-2 text-gray-900 dark:text-gray-100"
     >
       <label htmlFor="name">
         <strong>Name</strong>{" "}
@@ -47,6 +55,12 @@ export default function ContactForm() {
         id="message"
       />
       {/*padding-bottom for vertical alignment of placeholder to top*/}
+      <button
+        className="hover:border-gray-900 dark:hover:border-gray-100 px-4 py-2.5 mx-auto font-bold text-center rounded-lg text-base bg-green-dark border-transparent border-2 border-solid transition-all duration-700 text-gray-100 w-full"
+        formAction="submit"
+      >
+        Submit
+      </button>
     </form>
   )
 }
