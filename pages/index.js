@@ -14,11 +14,14 @@ import AboutSidebar from "@/components/AboutSidebar"
 // const MAX_DISPLAY = 5
 // const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
 
+// alternative title:
+// Middle East & Central Asia Business Consulting & Cultural Liasing
+
 export default function Home() {
   return (
     <>
       <PageSeo
-        title="Middle East & Central Asia Business Intelligence Consultants"
+        title="Middle East & Central Asia Business Intelligence Consulting"
         description="Steven Terner, LLC offers business intelligence consulting for the Middle East & Central Asia including due diligence, economic analysis & cultural liasing."
         url={siteMetadata.siteUrl}
       />

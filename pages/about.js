@@ -115,7 +115,7 @@ export default function About() {
   return (
     <>
       <PageSeo
-        title="About Steven Terner, LLC - Middle East Business Consulting"
+        title="About Steven Terner, LLC - Middle East Business Consultants"
         description="We are multi-linguistic consultants for the Middle East & Central Asia offering due diligence research, politico-economic analysis, and cultural liaising."
         url={`${siteMetadata.siteUrl}/about`}
       />
