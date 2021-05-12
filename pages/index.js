@@ -36,7 +36,7 @@ export default function Home() {
               heading="Services"
               link="/services"
             >
-              I offer <Link href="/services">expert consulting services</Link>{" "}
+              We offer <Link href="/services">expert consulting services</Link>{" "}
               for international businesses, newspapers, NGOs & think tanks.
             </Card>
             <Card
@@ -45,8 +45,8 @@ export default function Home() {
               heading="Portfolio"
               link="/portfolio"
             >
-              My <Link href="/portfolio">consulting portfolio</Link> includes
-              examples of my analysis of the Middle East & Central/West Asia.
+              Our <Link href="/portfolio">consulting portfolio</Link> includes
+              examples of our analysis of the Middle East & Central/West Asia.
             </Card>
             <Card
               alt="ocean"
@@ -54,9 +54,9 @@ export default function Home() {
               heading="Blog"
               link="/blog"
             >
-              I publish my latest socio-political analysis about trends
+              We publish my latest socio-political analysis about trends
               affecting international business on{" "}
-              <Link href="/blog">my blog</Link>.
+              <Link href="/blog">our blog</Link>.
             </Card>
           </CardList>
         </SectionContainer>
@@ -69,9 +69,9 @@ export default function Home() {
                 About
               </h2>
               <p className="py-4">
-                Steven Terner is a multi-lingual American scholar and researcher
-                specializing in socio-political and economic analysis of the
-                Middle East and Central/West Asia.
+                Steven Terner, LLC offers consulting and business intelligence
+                services specializing in socio-political and economic analysis
+                of the Middle East and Central Asia.
               </p>
               <p className="py-4">
                 <Link color="black" href="/about">
