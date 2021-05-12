@@ -58,8 +58,8 @@ export default function Services() {
             <span className="font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               3.&nbsp;
             </span>{" "}
-            We can help with geopolitical analysis, economic forecasting, due
-            diligence, and more.
+            We offer geopolitical analysis, economic forecasting, due diligence,
+            and more.
           </p>
           <hr className="h-1 bg-gray-900 rounded dark:bg-gray-100 lg:col-span-3" />
         </div>
