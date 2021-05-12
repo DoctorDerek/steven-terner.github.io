@@ -74,10 +74,7 @@ export default function Home() {
                 Middle East and Central/West Asia.
               </p>
               <p className="py-4">
-                <Link
-                  className="text-gray-900 underline hover:bg-green-light dark:text-gray-100 dark:hover:text-gray-900 dark:no-underline dark:border-b-2 dark:border-solid dark:border-gray-100"
-                  href="/about"
-                >
+                <Link color="black" href="/about">
                   Read more
                 </Link>
               </p>

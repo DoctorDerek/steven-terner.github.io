@@ -35,12 +35,43 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "0%": "0% auto",
+      "100%": "100% auto",
+    },
     extend: {
+      backgroundImage: {
+        "underline-green-dark":
+          // green-dark: "#206a5d", // brand color (logo)
+          "linear-gradient(180deg, rgba(255,255,255,0) 60%, #206a5d 60%)",
+        "underline-green-light":
+          // green-light: "#bfdcae",
+          "linear-gradient(180deg, rgba(255,255,255,0) 60%, #bfdcae 60%)",
+      },
+      keyframes: {
+        // this is unused because an animation only plays once, but we
+        // want to reverse the hover animation on mouseOut
+        underline: {
+          "0%": {
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "0% auto",
+          },
+          "100%": {
+            backgroundSize: "100% auto",
+          },
+        },
+      },
+      animation: {
+        underline: "underline 1s ease 1 forwards",
+      },
       fontSize: {
         "2xs": [".625rem", ".875rem"],
       },
       fill: {
-        //current: "currentColor", // Tailwind defaul
+        //current: "currentColor", // Tailwind default
         "green-dark": "#206a5d", // brand color (logo)
       },
       spacing: {
@@ -101,14 +132,10 @@ module.exports = {
       },
     },
   },
-  // variants unnecessary thanks to new tailwindcss-jit (just-in-time) engine
-  /*variants: {
-    typography: ["responsive", "dark"],
+  variants: {
     extend: {
-      padding: ["first", "last"],
+      backgroundSize: ["hover", "focus"],
     },
-  },*/
-  /* Tailwind has a new engine called jit (just-in-time) compiler changes;
-     see: https://youtu.be/3O_3X7InOw8?t=333 (Adam Wathan 3/15/2021) */
+  },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/line-clamp")],
 }
