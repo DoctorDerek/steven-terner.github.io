@@ -34,7 +34,7 @@ export default function Services() {
       </div>
       <SectionContainer fullWidth={true}>
         <div className="grid grid-cols-1 gap-8 px-8 pt-8 text-base lg:divide-y-0 sm:text-xl sm:px-16 xl:pt-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
-          <hr className="h-1 bg-black rounded lg:col-span-3" />
+          <hr className="h-1 bg-gray-900 rounded lg:col-span-3 dark:bg-gray-100" />
           <p className="lg:col-span-3">
             <span className="font-serif text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Why choose Steven Terner, LLC?
@@ -61,7 +61,7 @@ export default function Services() {
             We can help with geopolitical analysis, economic forecasting, due
             diligence, and more.
           </p>
-          <hr className="h-1 bg-black rounded lg:col-span-3" />
+          <hr className="h-1 bg-gray-900 rounded dark:bg-gray-100 lg:col-span-3" />
         </div>
         <div className="grid grid-cols-1 gap-8 px-8 pt-4 pb-8 text-base divide-y-4 lg:divide-y-0 sm:text-xl sm:py-8 sm:px-16 xl:pt-16 xl:pb-32 xl:px-16 lg:gap-4 lg:px-4 xl:gap-16 md:text-2xl lg:text-base xl:text-xl lg:grid-cols-3">
           <UL>
