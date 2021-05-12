@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 
-const DEBUG_BREAKPOINTS = true
+const DEBUG_BREAKPOINTS = false
+
 function getWindowDimensions() {
   const dimensions = { width: 0, height: 0 }
   if (
