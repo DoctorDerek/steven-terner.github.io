@@ -4,7 +4,10 @@ import SocialIcon from "@/components/social-icons"
 import Image from "@/components/Image"
 import { useCurrentPath } from "@/components/useCurrentPath"
 
-const AboutSidebarHomePage = () => {
+const classNames = (...classes) => classes.join(" ")
+
+// border can be "white" or "black"
+const AboutSidebarHomePage = ({ border = "white" }) => {
   const currentPagePath = useCurrentPath()
   return (
     <div className="flex flex-col items-center justify-between max-w-sm px-2 py-12 mx-auto space-y-12 border-2 border-gray-800 border-solid sm:px-8 rounded-3xl md:col-span-3 md:border-0 md:py-0 md:px-0">
@@ -24,9 +27,15 @@ const AboutSidebarHomePage = () => {
               ? "/contact#get-in-touch"
               : "/contact"
           }
-          className="text-gray-100"
         >
-          <div className="px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark border-transparent border-2 border-solid hover:border-gray-100 hover:underline">
+          <div
+            className={classNames(
+              border === "white"
+                ? "hover:border-gray-100"
+                : "hover:border-gray-900 dark:hover:border-gray-100",
+              "px-4 py-2.5 mx-auto font-bold text-center rounded text-base bg-green-dark border-transparent border-2 border-solid  transition-all duration-700 text-gray-100"
+            )}
+          >
             Get in touch
           </div>
         </Link>
@@ -50,11 +59,11 @@ const AboutSidebar = ({ photo = false }) => {
                 sizes="portrait"
               />
             </div>
-            <AboutSidebarHomePage />
+            <AboutSidebarHomePage border="black" />
           </div>
         </div>
         <div className="md:hidden">
-          <AboutSidebarHomePage />
+          <AboutSidebarHomePage border="black" />
         </div>
       </>
     )
