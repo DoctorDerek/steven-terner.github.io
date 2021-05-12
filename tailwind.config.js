@@ -35,24 +35,35 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      "0%": "0% auto",
+      "100%": "100% auto",
+    },
     extend: {
       backgroundImage: {
-        underline:
+        "underline-green-dark":
           // green-dark: "#206a5d", // brand color (logo)
           "linear-gradient(180deg, rgba(255,255,255,0) 60%, #206a5d 60%)",
+        "underline-green-light":
+          // green-light: "#bfdcae",
+          "linear-gradient(180deg, rgba(255,255,255,0) 60%, #bfdcae 60%)",
       },
       keyframes: {
         underline: {
-          "0%": { background: "transparent" },
-          "50%, 100%": {
-            background:
-              // green-dark: "#206a5d", // brand color (logo)
-              "linear-gradient(180deg, rgba(255,255,255,0) 60%, #206a5d 60%)",
+          "0%": {
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "0% auto",
+          },
+          "100%": {
+            backgroundSize: "100% auto",
           },
         },
       },
       animation: {
-        underline: "underline 1s ease-in-out infinite",
+        underline: "underline 1s ease 1 forwards",
       },
       fontSize: {
         "2xs": [".625rem", ".875rem"],

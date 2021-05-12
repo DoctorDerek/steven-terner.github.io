@@ -21,11 +21,13 @@ const CustomLink = ({
     border === "bottom"
       ? "border-green-dark"
       : "border-transparent dark:border-transparent",
-    color === "green" ? "text-green-dark" : "text-gray-900",
+    color === "green"
+      ? "text-green-dark bg-underline-green-light"
+      : "text-gray-900 bg-underline-green-dark",
     darkModeBorder === "green"
-      ? "hover:border-green-dark dark:hover:border-gray-100"
-      : "dark:border-gray-100 dark:hover:border-gray-100 hover:border-b-4",
-    "dark:text-gray-100 border-solid border-b-2 animate-underline"
+      ? "hover:border-green-dark dark:hover:border-green-dark"
+      : "hover:border-green-dark dark:border-gray-100 dark:hover:border-gray-100 hover:border-b-2",
+    "dark:text-gray-100 border-solid border-b-2 transition-all duration-700 hover:animate-underline dark:bg-underline-green-dark bg-0% bg-no-repeat"
   )
   if (className) {
     if (!className.match(/text-/)) {
