@@ -39,7 +39,22 @@ export default function Portfolio() {
           </h2>
           <p className="text-lg xl:text-2xl xl:leading-8">
             A selection of our written analysis about the Middle East and
-            Central/West Asia.{" "}
+            Central/West Asia.
+          </p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            <Link href="https://gulfstateanalytics.com/does-iran-want-to-be-removed-from-the-fatf-blacklist/">
+              “Does Iran Want to be Removed from the FATF Blacklist?”
+            </Link>
+            <br />
+            in <em>Gulf State Analytics</em>. April 1, 2021.
+          </p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
+            <Link href="https://gulfstateanalytics.com/political-rivalries-complicate-irans-data-policies-and-banking-regulations/">
+              “Political Rivalries Complicate Iran’s Data Policies and Banking
+              Regulations.”
+            </Link>
+            <br />
+            in <em>Gulf State Analytics</em>. February 10, 2021.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://www.fairobserver.com/region/middle_east_north_africa/steven-terner-us-interests-syria-russia-turkey-iran-isis-news-13211/">
@@ -47,14 +62,14 @@ export default function Portfolio() {
             </Link>
             <br />
             in <em>Fair Observer</em>. October 6, 2020.
-          </p>{" "}
+          </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://www.atlanticcouncil.org/blogs/iransource/irans-muddled-relationship-with-cryptocurrency-is-self-inflicted/">
               “Iran’s muddled relationship with cryptocurrency is
               self-inflicted”
             </Link>
             <br />
-            <em>Atlantic Council</em>. June 18, 2020.
+            in <em>Atlantic Council</em>. June 18, 2020.
           </p>
           <hr />
           <div className="float-right">
