@@ -36,6 +36,24 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        underline:
+          // green-dark: "#206a5d", // brand color (logo)
+          "linear-gradient(180deg, rgba(255,255,255,0) 60%, #206a5d 60%)",
+      },
+      keyframes: {
+        underline: {
+          "0%": { background: "transparent" },
+          "50%, 100%": {
+            background:
+              // green-dark: "#206a5d", // brand color (logo)
+              "linear-gradient(180deg, rgba(255,255,255,0) 60%, #206a5d 60%)",
+          },
+        },
+      },
+      animation: {
+        underline: "underline 1s ease-in-out infinite",
+      },
       fontSize: {
         "2xs": [".625rem", ".875rem"],
       },

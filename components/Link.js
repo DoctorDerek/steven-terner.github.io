@@ -23,9 +23,9 @@ const CustomLink = ({
       : "border-transparent dark:border-transparent",
     color === "green" ? "text-green-dark" : "text-gray-900",
     darkModeBorder === "green"
-      ? "hover:border-green-dark"
-      : "dark:border-gray-100 dark:hover:border-gray-100",
-    "no-underline hover:text-gray-900 hover:bg-green-light dark:text-gray-100 dark:hover:text-gray-900 border-solid dark:no-underline border-b-2 "
+      ? "hover:border-green-dark dark:hover:border-gray-100"
+      : "dark:border-gray-100 dark:hover:border-gray-100 hover:border-b-4",
+    "dark:text-gray-100 border-solid border-b-2 animate-underline"
   )
   if (className) {
     if (!className.match(/text-/)) {
