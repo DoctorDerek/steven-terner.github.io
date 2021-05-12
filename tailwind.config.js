@@ -52,6 +52,8 @@ module.exports = {
           "linear-gradient(180deg, rgba(255,255,255,0) 60%, #bfdcae 60%)",
       },
       keyframes: {
+        // this is unused because an animation only plays once, but we
+        // want to reverse the hover animation on mouseOut
         underline: {
           "0%": {
             backgroundRepeat: "no-repeat",
@@ -130,14 +132,10 @@ module.exports = {
       },
     },
   },
-  // variants unnecessary thanks to new tailwindcss-jit (just-in-time) engine
-  /*variants: {
-    typography: ["responsive", "dark"],
+  variants: {
     extend: {
-      padding: ["first", "last"],
+      backgroundSize: ["hover", "focus"],
     },
-  },*/
-  /* Tailwind has a new engine called jit (just-in-time) compiler changes;
-     see: https://youtu.be/3O_3X7InOw8?t=333 (Adam Wathan 3/15/2021) */
+  },
   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/line-clamp")],
 }

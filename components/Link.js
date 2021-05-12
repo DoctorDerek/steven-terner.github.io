@@ -27,7 +27,7 @@ const CustomLink = ({
     darkModeBorder === "green"
       ? "hover:border-green-dark dark:hover:border-green-dark"
       : "hover:border-green-dark dark:border-gray-100 dark:hover:border-gray-100 hover:border-b-2",
-    "dark:text-gray-100 border-solid border-b-2 transition-all duration-700 hover:animate-underline dark:bg-underline-green-dark bg-0% bg-no-repeat"
+    "dark:text-gray-100 border-solid border-b-2 transition-all duration-700 bg-underline-green-light dark:bg-underline-green-dark bg-0% bg-no-repeat hover:bg-100%"
   )
   if (className) {
     if (!className.match(/text-/)) {
