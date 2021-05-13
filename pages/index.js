@@ -57,7 +57,7 @@ export default function Home() {
               heading="Blog"
               link="/blog"
             >
-              We publish my latest socio-political analysis about trends
+              We publish our latest socio-political analysis about trends
               affecting international business on{" "}
               <Link href="/blog">our blog</Link>.
             </Card>
