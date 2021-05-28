@@ -3,8 +3,7 @@
 🎉 Site Launched May 2021 
 
 ---
-
-🟢 98/100 Lighthouse Performance
+🟢 97/100 Performance on Google Lighthouse
 
 ⚛ Next.js (React)
 
@@ -25,6 +24,10 @@
 📝 Blog Fetches New Posts to [StevenTerner.Medium.com](https://StevenTerner.Medium.com) Automatically
 
 😎 Based on [StevenTerner.WordPress.com](https://StevenTerner.WordPress.com), also by @DoctorDerek
+
+---
+
+![image](https://user-images.githubusercontent.com/761231/119943219-5b04ca80-bf58-11eb-9c30-98ed8a8fee13.png)
 
 ---
 
