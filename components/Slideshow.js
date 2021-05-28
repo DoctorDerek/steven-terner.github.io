@@ -40,7 +40,7 @@ const Slideshow = () => {
   return (
     <div
       ref={sliderRef}
-      className="h-60 sm:h-80 md:h-112 lg:h-112 xl:h-128 keen-slider"
+      className="w-full max-w-full min-w-full transform-gpu h-60 sm:h-80 md:h-112 lg:h-112 xl:h-128 keen-slider"
     >
       <SlideshowSlides />
     </div>
