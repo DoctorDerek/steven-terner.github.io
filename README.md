@@ -1,12 +1,14 @@
 # [StevenTerner.com](https://StevenTerner.com) by @DoctorDerek
 
-🎉 Site Launched May 2021 
+🎉 Site Launched May 2021
 
 🟢 98/100 Lighthouse Performance
 
 ⚛ Next.js (React)
 
 🖼 Tailwind CSS
+
+🎣 Husky (Git Hooks) for Prettier + ESLint
 
 🚢 Deployed at Vercel
 
