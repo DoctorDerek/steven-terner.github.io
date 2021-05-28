@@ -12,6 +12,7 @@ const Card = ({ alt, src, link, heading, children }) => {
             className="object-cover rounded-full"
             layout="fill"
             sizes="33vw"
+            preload={true}
           />
         </div>
       )}

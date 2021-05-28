@@ -12,7 +12,7 @@ const CustomImage = ({
   className = "object-cover", // Assume dynamic sizing
   sizes = "100vw", // Next.js default
   quality = "75", // Next.js default
-  preload = true, // Assume above-the-fold to improve performance
+  preload = false, // Next.js default; can toggle for above-the-fold images
   ...rest
 }) => {
   const validSizes = {

@@ -9,16 +9,19 @@ export default function SlideshowSlides() {
           alt="ocean"
           src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
           sizes="portrait"
+          preload={true}
         />
         <Image
           alt="ocean"
           src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
           sizes="portrait"
+          preload={true}
         />
         <Image
           alt="ocean"
           src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
           sizes="portrait"
+          preload={true}
         />
       </SlideshowSlide>
       <SlideshowSlide>
