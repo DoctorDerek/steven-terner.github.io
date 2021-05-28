@@ -8,12 +8,12 @@
 
 🖼 Tailwind CSS
 
-📱 Mobile-First Design with 5 Breakpoints
-
-🌃 Dark Mode Toggle that Detects System Preference
-
 🚢 Deployed at Vercel
 
 👨‍🎨 Designed by @DoctorDerek
+
+📱 Mobile-First Design With 5 Breakpoints
+
+🌃 Dark Mode Toggle That Detects System Preference
 
 😎 Based on (`StevenTerner.WordPress.com`)[https://StevenTerner.WordPress.com], also by @DoctorDerek
