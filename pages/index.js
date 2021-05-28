@@ -71,7 +71,7 @@ export default function Home() {
               </p>
               <p className="py-4">
                 <Link color="black" href="/about">
-                  Read more
+                  Read mo<span className="hidden">&nbsp;</span>re
                 </Link>
               </p>
             </div>
