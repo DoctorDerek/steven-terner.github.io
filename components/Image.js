@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/image"
+import ImageFixed from "next/image"
 
 const isRequired = () => {
   throw new Error("Both alt and src parameters are required in CustomImage")
@@ -46,7 +46,7 @@ const CustomImage = ({
   // We need a wrapper div with position: relative for dynamic sizing
   return (
     <div className="relative">
-      <Image {...resultingProps} />
+      <ImageFixed {...resultingProps} />
     </div>
   )
 }
