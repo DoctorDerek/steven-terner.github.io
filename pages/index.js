@@ -4,7 +4,7 @@ import siteMetadata from "@/data/siteMetadata"
 // import Tag from "@/components/Tag"
 import Link from "@/components/Link"
 import { PageSeo } from "@/components/SEO"
-import ImageSlideshow from "@/components/Slideshow"
+//import ImageSlideshow from "@/components/Slideshow"
 import SectionContainer from "@/components/SectionContainer"
 // import Image from "next/image"
 import CardList from "@/components/CardList"
@@ -26,9 +26,7 @@ export default function Home() {
         url={siteMetadata.siteUrl}
       />
       <div className="py-8 bg-gradient-to-b from-gray-900 to-gray-800 dark:from-transparent dark:to-black md:py-12">
-        <SectionContainer>
-          <ImageSlideshow />
-        </SectionContainer>
+        <SectionContainer></SectionContainer>
       </div>
       <div className="py-8 bg-gray-300 sm:py-12 md:py-32 dark:bg-transparent">
         <SectionContainer>
