@@ -38,6 +38,7 @@ const CustomImage = ({
     className,
     sizes,
     quality,
+    preload: true, // assume above the fold to improve performance
     ...rest,
   }
 
