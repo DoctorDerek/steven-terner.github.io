@@ -12,6 +12,7 @@ const CustomImage = ({
   className = "object-cover", // Assume dynamic sizing
   sizes = "100vw", // Next.js default
   quality = "75", // Next.js default
+  priority = false, // preload images
   ...rest
 }) => {
   const validSizes = {
@@ -38,6 +39,7 @@ const CustomImage = ({
     className,
     sizes,
     quality,
+    priority,
     ...rest,
   }
 
