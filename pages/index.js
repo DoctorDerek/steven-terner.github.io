@@ -1,18 +1,11 @@
-// import tinytime from "tinytime"
-// import { getAllFilesFrontMatter } from "@/lib/mdx"
 import siteMetadata from "@/data/siteMetadata"
-// import Tag from "@/components/Tag"
 import Link from "@/components/Link"
 import { PageSeo } from "@/components/SEO"
 import ImageSlideshow from "@/components/Slideshow"
 import SectionContainer from "@/components/SectionContainer"
-// import Image from "next/image"
 import CardList from "@/components/CardList"
 import Card from "@/components/Card"
 import AboutSidebar from "@/components/AboutSidebar"
-
-// const MAX_DISPLAY = 5
-// const postDateTemplate = tinytime("{MMMM} {DD}, {YYYY}")
 
 // alternative title:
 // Middle East & Central Asia Business Consulting & Cultural Liasing
