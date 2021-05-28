@@ -7,8 +7,8 @@ import { PageSeo } from "@/components/SEO"
 //import ImageSlideshow from "@/components/Slideshow"
 import SectionContainer from "@/components/SectionContainer"
 // import Image from "next/image"
-// import CardList from "@/components/CardList"
-// import Card from "@/components/Card"
+import CardList from "@/components/CardList"
+import Card from "@/components/Card"
 import AboutSidebar from "@/components/AboutSidebar"
 
 // const MAX_DISPLAY = 5
@@ -29,7 +29,38 @@ export default function Home() {
         <SectionContainer></SectionContainer>
       </div>
       <div className="py-8 bg-gray-300 sm:py-12 md:py-32 dark:bg-transparent">
-        <SectionContainer></SectionContainer>
+        <SectionContainer>
+          <CardList>
+            <Card
+              alt="ocean"
+              src="/static/images/Iran Currency.jpg"
+              heading="Services"
+              link="/services"
+            >
+              We offer <Link href="/services">expert consulting services</Link>{" "}
+              for international businesses, newspapers, NGOs & think tanks.
+            </Card>
+            <Card
+              alt="ocean"
+              src="/static/images/Banking, Currency, Policy photo.jpg"
+              heading="Portfolio"
+              link="/portfolio"
+            >
+              Our <Link href="/portfolio">consulting portfolio</Link> includes
+              examples of our analysis of the Middle East & Central/West Asia.
+            </Card>
+            <Card
+              alt="ocean"
+              src="/static/images/Iran Tehran traffic.jpg"
+              heading="Blog"
+              link="/blog"
+            >
+              We publish our latest socio-political analysis about trends
+              affecting international business on{" "}
+              <Link href="/blog">our blog</Link>.
+            </Card>
+          </CardList>
+        </SectionContainer>
       </div>
       <div className="pt-12 pb-20 md:py-32 from-green-lighter to-green-dark bg-gradient-to-b dark:from-green-dark dark:to-green-900">
         <SectionContainer>
