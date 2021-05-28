@@ -2,6 +2,7 @@
 
 🎉 Site Launched May 2021
 
+---
 🟢 98/100 Lighthouse Performance
 
 ⚛ Next.js (React)
@@ -12,10 +13,14 @@
 
 🚢 Deployed at Vercel
 
+---
 👨‍🎨 Designed by @DoctorDerek
 
-📱 Mobile-First Design With 5 Breakpoints
+📱 Mobile-First Design With 5 Responsive Breakpoints
 
-🌃 Dark Mode Toggle That Detects System Preference
+🌃 Dark Mode Toggle That Also Detects System Preference
 
-😎 Based on (`StevenTerner.WordPress.com`)[https://StevenTerner.WordPress.com], also by @DoctorDerek
+📝 Blog Fetches Posts From [StevenTerner.Medium.com](https://StevenTerner.Medium.com) Automatically
+
+😎 Based on [StevenTerner.WordPress.com](https://StevenTerner.WordPress.com), also by @DoctorDerek
+---
