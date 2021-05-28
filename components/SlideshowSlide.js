@@ -1,6 +1,6 @@
 import React from "react"
 const SlideshowSlide = ({ children }) => (
-  <div className="grid grid-cols-3 space-x-0.5 sm:space-x-1 md:space-x-1.5 xl:space-x-2 transform-gpu keen-slider__slide w-full min-w-full max-w-full">
+  <div className="grid grid-cols-3 space-x-0.5 sm:space-x-1 md:space-x-1.5 xl:space-x-2 transform-gpu keen-slider__slide w-full min-w-full max-w-full relative overflow-hidden h-60 sm:h-80 md:h-112 lg:h-112 xl:h-128">
     {children}
   </div>
 )
