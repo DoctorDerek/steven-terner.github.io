@@ -9,7 +9,7 @@ const Card = ({ alt, src, link, heading, children }) => {
           <Image
             alt={alt}
             src={src}
-            className="object-cover rounded-full h-36"
+            className="object-cover rounded-full"
             layout="fill"
             sizes="33vw"
           />
