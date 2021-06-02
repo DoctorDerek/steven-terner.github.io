@@ -3,7 +3,7 @@ import siteMetadata from "@/data/siteMetadata"
 // import ListLayout from "@/layouts/ListLayout"
 import { PageSeo } from "@/components/SEO"
 import PageTitle from "@/components/PageTitle"
-import ImageFixed from "next/image"
+import Image from "@/components/Image"
 import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
 import { Filter } from "interweave"
@@ -108,12 +108,9 @@ Areas of Expertise Include:
                   <div className="flex items-center flex-shrink-0">
                     <div className="relative w-16 h-16 xs:w-24 xs:h-24 sm:w-32 sm:h-32 md:w-full md:h-60 lg:h-80 xl:h-96">
                       <Link href={link}>
-                        <ImageFixed
-                          src={thumbnail}
-                          alt="Thumbnail for Post"
-                          className="object-cover"
-                          layout="fill"
-                        />
+                        <div className="grid w-full h-full">
+                          <Image src={thumbnail} alt="Thumbnail for Post" />
+                        </div>
                       </Link>
                     </div>
                   </div>
