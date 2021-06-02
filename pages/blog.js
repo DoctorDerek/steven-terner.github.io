@@ -1,6 +1,4 @@
-// import { getAllFilesFrontMatter } from "@/lib/mdx"
 import siteMetadata from "@/data/siteMetadata"
-// import ListLayout from "@/layouts/ListLayout"
 import { PageSeo } from "@/components/SEO"
 import PageTitle from "@/components/PageTitle"
 import Image from "@/components/Image"
@@ -46,17 +44,6 @@ export default function Blog({ posts }) {
               analysis.
             </span>
           </h2>
-          {/*I am a multilingual analyst, scholar, consultant, and cultural liaison. I specialize in the political economics of the Middle East and Central Asia. I provide bespoke reports including geopolitical analysis, economic forecasting, and due diligence assessments for public and private sector institutions. I frequently publish articles with foreign policy think tanks and international news sites, and present original research on socio-political, intelligence, corporate, and leadership analysis to a wide variety of audiences.
-
-Areas of Expertise Include:
--Economics: Sector and Country-Specific Analysis, Data Policy, Banking Regulations, Infrastructure Development, Emerging Market Ecosystems, Resource Allocation
--Politics: Election and Legislative Forecasting, Policy Assessment, Foreign Policy Decision-Making and Leadership Analysis, Inter- and Intra-Party Factionalism
--Foreign Language Research
--Due Diligence: Company and Executive Profiles, Litigation Reports, Press, Risk and Liability Assessment
--Historical Reports on People, Places, Populations, and Political Context
--Religious and Social Customs and Practices
--Resource and Crisis Management
--Cultural Liaising and Translation*/}
         </SectionContainer>
       </div>
       <SectionContainer>
@@ -71,8 +58,8 @@ Areas of Expertise Include:
               thumbnail,
               description,
             } = post
-            // The post's description is an HTML string that may contain an image
-            // and/or headings.We want the text just from the first paragraph:
+            // The post's description is an HTML string that may contain an
+            // image and/or headings. We want the text from the first paragraph:
             class ParagraphFilter extends Filter {
               attribute(name, value) {
                 return value
@@ -140,8 +127,8 @@ Areas of Expertise Include:
                           month: "short",
                           day: "numeric",
                           year: "numeric",
-                        })}{" "}
-                        {/*Feb 19, 2021*/}
+                        })}
+                        {/*e.g. "Feb 19, 2021*"*/}
                       </span>
                     </p>
                   </div>
