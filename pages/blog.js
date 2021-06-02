@@ -110,7 +110,7 @@ Areas of Expertise Include:
                       <Link href={link}>
                         <ImageFixed
                           src={thumbnail}
-                          alt="ocean"
+                          alt="Thumbnail for Post"
                           className="object-cover"
                           layout="fill"
                         />

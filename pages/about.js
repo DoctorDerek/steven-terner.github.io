@@ -131,7 +131,7 @@ export default function About() {
               <div className="flex items-center md:hidden">
                 <div className="grid w-40 h-40 max-w-full mx-auto mb-4 border-2 border-gray-800 border-solid rounded-full sm:w-48 sm:h-48">
                   <Image
-                    alt="ocean"
+                    alt="Portrait of Steven Terner"
                     src="/static/images/StevenTernerPhoto2-cropped.jpg"
                     className="rounded-full"
                     sizes="portrait"

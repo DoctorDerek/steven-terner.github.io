@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
           <div className="grid col-span-4 h-96 xl:h-full">
             <Image
-              alt="ocean"
+              alt="A globe turned to display the Middle East and Central / West Asia sitting on a wood desk in a wood-paneled room."
               src="/static/images/kyle-glenn-nxt5htlmlge-unsplash.jpg"
               className="rounded-3xl"
             />

@@ -27,7 +27,7 @@ export default function Home() {
         <SectionContainer>
           <CardList>
             <Card
-              alt="ocean"
+              alt="Iranian currency sitting on a table, showing the money of Iran in both change and large bills. The Ayatollah - the supreme leader of Iran - appears prominently on the 100 rial note. There is also a mobile phone with stock market or forecasting charts."
               src="/static/images/Iran Currency.jpg"
               heading="Services"
               link="/services"
@@ -36,7 +36,7 @@ export default function Home() {
               for international businesses, newspapers, NGOs & think tanks.
             </Card>
             <Card
-              alt="ocean"
+              alt="The outside of the Bank Melli Iran building features the name of the bank in Farsi letters on one side and in English for international audiences on the other above a soaring arch reminiscent of a Middle Eastern mosque."
               src="/static/images/Banking, Currency, Policy photo.jpg"
               heading="Portfolio"
               link="/portfolio"
@@ -45,7 +45,7 @@ export default function Home() {
               examples of our analysis of the Middle East & Central/West Asia.
             </Card>
             <Card
-              alt="ocean"
+              alt="Traffic in Tehran, Iran looks like a dozen lanes each way across a soaring bridge and tunnel system, with motorcyles, international tourists, businessmen, autobuses, and even pedestrians. The image is framed against a mountainous backdrop  found in these areas of the Middle East and Central / West Asia."
               src="/static/images/Iran Tehran traffic.jpg"
               heading="Blog"
               link="/blog"
