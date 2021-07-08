@@ -9,8 +9,8 @@ export default function SectionContainer({
   // className, if present, is appended to the defaults
 
   const defaultClass = fullWidth
-    ? "w-full px-4 mx-auto sm:px-6"
-    : "w-full max-w-sm px-4 mx-auto sm:max-w-3xl sm:px-6 xl:max-w-5xl xl:px-0"
+    ? "w-full px-1 mx-auto sm:px-2"
+    : "w-full max-w-sm px-1 mx-auto sm:max-w-3xl sm:px-2 xl:max-w-5xl md:px-3"
 
   if (className) {
     className = defaultClass + " " + className
