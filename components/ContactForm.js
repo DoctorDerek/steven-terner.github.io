@@ -29,6 +29,7 @@ export default function ContactForm() {
         name="email"
         id="email"
         placeholder="Steven Terner, LLC"
+        required
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <label htmlFor="email">
@@ -41,6 +42,7 @@ export default function ContactForm() {
         name="name"
         id="name"
         placeholder="hello@gmail.com"
+        required
       />
       <label htmlFor="message">
         <strong>Message</strong>{" "}
@@ -53,11 +55,13 @@ export default function ContactForm() {
         placeholder="Let us know how we can help 💼"
         name="message"
         id="message"
+        required
       />
       {/*padding-bottom for vertical alignment of placeholder to top*/}
       <button
         className="hover:border-gray-900 dark:hover:border-gray-100 px-4 py-2.5 mx-auto font-bold text-center rounded-lg text-base bg-green-dark border-transparent border-2 border-solid transition-all duration-700 text-gray-100 w-full"
         formAction="submit"
+        disabled={state.submitting}
       >
         Submit
       </button>
