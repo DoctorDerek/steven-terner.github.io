@@ -5,7 +5,6 @@ import { useCurrentPath } from "@/components/useCurrentPath"
 // location can also be "footer"
 const HeaderNavLinks = ({ location = "header" }) => {
   const currentPagePath = useCurrentPath()
-  const className = "px-1 py-1 xl:px-5 dark:text-gray-100"
 
   return (
     <>
@@ -14,7 +13,10 @@ const HeaderNavLinks = ({ location = "header" }) => {
           (link.href.length > 1 && currentPagePath.includes(link.href)) ||
           currentPagePath === link.href // handle homepage
         return (
-          <div key={link.title} className={className}>
+          <div
+            key={link.title}
+            className="px-1 py-1 xl:px-5 dark:text-gray-100"
+          >
             <Link
               key={link.title}
               href={link.href}
