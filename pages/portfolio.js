@@ -42,6 +42,14 @@ export default function Portfolio() {
             Central/West Asia.
           </p>
           <p className="text-lg xl:text-2xl xl:leading-8">
+            <Link href="https://gulfstateanalytics.com/irans-economic-recovery-will-require-an-independent-central-bank/">
+              “Iran’s Economic Recovery will Require an Independent Central
+              Bank.”
+            </Link>
+            <br />
+            in <em>Gulf State Analytics</em>. 11 June 2021.
+          </p>
+          <p className="text-lg xl:text-2xl xl:leading-8">
             <Link href="https://gulfstateanalytics.com/does-iran-want-to-be-removed-from-the-fatf-blacklist/">
               “Does Iran Want to be Removed from the FATF Blacklist?”
             </Link>
@@ -140,6 +148,7 @@ export default function Portfolio() {
                 <li>Data Policy Modernization</li>
                 <li>Negative Press Investigations</li>
                 <li>Litigation Reports</li>
+                <li>Polling Analysis</li>
               </ul>
             </div>
             <AboutSidebar />
