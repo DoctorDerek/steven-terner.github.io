@@ -146,20 +146,23 @@ export default function About() {
               Asia.
             </h2>
             <p className="text-lg xl:text-2xl xl:leading-8">
-              Steven Terner is a multi-lingual American scholar and researcher
-              who has spent more than a decade specializing in socio-political
-              and economic analysis of the Middle East and Central/West Asia,
-              with a focus on Iran. His intent is to serve as a cultural
-              liaison, guiding international business in expanding global
-              markets.
+              Dr. Steven Terner is a multi-lingual American scholar and
+              researcher who has spent more than a decade specializing in
+              socio-political and economic analysis of the Middle East and
+              Central/West Asia. His passion is serving as a cultural liaison,
+              guiding international business in expanding global markets.
             </p>
             <p className="text-lg xl:text-2xl xl:leading-8">
-              Mr. Terner spent six years living, studying, and working in the
-              Middle East. His professional experience includes the Jerusalem
-              Post, the Indian Embassy in Israel, and the Atlantic Council and
-              Hudson Institute think tanks in Washington, DC. He holds an MA in
-              Middle East Studies, an MA in Government, and is completing a PhD
-              in Middle East History.
+              Dr. Terner spent six years living, studying, and working in the
+              Middle East. He holds a PhD in Contemporary Middle East History as
+              well as an MA in Middle East Studies, and an MA in Government. His
+              professional experience includes the Jerusalem Post, the Indian
+              Embassy in Israel, and the Atlantic Council and Hudson Institute
+              think tanks in Washington, DC. He also produces{" "}
+              <Link href="https://IranianEconomicNews.com/">
+                Iranian Economic News
+              </Link>
+              , a free email newsletter focusing on Iranian political economics.
             </p>
           </div>
         </div>
