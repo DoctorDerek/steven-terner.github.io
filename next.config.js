@@ -5,9 +5,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "md", "mdx"],
-  future: {
-    webpack5: true,
-  },
+  webpack5: true,
   // Custom deviceSizes for e.g. 320px (iPhone 5) 3-column images <100px
   images: {
     /* This is because imageSizes is only used when generating the 1x/2x/3x srcSet for layout="fixed" or layout="intrinsic".
