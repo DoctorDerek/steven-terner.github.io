@@ -60,7 +60,7 @@ export default function ContactForm() {
       {/*padding-bottom for vertical alignment of placeholder to top*/}
       <button
         className="hover:border-gray-900 dark:hover:border-gray-100 px-4 py-2.5 mx-auto font-bold text-center rounded-lg text-base bg-green-dark border-transparent border-2 border-solid transition-all duration-700 text-gray-100 w-full"
-        formAction="submit"
+        action="submit"
         disabled={state.submitting}
       >
         Submit
