@@ -105,7 +105,7 @@ export default function Services() {
             </LI>{" "}
             <LI>
               <Twemoji emoji="✍" />
-              <p>Contract negotation</p>
+              <p>Contract negotiation</p>
             </LI>
           </UL>
           <UL>
