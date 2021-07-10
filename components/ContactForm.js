@@ -19,36 +19,52 @@ export default function ContactForm() {
       id="get-in-touch"
       className="space-y-2 text-gray-900 dark:text-gray-100"
     >
-      <label htmlFor="name">
-        <strong>Name</strong>{" "}
+      <label htmlFor="name" className="flex items-center space-x-2">
+        <strong>Name</strong>
         <span className="text-xl md:text-2xl">(required)</span>
-      </label>
-      <input
-        type="text"
-        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl dark:bg-gray-700"
-        name="email"
-        id="email"
-        placeholder="Steven Terner, LLC"
-        required
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label htmlFor="email">
-        <strong>Email</strong>{" "}
-        <span className="text-xl md:text-2xl">(required)</span>
+        <ValidationError
+          prefix="name"
+          field="name"
+          errors={state.errors}
+          className="text-red-800"
+        />
       </label>
       <input
         type="text"
         className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl dark:bg-gray-700"
         name="name"
         id="name"
+        placeholder="Steven Terner, LLC"
+        required
+      />
+      <label htmlFor="email" className="flex items-center space-x-2">
+        <strong>Email</strong>
+        <span className="text-xl md:text-2xl">(required)</span>
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+          className="text-red-800"
+        />
+      </label>
+      <input
+        type="text"
+        className="w-full h-10 pl-1 text-xl align-top border-2 border-black border-solid rounded-xl md:text-2xl dark:bg-gray-700"
+        name="email"
+        id="email"
         placeholder="hello@gmail.com"
         required
       />
-      <label htmlFor="message">
-        <strong>Message</strong>{" "}
+      <label htmlFor="message" className="flex items-center space-x-2">
+        <strong>Message</strong>
         <span className="text-xl md:text-2xl">(required)</span>
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+          className="text-red-800"
+        />
       </label>
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
       <input
         type="textarea"
         className="w-full pb-48 pl-1 text-lg align-top border-2 border-black border-solid md:text-3xl sm:text-2xl rounded-3xl h-60"
