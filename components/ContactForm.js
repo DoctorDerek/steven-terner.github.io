@@ -65,15 +65,13 @@ export default function ContactForm() {
           className="text-red-800"
         />
       </label>
-      <input
-        type="textarea"
-        className="w-full pb-48 pl-1 text-lg align-top border-2 border-black border-solid md:text-3xl sm:text-2xl rounded-3xl h-60"
+      <textarea
+        className="w-full pl-1 text-lg align-top border-2 border-black border-solid md:text-3xl sm:text-2xl rounded-3xl h-60"
         placeholder="Let us know how we can help 💼"
         name="message"
         id="message"
         required
       />
-      {/*padding-bottom for vertical alignment of placeholder to top*/}
       <button
         className="hover:border-gray-900 dark:hover:border-gray-100 px-4 py-2.5 mx-auto font-bold text-center rounded-lg text-base bg-green-dark border-transparent border-2 border-solid transition-all duration-700 text-gray-100 w-full"
         type="submit"
