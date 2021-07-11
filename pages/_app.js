@@ -6,7 +6,7 @@ import { DefaultSeo } from "next-seo"
 import Head from "next/head"
 
 import { SEO } from "@/components/SEO"
-import LayoutWrapper from "@/components/LayoutWrapper"
+import LayoutWrapper from "@/layouts/LayoutWrapper"
 import MDXComponents from "@/components/MDXComponents"
 
 export default function App({ Component, pageProps }) {
