@@ -31,7 +31,7 @@ class MyDocument extends Document {
           <meta name="application-name" content="StevenTerner.com" />
           <meta name="msapplication-TileColor" content="#603cba" />
           <meta name="theme-color" content="#ffffff" />
-          <link rel="alternate" type="application/rss+xml" href="/index.xml" />
+          <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
