@@ -22,13 +22,12 @@ const SocialIcon = ({
 }) => {
   const SocialSvg = components[kind]
 
-  // brand colors for social icons
-  // arbitrary values enabled by Tailwind CSS JIT (Just-In-Time) Engine
+  // brand colors for social icons, configured in tailwind.config.js
   const socialColors = {
-    twitter: "bg-[#1DA1F2]",
-    linkedin: "bg-[#2867B2]",
-    medium: "bg-[#12100E]",
-    email: "bg-[#206A5D]",
+    twitter: "bg-social-twitter",
+    linkedin: "bg-social-linkedin",
+    medium: "bg-social-medium",
+    email: "bg-social-email",
   }
 
   return (

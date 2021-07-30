@@ -129,6 +129,13 @@ module.exports = {
           // table row color for services page
           pale: "#e9fbe5",
         },
+        social: {
+          // brand colors for social icons
+          twitter: "#1DA1F2",
+          linkedin: "#2867B2",
+          medium: "#12100E",
+          email: "#206A5D",
+        },
       },
     },
   },
