@@ -10,7 +10,7 @@ const Card = ({ alt, src, link, heading, children }) => {
             alt={alt}
             src={src}
             sizes="portrait"
-            preload={true}
+            preload="true"
             className="rounded-full"
           />
         </div>

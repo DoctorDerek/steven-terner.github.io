@@ -9,19 +9,19 @@ export default function SlideshowSlides() {
           alt="A man and three fashionable women in hijab sitting inside a cozy cafe."
           src="/static/images/ahmad-barshod-miCPhkJLYs8-unsplash.jpg"
           sizes="portrait"
-          preload={true}
+          preload="true"
         />
         <Image
           alt="Two women in hijab sitting at a fashionable Middle Eastern bar."
           src="/static/images/behzad-ghaffarian-agGyKOiowuk-unsplash.jpg"
           sizes="portrait"
-          preload={true}
+          preload="true"
         />
         <Image
           alt="A towering skyscraper reminiscent of Dubai or other Arab states."
           src="/static/images/mehrshad-rajabi-UI8kIVUu7oI-unsplash.jpg"
           sizes="portrait"
-          preload={true}
+          preload="true"
         />
       </SlideshowSlide>
       <SlideshowSlide>
