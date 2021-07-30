@@ -19,7 +19,6 @@ const SocialIcon = ({
     "Missing required kind prop in SocialIcon"
   },
   href,
-  size = 5,
 }) => {
   const SocialSvg = components[kind]
 
@@ -43,7 +42,7 @@ const SocialIcon = ({
       href={href}
     >
       <span className="sr-only">{kind}</span>
-      <SocialSvg className={`fill-current h-${size} w-${size} m-2`} />
+      <SocialSvg className="w-5 h-5 m-2 fill-current" />
     </a>
   )
 }
