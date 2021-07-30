@@ -1,6 +1,6 @@
 import siteMetadata from "@/data/siteMetadata"
 import Link from "@/components/Link"
-import SocialIcon from "@/components/"
+import SocialIcon from "@/components/social-icons"
 import Image from "@/components/CustomImage"
 import { useCurrentPath } from "@/components/useCurrentPath"
 
