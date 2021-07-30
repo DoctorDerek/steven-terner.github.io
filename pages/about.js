@@ -3,7 +3,7 @@ import AboutSidebar from "@/components/AboutSidebar"
 import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 import Twemoji from "@/components/Twemoji"
 import Link from "@/components/Link"
 

@@ -1,4 +1,4 @@
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 import Link from "@/components/Link"
 
 const Card = ({ alt, src, link, heading, children }) => {

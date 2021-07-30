@@ -1,5 +1,5 @@
 import React, { memo } from "react"
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 
 const isRequired = () => {
   throw new Error("You need to specify an emoji for the Twemoji component")

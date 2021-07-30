@@ -1,7 +1,7 @@
 import siteMetadata from "@/data/siteMetadata"
 import { PageSeo } from "@/components/SEO"
 import PageTitle from "@/components/PageTitle"
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 import SectionContainer from "@/components/SectionContainer"
 import Interweave from "interweave"
 import { Filter } from "interweave"

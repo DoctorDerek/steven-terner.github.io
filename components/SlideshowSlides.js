@@ -1,4 +1,4 @@
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 import SlideshowSlide from "@/components/SlideshowSlide"
 
 export default function SlideshowSlides() {

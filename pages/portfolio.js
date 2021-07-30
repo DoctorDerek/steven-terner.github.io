@@ -4,7 +4,7 @@ import { PageSeo } from "@/components/SEO"
 import SectionContainer from "@/components/SectionContainer"
 import PageTitle from "@/components/PageTitle"
 import Link from "@/components/Link"
-import Image from "@/components/Image"
+import Image from "@/components/CustomImage"
 
 export default function Portfolio() {
   return (
