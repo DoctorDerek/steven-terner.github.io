@@ -14,12 +14,11 @@ const components = {
 
 const classNames = (...classes) => classes.join(" ")
 
-const SocialIcon = ({
-  kind = () => {
-    "Missing required kind prop in SocialIcon"
-  },
-  href,
-}) => {
+const isRequired = () => {
+  throw new Error("Missing required kind prop in SocialIcon")
+}
+
+const SocialIcon = ({ kind = isRequired(), href }) => {
   const SocialSvg = components[kind]
 
   // brand colors for social icons, configured in tailwind.config.js
