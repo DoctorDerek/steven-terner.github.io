@@ -82,7 +82,7 @@ export default function Portfolio() {
           <hr />
           <div className="float-right">
             <Link href="https://iranianeconomicnews.com/">
-              <div className="grid w-20 h-20 sm:w-40 sm:h-40 md:w-60 md:h-60">
+              <div className="grid w-24 h-24 ml-4 sm:w-40 sm:h-40 md:w-60 md:h-60">
                 <Image
                   src="/static/images/IEN-logo.png"
                   alt="The logo for Iranian Economic News is based on the Iranian flag."
